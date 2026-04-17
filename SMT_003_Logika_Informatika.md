@@ -1,4 +1,4 @@
-# Modul 1: Kalimat Logika Proporsionalm Aturan Sintatik dan Interpretasi
+# Modul 1: Kalimat Logika Proposisional Aturan Sintatik dan Interpretasi
 
 ### Kegiatan 1: Bahasa Logika Proporsional dan Aturan Sintatik
 
@@ -54,7 +54,7 @@ Sebuah kalimat logika proposisional tidak memiliki arti sampai kita memberikan N
 #### Interpretasi
 Definisi Interpretasi Interpretasi adalah sebuah pemberian (*assignment*) nilai kebenaran `true` atau `false` ke masing-masing himpunan simbol proposisional.
 * **Interpretasi untuk Kalimat:** Suatu interpretasi dikatakan sebagai "`interpretasi untuk kalimat K`" jika memberikan nilai kebenaran ke masing-masing simbol proposisional yang ada di dalam kalimat K.
-* **Contoh:** Untuk kalimat ``$K: P \lor (\neg Q)$, salah satu interpretasi yang mungkin adalah $I_1 = \{P \leftarrow \text{false}, Q \leftarrow \text{true}\}$.2. 
+* **Contoh:** Untuk kalimat $K: P \lor (\neg Q)$, salah satu interpretasi yang mungkin adalah $I_1 = \{P \leftarrow \text{false}, Q \leftarrow \text{true}\}$.2. 
 
 #### Interpretasi dan Tabel Kebenaran
 Suatu interpretasi untuk kalimat `K` akan cocok (match) dengan tepat satu baris dalam Tabel Kebenaran kalimat tersebut.

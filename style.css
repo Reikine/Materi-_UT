@@ -1,0 +1,13 @@
+/* Membuat garis horizontal tebal dan abu-abu */
+hr {
+    border: none !important;
+    height: 20px !important; /* Ketebalan garis */
+    background-color: #555555 !important; /* Abu-abu tegas */
+    margin: 30px 0 !important;
+    border-radius: 5px;
+}
+
+/* Bonus: Agar tampilan LaTeX di preview lebih snappy */
+.katex {
+    font-size: 1.1em !important;
+}

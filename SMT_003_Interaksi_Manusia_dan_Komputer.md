@@ -90,7 +90,7 @@ ___
 
 # Modul 2 Faktor Manusia
 
-## Kegiatan 1 Pemodelan Sistem Pengolah
+## Kegiatan 1 Pemodelan Sistem Pengolah (Downtown dan Leedham 1992)
 ### Pemodelan Sistem Pengolah
 Sistem komputer terdiri dari hardware, software, dan brainware. Manusia dimodelkan sebagai sistem pengolah informasi yang memiliki siklus interaksi (masukan $\rightarrow$ pengolah $\rightarrow$ keluaran).
 1. **Pengolahan (secara) Sadar dan Otomatis**
@@ -112,7 +112,7 @@ Sistem komputer terdiri dari hardware, software, dan brainware. Manusia dimodelk
     * Rasa takut salah atau takut merusak sistem dapat menghambat proses belajar.
     * Desain antarmuka yang ramah dan instruktif sangat penting untuk mengurangi kecemasan.
 
-### Pengendali Rotorik
+### Pengendali Motorik
     Respon fisik manusia terhadap hasil pengolahan (tangan, kaki, suara). Kecepatan pengendalian (seperti mengetik) dapat ditingkatkan secara signifikan melalui latihan yang konsisten.
 
 ### Kunci Jawaban Test Formatif 1
@@ -133,12 +133,12 @@ Sistem komputer terdiri dari hardware, software, dan brainware. Manusia dimodelk
 ## Kegiatan Belajar 2 Panca Indra dan Lingkungan Sekitar
 ### Indra Penglihatan
 Mata digunakan untuk menghasilkan persepsi terorganisir mengenai gerakan, ukuran, bentuk, jarak, posisi, tekstur, dan warna. Dalam sistem komputer, mata "dipaksa" menginterpretasikan obyek dua dimensi di layar sebagai obyek tiga dimensi.
-* **Luminansi**
+* **Luminansi (luminance)**
     * Jumlah cahaya yang dipantulkan permukaan obyek (satuan: lilin/meter persegi).
     * Luminansi tinggi meningkatkan kedalaman fokus namun membuat mata sensitif terhadap kedipan (flicker).
 * **Kontras**
     * Hubungan antara cahaya obyek dan latar belakangnya (selisih luminansi).
-    * Nilai kontras dapat positif atau negatif tergantung mana yang lebih besar antara obyek atau latar belakang.
+    * Nilai kontras dapat positif (cahaya lebih besar) atau negatif tergantung mana yang lebih besar antara obyek atau latar belakang.
 * **Kecerahan**
     * Tanggapan subjektif terhadap cahaya. Luminansi tinggi berimplikasi pada kecerahan yang tinggi pula.
     * Fenomena kisi-kisi Herman menunjukkan ilusi titik hitam/putih pada perpotongan garis akibat perbedaan kecerahan.
@@ -148,13 +148,14 @@ Mata digunakan untuk menghasilkan persepsi terorganisir mengenai gerakan, ukuran
     * Rumus sudut penglihatan: $\phi = 120 \tan^{-1} \frac{L}{2D}$ (L = tinggi obyek, D = jarak).
 * **Medan Penglihatan**
     * Sudut yang dibentuk saat mata bergerak ke kiri dan kanan terjauh. Terbagi menjadi:
-      * **Binokuler:** Kedua mata mampu melihat obyek yang sama ($62^\circ - 70^\circ$).
+      * **Binokuler:** Kedua mata mampu melihat obyek yang sama ($62^\circ - 70^\circ$) dengan daerah sebesar $30^\circ$.
       * **Monokuler:** Dilihat oleh salah satu mata saja ($94^\circ - 104^\circ$).
       * **Area Buta:** Tidak dapat dilihat oleh kedua mata.
     * Medan penglihatan optimum untuk pekerjaan interaktif adalah $\pm 15^\circ$.
 * **Warna**
-    * Cahaya tampak berada pada spektrum 400–700 nm. Mata mampu membedakan sekitar 128 warna berbeda.
+    * Cahaya tampak berada pada spektrum 400–700 nm. Mata mampu membedakan sekitar 128 warna berbeda, dan mata dapat membedakan warna secara akurat saat membentuk sudut $60^\circ$.
     * Psikologi Warna: Warna adalah sensasi sistem saraf. Lensa mata tidak dapat mengoreksi warna secara otomatis (*chromostereopsis*), sehingga warna merah tampak lebih dekat dan biru lebih jauh.
+    * Transmisitas Lensa : Lensa menyerap energi spektrum biru dua kali lebih banyak daripada merah/kuning. Penuaan menyebabkan efek "penguningan" lensa, yang mereduksi sensitivitas terhadap panjang gelombang pendek (biru).
     * Persepsi: Penglihatan malam diatur oleh sel rods (tidak peka warna), sedangkan penglihatan warna oleh sel cones (biru, hijau, merah). Buta warna terjadi karena hilangnya fotopigmen tertentu.
 
 #### Saran Penggunaan Warna
@@ -170,6 +171,18 @@ Penggunaan warna harus diatur agar tidak menimbulkan ketidaknyamanan mata dan me
     * Jangan gunakan warna berlebihan (maksimal 4-5 warna).
     * Gunakan warna yang sama untuk pesan yang serupa.
     * Warna hangat (panjang gelombang besar) untuk menunjukkan tindakan atau tanggapan yang diperlukan.
+
+#### Optimasi Kombinasi Warna
+
+| Latar Belakang | Rekomendasi Warna Objek (Garis/Teks)  |
+| -------------- | ------------------------------------- |
+| Putih          | Biru (94%), Hitam (63%)               |
+| Hitam          | Putih (75%), Kuning (63%), Biru (81%) |
+| Merah          | Kuning (75%), Magenta (81%)           |
+| Hijau          | Hitam (100%), Cyan (81%)              |
+| Biru           | Putih (81%), Kuning (62%)             |
+
+![alt text](image.png)
 
 ### Indra Pendengaran
 Pendengaran adalah indera terpenting kedua setelah penglihatan dalam IMK, terutama untuk umpan balik (feedback) multimedia.
@@ -248,7 +261,7 @@ Abowd dan Beale memperluas siklus Norman dengan memasukkan elemen sistem secara 
         * **Penyajian:** Sistem menyajikan hasil operasi dalam bahasa keluaran.
     * **Fase Evaluasi:**
         * **Observasi:** Pengguna mengartikan hasil di layar dan mencocokkannya dengan gol semula.
-* Analisis Kesulitan:
+* **Analisis Kesulitan:**
     * Kesulitan sering muncul pada langkah Artikulasi jika pemetaan antara bahasa tugas dan bahasa masukan tidak jelas (misal: bingung mencari ikon untuk fungsi tertentu).
     * Keberhasilan Penyajian diukur dari tingkat ekspresivitas penerjemah status sistem (misal: penggunaan ikon jam pasir untuk menunjukkan sistem sedang bekerja).
 
@@ -648,19 +661,19 @@ Penilaian subjektif terhadap tata letak sangat mempengaruhi kebergunaan:
     * Laporan Status: Tunjukkan posisi pengguna saat ini dalam hierarki (seperti breadcrumb atau perubahan jenis huruf).
 
 ### Kunci Jawaban Test Formatif 2
-| No   | Jawaban                                   | Alasan Singkat Berdasarkan Materi                                                                        |
-| :--- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | B. pengelompokan yang logis               | Struktur pohon yang efektif mengharuskan item serupa disatukan dalam kategori yang masuk akal.           |
-| 2    | C. kategori                               | Memberikan nama pada sekumpulan item yang memiliki karakteristik serupa untuk memudahkan navigasi.       |
-| 3    | C. menu adaptif                           | Jenis menu yang daftar pilihannya berubah (disembunyikan) berdasarkan frekuensi penggunaan.              |
-| 4    | D. kronologis                             | Pengelompokan berdasarkan waktu (hari, bulan, atau tahun) disebut pengurutan kronologis.                 |
-| 5    | A. kepentingan tugas                      | Item yang paling penting diletakkan di bagian atas/awal karena paling sering diakses.                    |
-| 6    | A. judul menu                             | Judul yang unik dan deskriptif sangat krusial agar pengguna tidak bingung dengan isi menu.               |
-| 7    | C. terminologi yang dikenal dan konsisten | Penggunaan kata-kata yang umum dipahami membantu pengguna memproses pilihan lebih cepat.                 |
-| 8    | B. kiri                                   | Secara grafis, judul menu yang diletakkan di sebelah kiri lebih disukai untuk kecepatan pemindaian mata. |
-| 9    | C. pesan kesalahan                        | Pesan yang muncul secara konsisten dan bersifat instruktif saat pengguna melakukan kesalahan navigasi.   |
-| 10   | C. laporan status                         | Fitur yang menunjukkan posisi terkini pengguna dalam struktur hierarki menu (seperti breadcrumb).        |
+
+| No  | Jawaban                                             | Alasan Teknis & Logika                                                                                                          |
+| --- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | C. satukan pilihan-pilihan yang secara logis serupa | Pengelompokan semantik meminimalkan beban kognitif dalam pencarian informasi di dalam hierarki.                                 |
+| 2   | D. sifat fisik                                      | Penyajian menu harus didasarkan pada atribut fisik yang terukur (seperti panjang teks atau frekuensi) untuk optimalisasi akses. |
+| 3   | A. sudah dikenal dan konsisten                      | Terminologi yang familier memastikan kesesuaian antara model mental pengguna dengan sistem.                                     |
+| 4   | D. satu kali lebih lama...                          | Konsistensi posisi memungkinkan pemanfaatan motor memory; perubahan posisi memaksa mata melakukan pemindaian ulang.             |
+| 5   | C. penulisan judul                                  | Rata kiri pada judul merupakan standar konsistensi visual untuk mempercepat proses scanning teks.                               |
+| 6   | C. penempatan pilihan                               | Penggunaan ruang kosong dan penomoran adalah teknik organisasi spasial untuk membedakan kategori pilihan.                       |
+| 7   | B. pesan kesalahan                                  | Merupakan mekanisme umpan balik (feedback) saat sistem menerima input yang tidak sesuai dengan batasan fungsi.                  |
+| 8   | A. laporan status                                   | Indikator posisi (seperti highlight) memberikan informasi real-time mengenai lokasi pengguna dalam struktur menu.               |
+| 9   | D. alfabetis                                        | Data disusun berdasarkan urutan leksikografis (A ke Z) untuk memudahkan pencarian nama secara linear.                           |
+| 10  | B. Data Pribadi & Data Pendidikan                   | Pengelompokkan paling logis: Data identitas disatukan, dan data pendidikan disusun secara kronologis (SD → SMP → SMA).          |
 
 ___
 
@@ -710,7 +723,7 @@ Paradigma interaksi ini memungkinkan komunikasi antara manusia dan komputer meng
 | No   | Jawaban                                             | Alasan Singkat Berdasarkan Materi                                                                               |
 | :--- | :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
 |      |
-| 1    | B. D: >DIR                                          | Perintah DIR digunakan untuk menampilkan daftar berkas, dan D: merujuk pada drive/partisi D.                    |
+| 1    | A. D: >DIR                                          | Perintah DIR digunakan untuk menampilkan daftar berkas, dan D: merujuk pada drive/partisi D.                    |
 | 2    | C. lpr                                              | Dalam sistem UNIX, perintah lpr (line printer) digunakan untuk mencetak berkas ke printer.                      |
 | 3    | B. gambar                                           | Ekstensi .png merujuk pada jenis berkas gambar (Portable Network Graphics).                                     |
 | 4    | A. C:\DOS>FORMAT A: /S                              | FORMAT adalah perintah luar (external command) karena memerlukan berkas sistem FORMAT.COM.                      |
@@ -787,7 +800,8 @@ ___
 # Modul 8 Rancangan Tampilan
 
 ## Kegiatan 1 Prinsip dan Petunjuk Perancangan
-Dokumentasi rancangan adalah elemen krusial untuk memfasilitasi iterasi dan perubahan desain. Metode dokumentasi meliputi: sketsa kertas, prototipe GUI, deskripsi tekstual hubungan antarjendela, dan penggunaan perangkat bantu CASE (Computer-Aided Software Engineering).
+Dokumentasi rancangan adalah elemen krusial untuk memfasilitasi iterasi dan perubahan desain. 
+* Metode dokumentasi meliputi: sketsa kertas, prototipe GUI, deskripsi tekstual hubungan antarjendela, dan penggunaan perangkat bantu CASE (Computer-Aided Software Engineering).
 
 ### Cara Pendekatan
 Pendekatan perancangan dibedakan berdasarkan target pengguna:
@@ -795,7 +809,7 @@ Pendekatan perancangan dibedakan berdasarkan target pengguna:
 * **General Purpose Software (Public Software):** Untuk pengguna luas dengan tingkat kemahiran beragam. Mengutamakan Customization agar pengguna dapat menyesuaikan antarmuka (misal: pengaturan desktop OS X) sesuai preferensi pribadi.
 
 ### Prinsip dan Petunjuk Perancangan
-Antarmuka terdiri dari empat komponen utama: model pengguna, bahasa perintah, umpan balik, dan penampilan informasi.
+Antarmuka terdiri dari empat komponen utama: **model pengguna**, **bahasa perintah**, **umpan balik**, dan **penampilan informasi**.
 * **Urutan Perancangan**
 Proses dilakukan secara top-down dan stepwise refinement:
     * Pemilihan Ragam Dialog: Menyesuaikan karakteristik populasi pengguna (mula, menengah, ahli).

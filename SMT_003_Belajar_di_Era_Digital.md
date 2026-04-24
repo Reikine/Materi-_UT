@@ -391,3 +391,538 @@ Untuk menentukan reliabilitas suatu media atau publikasi, digunakan tiga kriteri
 Membaca lateral adalah langkah kritis dalam literasi digital untuk memverifikasi kredibilitas suatu situs baru.
 * **Logika Prosedural:** Alih-alih menggali lebih dalam pada satu situs (membaca vertikal seperti halaman "About Us"), pemeriksa fakta akan membuka tab baru untuk mencari informasi tentang situs tersebut dari sumber luar.
 * **Strategi:** Mencari tahu apa yang dikatakan situs lain yang tepercaya mengenai sumber yang sedang dievaluasi. Hal ini dilakukan karena situs yang tidak tepercaya sering kali memberikan gambaran yang bias tentang kepakaran dan kredibilitas mereka sendiri pada halaman internal mereka.
+___
+
+# Modul 4: Mass Media Digital
+## Media Mass Digital dan Pesan
+### Propaganda dan Persuasi
+Materi ini mengeksplorasi bagaimana pesan media digunakan untuk memengaruhi opini publik.
+* **Definisi Propaganda**: Menurut Encyclopedia Britannica, propaganda adalah manipulasi informasi dengan tujuan memengaruhi opini publik. Paul Starr (2004) menekankan bahwa media dalam demokrasi liberal cenderung lebih independen, namun tetap menjadi alat kekuasaan politik yang melekat.
+* **Persuasi VS Propaganda**: Persuasi adalah kekuatan media yang bersifat luas untuk mengirimkan pesan kepada masyarakat umum.
+* **Perspektif Historis**: Contoh klasik penggunaan propaganda meliputi:
+    * Slogan "Join, or Die" oleh Benjamin Franklin pada Revolusi Amerika.
+    * Penggunaan koran pada tahun 1830-an untuk kohesi sosial.
+    * Era Perang Dunia I, di mana media massa digunakan pemerintah untuk memotivasi warga negara agar berperang melalui teknik periklanan yang mulai profesional.
+
+### Media dan Perilaku Masyarakat
+Bagian ini membahas hubungan timbal balik antara konsumsi media dengan budaya lokal maupun global.
+* **Interaksi Budaya**: Budaya dan media tidak dapat dipisahkan. Media memiliki daya tarik yang mampu mengubah budaya lokal dan perilaku masyarakat agar mengikuti tren baru atau asing (penetrasi budaya).
+* **Globalisasi Media**: Hadirnya teknologi komunikasi global mempengaruhi cara pandang dan perilaku manusia secara menyeluruh melalui persebaran informasi yang melampaui batas fisik.
+
+### Media dan Kekerasan
+Menganalisis alasan media menonjolkan konten kekerasan dan dampaknya terhadap audiens.
+* **Faktor Pendorong**: Media cenderung memberitakan kekerasan karena nilai berita (news value), dramatisasi untuk menarik audiens, orientasi profit, dan kebijakan pemilik modal.
+* **Dampak pada Audiens**: 
+    * Copycats: Peniruan aksi kekerasan.
+    * Desensitization effects: Masyarakat menjadi terbiasa/mati rasa terhadap kekerasan.
+    * Moral panic: Ketakutan berlebih audiens akan menjadi korban.
+    * Fear of crime: Perasaan takut akan kejahatan di sekitar mereka.
+* **Tipe Pembaca Media**:
+    * Oppositional reader: Menolak pesan/nilai yang ditransmisikan media.
+    * Dominant reader: Tidak kritis dan langsung mengikuti isi berita.
+    * Negotiated reader: Kritis, selektif, dan melakukan klarifikasi mandiri (tipe ideal).
+
+### E-Media dan Masyarakat
+Membahas transformasi informasi, literasi, dan berita di era internet.
+* **Informasi**: Internet menciptakan kekayaan informasi namun juga fenomena cyberbalkanization, di mana individu hanya menerima informasi yang mereka inginkan (fragmentasi informasi).
+* **Literasi**: Terjadi perubahan standar literasi dari teks yang rumit menuju penggunaan bahasa yang lebih sederhana dan terbuka pada platform digital seperti blog dan forum.
+* **Berita**: Kecepatan menjadi faktor utama. Media baru memungkinkan penyebaran berita nasional secara instan, namun menuntut audiens untuk mampu membedakan informasi tepercaya dari sumber aslinya.
+* **Budaya Konvergensi**: Mengutip Henry Jenkins (2006), konvergensi adalah aliran konten di berbagai platform media dan perilaku migrasi audiens yang mencari hiburan di mana saja. Media baru bersifat partisipatif, di mana audiens terlibat aktif dalam mengomentari atau membedah konten (contoh: interaksi di YouTube).
+
+## Konsep-konsep Dasar dalam Pembangunan Ekonomi (fokus pada Internet dan Media Sosial di Indonesia)
+### Internet di Indonesia
+Bagian ini memaparkan data statistik dan tren penggunaan internet di ranah global maupun nasional.
+* **Era Big Data:** Komunikasi antarpersonal kini berada di era Teknologi Informasi dan Komunikasi (TIK), di mana jarak dan waktu bukan lagi hambatan.
+* **Statistik Pengguna:**
+    * Global (2018): 51,2% populasi dunia (sekitar 3,9 miliar orang) adalah pengguna internet.
+    * Indonesia (2019): Dari 268,2 juta penduduk, terdapat 150 juta pengguna internet (penetrasi 56%).
+    * Durasi Akses: Rata-rata orang Indonesia mengakses internet selama 8 jam 36 menit per hari.
+* **Profil Pengguna:** Mayoritas pengguna di Indonesia (49%) berusia 18-25 tahun (Digital Natives / Generasi Z).
+* **Alasan Utama Mengakses Internet:**
+    * Media sosial (87%).
+    * Mencari informasi/browsing (69%).
+    * Layanan pesan instan (60%).
+    * Video streaming (27,3%).
+
+### Media Sosial
+Materi ini membahas definisi, sejarah singkat, serta dampak penggunaan media sosial bagi individu dan masyarakat.
+* **Definisi:** Media berbasis internet yang memungkinkan interaksi virtual (dunia maya), berbagi konten (foto/video), dan membangun komunitas.
+* **Sejarah Singkat Platform:**
+    * 1999: Munculnya Blogger sebagai tonggak awal media sosial.
+    * 2004: Kelahiran Facebook dengan corak tampilan yang lebih modern.
+    * 2006: Munculnya Twitter dengan sistem follow-unfollow.
+    * Pertumbuhan: Hingga 2019, Facebook memimpin jumlah pengguna global, disusul YouTube dan Instagram.
+* **Dampak Positif:**
+    * Mempermudah aktivitas harian, efisiensi, dan efektivitas komunikasi.
+    * Sarana penggalangan kesadaran sosial, politik, dan ekonomi (bisnis).
+    * Media untuk merefleksikan pengalaman pribadi (membantu daya ingat di masa depan).
+* **Dampak Negatif & Tantangan:**
+    * Berkurangnya interaksi tatap muka secara langsung.
+    * Risiko kecanduan, pelanggaran privasi, etika, dan hukum.
+    * Munculnya kejahatan siber: fitnah, teror, penipuan, penculikan, hingga adu argumen yang melanggar kesopanan.
+
+### Etika Berkomunikasi di Media Digital
+Menekankan pentingnya integritas dan norma dalam menjaga tatanan sosial di dunia maya.
+* **Kritik Sosial:** Presiden Joko Widodo pernah mengkritik budaya saling hujat di media sosial dan berpesan agar generasi muda menjaga jati diri bangsa (budi pekerti, kesantunan, dan semangat juang).
+* **Prinsip Utama:** Komunikasi digital harus didasarkan pada Trust (Rasa Saling Percaya) dan nilai etika yang tinggi.
+* **Aspek Penting yang Harus Diperhatikan:**
+    * Keamanan: Menghindari risiko menjadi korban kejahatan siber.
+    * Etika: Menggunakan internet agar tidak merugikan diri sendiri, orang lain, maupun budaya bangsa.
+    * Kreativitas: Memanfaatkan medsos untuk kolaborasi, inovasi digital, promosi budaya/pariwisata, dan kampanye positif (seperti mencegah radikalisme).
+
+## Digital Citizenship dan Citizen Jurnalism
+### Pengertian Digital Citizen
+Warga digital (digital citizen) adalah individu yang ahli menggunakan internet untuk berkomunikasi, bertransaksi, dan berpartisipasi dalam politik dengan cara yang aman dan bertanggung jawab.
+* **Digital Citizenship:** Konsep norma perilaku yang tepat dan bertanggung jawab terkait penggunaan teknologi.
+* **Tiga Pilar Utama:**
+    * Literasi Digital: Berwawasan pengetahuan luas agar siap menghindari risiko dan menjaga privasi.
+    * Digital Civility: Menunjukkan rasa hormat, perilaku sopan, dan etis terhadap hak orang lain di dunia online.
+    * Literasi Informasi: Kemampuan menemukan, mengevaluasi, dan menggunakan informasi dari internet secara efektif untuk menyelesaikan tugas.
+
+### Pengertian Citizen Journalism
+Jurnalisme warga adalah praktik jurnalisme yang dilakukan oleh non-profesional (warga biasa) melalui kanal media baru atau internet.
+* **Definisi (Bowman & Willis):** Tindakan warga yang berperan aktif dalam proses pengumpulan, pelaporan, analisis, dan penyebaran berita.
+* **Karakteristik:** Menghasilkan konten berita sendiri (user-generated content) dalam bentuk teks, gambar, audio, maupun video (blog, podcast, media sosial).
+* **Kelebihan & Kekurangan:** Berita lebih cepat tersaji karena akses teknologi 24/7, namun seringkali kurang dapat diandalkan karena lemah dalam verifikasi sumber dan analisis latar belakang.
+
+### Bentuk-Bentuk Citizen Journalism
+Terdapat berbagai klasifikasi praktik jurnalisme warga menurut para ahli:
+* **5 Tipe J.D. Lasica:** Partisipasi audiens (komentar), situs berita independen, situs berita partisipatoris murni, situs media kolaboratif, dan situs penyiaran pribadi.
+* **11 Klasifikasi Steve Outing:** Mencakup ruang komentar publik, blog warga (bloghouse), kolaborasi jurnalis profesional-amatir, model Wiki (pembaca adalah editor), hingga situs jurnalisme warga yang berdiri sendiri (stand-alone).
+
+### Perkembangan dan Peran Citizen Journalism
+Kemajuan TIK memberikan ruang publik yang sangat luas bagi partisipasi warga.
+* **Dukungan Profesional:** Jurnalis arus utama (seperti BBC) mulai bekerja sama dengan audiens untuk kontribusi informasi.
+* **Konteks Indonesia:** Berkembang pesat terutama saat peristiwa besar seperti bencana alam atau terorisme melalui prinsip hyperlocalism (meliput isu lokal yang luput dari media besar).
+* **Fungsi:** Bertindak sebagai watchdog (penjaga), penyaring informasi, pengecek fakta, hingga editor di atmosfer media tradisional.
+
+### Etika Citizen Journalism
+Meskipun tidak memiliki batasan baku, jurnalis warga harus mematuhi etika dasar: tidak menyebarkan berita bohong (hoaks), tidak mencemarkan nama baik, tidak memicu konflik SARA, dan mencantumkan sumber berita dengan jelas.
+
+### Kolaborasi vs Pelaporan Independen
+Warga dapat berkontribusi melalui dua cara:
+* **Kolaborasi:** Memberikan komentar, data lokal, atau keahlian khusus ke dalam artikel yang ditulis jurnalis profesional.
+* **Independen:** Beroperasi sepenuhnya sendiri melalui blog atau saluran video pribadi (YouTube) tanpa terikat outlet berita tradisional.
+
+### Berita Revolusioner
+Jurnalisme warga dianggap sebagai revolusi demokrasi dalam pengumpulan berita.
+* **Dampak:** Media sosial memungkinkan warga menjadi pelapor pertama di lokasi kejadian secara real-time.
+* **Simbiosis:** Studi tahun 2016 menunjukkan lebih dari 50% jurnalis profesional menggunakan media sosial untuk menemukan dan membangun cerita.
+* **Tantangan Akhir:** Kekhawatiran utama tetap pada keandalan berita, kebutuhan akan pengecekan fakta, dan risiko penyebaran informasi yang salah.
+
+___
+
+# Modul 5: Literasi Informasi
+
+## Pengertian Model
+### Pengertian Literasi Informasi (LI)
+ Literasi Informasi merupakan istilah yang muncul pada dekade 1970-an (Paul Zurkowski). Berdasarkan kesepakatan IFLA, UNESCO, dan NFIL (2005), serta standar ALA (1989), LI didefinisikan sebagai:
+* **Definisi**: Kemampuan seseorang untuk mengenali kapan informasi dibutuhkan dan memiliki kemampuan untuk menemukan, mengevaluasi, serta menggunakan informasi tersebut secara efektif.
+* **Indikator Kemampuan Individu yang Literat Informasi (ACRL):**
+    * Mementukan sifat dan keluasan informasi yang dibutuhkan.
+    * Mengakses informasi secara efektif dan efisien.
+    * Menilai informasi dan sumbernya secara kritis.
+    * Memadukan informasi ke dalam basis pengetahuan dan sistem nilai probadi.
+    * Menggunakan informasi untuk tujuan spesifik secara etis dan sah.
+
+### Model-Model Literasi Informasi
+ Terdapat empat model utama yang digunakan sebagai panduan untuk melatih keterampilan literasi informasi:
+* **Model Big6**: Dikembangkan oleh Michael B. Eisenberg dan Robert E. Berkowitz (1988). Model ini sangat populer karena pendekatannya yang praktis dan sistematis melalui 6 tahapan:
+    * Task Definition: Merumuskan masalah dan identifikasi informasi yang butuh.
+    * Information Seeking Strategies: Menentukan sumber-sumber terbaik.
+    * Location and Access: Menemukan informasi secara intelektual dan fisik.
+    * Use of Information: Memilah dan mengevaluasi isi informasi.
+    * Synthesis: Mengorganisasikan dan mempresentasikan informasi dari berbagai sumber.
+    * Evaluation: Menilai hasil dan efektivitas proses pencarian.
+* **Model SCONUL (Seven Pillars Model)**: Diterbitkan oleh Society of College, National and University Libraries (Inggris, 2011). Model ini menggunakan 7 pilar untuk mengidentifikasi kemahiran seseorang, mulai dari tingkat Novice (pemula) hingga Expert (pakar).
+* **Empowering the Eoght (E8)**: Model ini menggunakan pendekatan pemecahan masalah untuk *resource-based learning* yang terdiri dari 8 kemampuan:
+    * Identifikasi: Topik, audiens, dan format.
+    * Eksplorasi: Mencari sumber yang sesuai.
+    * Seleksi: Mengumpulkan kutipan yang relevan.
+    * Organisasi: Menyusun informasi secara logis.
+    * Penciptaan: Membuat karya dengan kata-kata sendiri.
+    * Presentasi: Menyebarkan informasi.
+    * Penilaian: Evaluasi berdasarkan masukan orang lain.
+    * Penerapan: Mengimplementasikan ilmu. 
+* **Bruce's Seven Faces of Information Literacy**: Christine Bruce (1997) mengusulkan tiga pendekatan (perilaku, konstruktivis, dan relasional) yang dijabarkan dalam 7 kategori pengalaman:
+    * Information technology conception
+    * Information sources conception
+    * Information process conception
+    * Information control conception
+    * Knowledge construction conception
+    * Knowledge extension conception
+    * Wisdom conception
+
+### Elemen Literasi Informasi
+* **Literasi Visual**
+* **Literasi Media**: TV, radio, koran.
+* **Literasi Komputer**: database dan teknologi inforomasi.
+* **Literasi Digital**: mengolah informasi dari sumber digital.
+* **Literasi Jaringan**: kelola informasi melalui aksesk jaringan.
+
+## Fake News, UpStream, dan Read Literally
+### Penelusuran Web: Fake News dan Read Laterally
+ Bagian ini memfokuskan pada kemampuan membedakan fakta dan informasi di web melalui teknik verifikasi sumber.
+* **Fenomena Literasi:** Banyak pengguna web terjebak pada informasi fiksi karena kurangnya keterampilan penelusuran. Seringkali keputusan percaya atau tidak didasarkan pada bias informasi yang sudah dimiliki sebelumnya.
+* **Studi Kasus Perbandingan:** Video "Online Verification Skills" membandingkan dua situs medis dengan nama serupa namun kredibilitas berbeda:
+    * American Academy of Pediatrics: Organisasi kredibel sejak 1930.
+    * American College of Pediatricians: Kelompok dengan agenda tertentu yang sering dianggap sebagai kelompok kebencian.
+* **Akurasi Berdasarkan Kelompok:** Penelitian menunjukkan bahwa mahasiswa dan sejarawan sering gagal mengidentifikasi sumber yang lebih kredibel. Sebaliknya, pemeriksa fakta profesional mencapai tingkat keberhasilan 100% karena menggunakan metode penelusuran yang benar.
+* **Teknik Wikipedia:** Menggunakan Wikipedia untuk memverifikasi latar belakang organisasi (pendiri, dana, literatur terkait) secara cepat sebagai alat pembanding.
+* **Metode Go UpStream to the Source:** Teknik menelusuri link atau kutipan hingga ke sumber aslinya guna memastikan deskripsi asli dari sebuah informasi.
+* **Read Literally:** Strategi antisipasi terhadap fake news atau berita sampah dengan tidak hanya membaca apa yang tersurat, tetapi menyelidiki kebenaran melalui penelusuran ke sumber hulu (UpStream).
+
+### Penelusuran Sosial Media
+ Bagian ini membahas karakteristik media sosial dan teknik verifikasi akun untuk menghindari informasi palsu.
+* **Klasifikasi Media Sosial:**
+    * Social Bookmarking: Berbagi link dan tag (contoh: Pinterest, Reddit).
+    * Content Sharing: Berbagi media dan publikasi (contoh: YouTube, Flickr).
+    * Wiki: Situs berbagi pengetahuan komunal (contoh: Wikitravel).
+    * Flickr: Fokus pada katalog foto profesional.
+    * Social Network: Interaksi antarindividu (contoh: Facebook, LinkedIn).
+    * Creating Opinion: Sarana berbagi opini di seluruh dunia.
+* **Evaluasi Akun Media Sosial:** Pentingnya menganalisis kredibilitas akun untuk menghindari ancaman anonim atau pernyataan rasis/fanatik melalui penelusuran terbalik.
+* **Teknik Reverse Image Search:** Menggunakan fitur pencarian gambar terbalik (klik kanan pada foto profil) untuk melacak identitas asli pemilik foto. Sering ditemukan akun palsu menggunakan foto atlet atau figur publik (seperti kasus akun "Sean Patrick" yang menggunakan foto Jesse Palmer).
+* **Indikator Akun Palsu:**
+    * Ketidakseimbangan antara klaim status dengan visibilitas waktu bergabung.
+    * Jumlah following yang jauh lebih besar daripada follower.
+    * Penggunaan kalimat yang sama persis di berbagai postingan.
+    * Penggunaan aplikasi robot (bot) untuk menjawab komentar.
+    * Ketidadaan tanda verifikasi (centang biru) pada akun tokoh publik atau artis besar.
+
+## Wikipedia: Ensiklopedia Bebas
+### Definisi dan Karakteristik Wikipedia
+ Wikipedia adalah ensiklopedia bebas berbasis web yang dioperasikan oleh Wikimedia Foundation.
+* **Sifat Konten:** Terbuka untuk ditulis, disunting, dan didistribusikan oleh siapa saja (kolaboratif/sukarela).
+* **Skala:** Tersedia dalam lebih dari 300 bahasa di seluruh dunia.
+* **Prinsip Dasar (Lima Pilar):** Menekankan pada sudut pandang netral, konten gratis, serta interaksi antar editor yang berbasis rasa hormat dan kesopanan.
+
+### Mekanisme Kerja dan Verifikasi
+ Berbeda dengan ensiklopedia cetak, Wikipedia berkembang secara dinamis dan terus-menerus diperbarui.
+* **Kolaborasi Referensi:** Artikel dikembangkan dengan menghubungkan berbagai sumber referensi eksternal.
+* **Proses Validasi:** Pengguna diwajibkan untuk selalu waspada terhadap sumber tunggal dan disarankan untuk memeriksa referensi eksternal guna membuktikan validitas informasi dalam artikel.
+* **Status Akademis:** Sebagai sumber tersier, Wikipedia umumnya tidak diterima sebagai sumber fakta utama dalam makalah penelitian formal, namun diakui memiliki tingkat akurasi yang mendekati Encyclopaedia Britannica menurut studi jurnal Nature.
+
+### Kekuatan, Kelemahan, dan Manajemen Konten
+ Struktur terbuka Wikipedia memberikan dampak ganda pada kualitas dan keberlangsungan informasi.
+* **Kelebihan:**
+    * Basis editor yang luas dan beragam memungkinkan dokumentasi subjek yang sulit diakses.
+    * Kecepatan pembaruan informasi terhadap peristiwa terkini sangat tinggi (dalam hitungan jam).
+    * Mencegah penyensoran oleh kelompok atau pihak tertentu.
+* **Kelemahan & Tantangan:**
+    * Vandalisme: Kerentanan terhadap pengeditan palsu atau perusakan konten (meskipun biasanya cepat dikoreksi melalui daftar pantauan editor).
+    * Bias: Adanya potensi bias budaya, usia, dan sosial ekonomi karena distribusi demografis editor yang tidak merata.
+    * Konsensus: Penentuan "pendekatan netral" sering kali memerlukan proses diskusi panjang dan transparan antar kontributor hingga mencapai kesepakatan.
+* **Kontributor:** Sebagian besar konten ditulis oleh amatir yang memiliki waktu luang, di mana kredensial ahli tidak diberikan bobot tambahan dalam proses pengeditan.
+
+___
+
+# Modul 6: Pengembangan Media Digital
+## Memilih Media Digital
+### Pengertian Media
+ Media berasal dari bahasa Latin medius yang berarti "tengah", "perantara", atau "pengantar". Dalam konteks pendidikan, media adalah perantara pesan dari pengirim ke penerima pesan untuk membantu proses perolehan pengetahuan, keterampilan, atau sikap.
+* **Media Pembelajaran:** Segala sesuatu yang digunakan untuk menyalurkan pesan (bahan pembelajaran) agar dapat merangsang perhatian, minat, pikiran, dan perasaan pembelajar.
+* **Media Digital (Multimedia):** Kombinasi berbagai elemen seperti teks, gambar, audio, video, dan animasi yang terintegrasi untuk menyampaikan informasi secara interaktif.
+* **Klasifikasi Elemen Media:**
+    * Teks: Data alfanumerik yang dapat dicetak atau ditampilkan.
+    * Gambar: Perwujudan visual (foto atau grafik).
+    * Audio: Suara rekaman (frekuensi yang dapat didengar manusia).
+    * Video: Rekaman dan reproduksi gambar bergerak.
+    * Animasi: Manipulasi gambar digital untuk menciptakan ilusi gerakan.
+
+### Landasan Pemilihan Media
+ Terdapat empat landasan utama dalam memilih media pembelajaran:
+* **Landasan Filosofis:** Penggunaan teknologi tidak boleh menyebabkan dehumanisasi. Media harus digunakan dengan pendekatan humanis yang menghargai perbedaan kepribadian dan kemampuan pembelajar.
+* **Landasan Psikologis:** Pemilihan media harus memperhatikan kompleksitas proses belajar dan persepsi. Mengacu pada Dale's Cone of Experience (Kerucut Pengalaman), pembelajar cenderung mengingat:
+    * 10% dari apa yang dibaca.
+    * 20% dari apa yang didengar.
+    * 50% dari apa yang dilihat dan didengar
+    * 90% dari apa yang dilakukan secara langsung.
+* **Landasan Teknologis:** Media adalah bagian integral dari sistem pembelajaran yang melibatkan desain, pengembangan, dan pengelolaan sumber belajar yang terkontrol.
+* **Landasan Empiris:** Pemilihan media harus didasarkan pada karakteristik atau gaya belajar pembelajar (visual, auditif, atau audio-visual), bukan sekadar kesukaan pengajar.
+
+### Prinsip Pemilikan Media
+ Dalam memilih media, terdapat beberapa prinsip teknis yang harus dipenuhi:
+* **Kesesuaian:** Harus selaras dengan tujuan pembelajaran, materi, dan karakteristik peserta didik.
+* **Kejelasan Sajian:** Media harus mudah dipahami, tidak menggunakan istilah yang terlalu sulit bagi level pembelajar tersebut.
+* **Kemudahan Akses:** Media harus mudah dijangkau dan digunakan oleh pembelajar (termasuk ketersediaan infrastruktur internet).
+* **Keterjangkauan:** Mempertimbangkan aspek biaya (cost) dibandingkan dengan manfaat yang diperoleh.
+* **Ketersediaan:** Memastikan media tersebut tersedia atau dapat diganti dengan alternatif lain jika tidak ada.
+* **Kualitas:** Memiliki spesifikasi teknis yang baik (gambar jelas, suara jernih).
+* **Interaktivitas:** Mampu memberikan komunikasi dua arah.
+* **Organisasi:** Mendapat dukungan dari pimpinan lembaga/sekolah dan fasilitas penyimpanan yang memadai.
+* **Kebaruan:** Mengikuti perkembangan zaman agar relevan dengan kebutuhan dunia kerja (stakeholder).
+* **Berorientasi Pembelajar:** Fokus utama adalah keuntungan bagi pembelajar, bukan keuntungan finansial (komisi) bagi pengajar atau sekolah.
+
+### Peran dan Fungsi Media Pembelajaran
+ Media bukan sekadar alat bantu, melainkan strategi untuk meningkatkan efektivitas belajar, memotivasi pembelajar, dan memvisualisasikan materi abstrak.
+* **Media sebagai Sumber Belajar:** Media dapat menggantikan sebagian fungsi pengajar dalam menyalurkan pesan dan membentuk pengetahuan baru.
+* **Fungsi Semantik:** Memberikan pemahaman yang benar atas simbol, istilah, atau rumus (mengkonkretkan ide).
+* **Fungsi Manipulatif:** Menampilkan kembali objek atau peristiwa yang terlalu besar, kecil, berbahaya, atau lambat (seperti simulasi metamorfosis).
+* **Fungsi Fiksatif (Rekam):** Kemampuan menangkap, menyimpan, dan menampilkan kembali peristiwa masa lalu (contoh: rekaman tsunami).
+* **Fungsi Distributif:** Mengatasi batas ruang dan waktu serta keterbatasan indrawi manusia secara serempak.
+* **Fungsi Psikologis:**
+    * Atensi: Menarik perhatian (attention catcher).
+    * Afektif: Membangkitkan minat dan sikap positif.
+    * Kognitif: Memberikan pengetahuan dan pengalaman baru (contoh: field trip).
+    * Psikomotorik: Melatih keterampilan fisik (contoh: penggunaan media audio untuk bahasa asing).
+    * Imajinatif: Merangsang daya kreasi dan penemuan objek baru.
+    * Motivasi: Meningkatkan daya ingat dan partisipasi aktif.
+* **Fungsi Sosio-Kultural:** Mengatasi hambatan adat, kebiasaan, dan lingkungan yang berbeda di antara pembelajar.
+
+### Klasifikasi Media Digital
+ Berdasarkan pemanfaatannya, media digital diklasifikasikan menjadi:
+* **Video Instruksional:** Media gambar bergerak yang semakin populer karena aksesibilitas ponsel pintar.
+* **Simulasi dan Permainan Instruksional:** Alat kuat untuk memotivasi dan menciptakan narasi yang meningkatkan pemahaman melalui pengalaman langsung.
+* **Pembelajaran Online (E-learning):** Penggunaan internet dan sistem manajemen pembelajaran (LMS) seperti Moodle atau Canvas.
+* **Pembelajaran Seluler (Mobile Learning):** Pemanfaatan smartphone dan tablet melalui aplikasi khusus (seperti Unity atau Xcode).
+* **Teknologi Masa Depan:** Implementasi Virtual Reality (VR), Augmented Reality (AR), dan Artificial Intelligence (AI) yang adaptif terhadap kebutuhan belajar.
+
+### Manfaat Media Pembelajaran
+ Manfaat media pembelajaran dapat dirangkum dalam beberapa poin utama:
+* **Penyajian Materi:** Mengurangi verbalisme (kata-kata lisan belaka) sehingga materi lebih jelas maknanya.
+* **Mengatasi Keterbatasan:** Menghadirkan objek yang terlalu kompleks (mesin), luas (gunung berapi), atau mikroskopis ke dalam kelas.
+* **Aktivitas Belajar:** Pembelajar tidak hanya mendengarkan, tetapi juga mengamati, mendemonstrasikan, dan memerankan.
+* **Keunggulan Digital:** Kemudahan penggunaan, jangkauan geografis yang luas, konten yang mudah diperbarui (updateable), dan memungkinkan pembelajar bergerak sesuai kecepatan masing-masing (self-paced).
+
+### Tantangan Media Digital
+ Selain manfaat, terdapat beberapa hambatan teknis:
+* **Interaktivitas:** Risiko proyek digital yang hanya bersifat "pergantian halaman" tanpa interaksi nyata.
+* **Biaya:** Pengembangan resolusi tinggi dan simulasi memerlukan biaya besar.
+* **Pemeliharaan:** Media offline (seperti CD) sulit dan mahal untuk diperbarui dibanding media online.
+* **Pelapukan (Decay):** Risiko kegagalan fungsional perangkat lunak seiring waktu, meski data teks/audio cenderung lebih tahan lama.
+
+## Membuat Media Digital
+### Membuat Presentasi dengan Sway
+* **Sway**: adalah aplikasi berbasis web dari Microsoft Office yang berfungsi untuk membuat materi kreatif seperti laporan, brosur, dan presentasi interaktif secara otomatis.
+    * Otomasi Desain: Pengguna cukup memasukkan konten (teks, gambar, video), dan Sway akan merangkainya menjadi presentasi digital yang menarik.
+    * Responsif: Tampilan presentasi secara otomatis menyesuaikan dengan ukuran layar perangkat (PC, tablet, atau smartphone).
+* **Sway vs PowerPoint**: Meskipun keduanya adalah produk Microsoft, terdapat perbedaan fundamental dalam mekanisme kerjanya:
+
+| Fitur    | Microsoft PowerPoint                                                         | Microsoft Sway                                                                          |
+| -------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Layout   | Berbasis slideshow linear.                                                   | Tiga opsi: Vertikal (gulir), Horizontal, dan Slideshow.                                 |
+| Template | Ribuan pilihan, dapat dikembangkan sendiri secara mendalam.                  | Terbatas pada beberapa lusin "Style" yang dapat dikustomisasi secara bebas.             |
+| Konten   | Input manual; mendukung objek 3D, tabel Excel, dan rekaman layar.            | Input otomatis; mendukung integrasi langsung dari Bing, Wikipedia, YouTube, dan Flickr. |
+| Berbagi  | Melalui file atau tautan (memerlukan Office 365 untuk kolaborasi real-time). | Berbasis tautan (link) atau embed code (iframe) untuk disisipkan ke situs web.          |
+
+* **Bagaimana Mendapatkan Microsoft Sway**: Sway tersedia secara gratis bagi siapa saja yang memiliki akun Microsoft (Hotmail, Live, atau Outlook.com). Mahasiswa Universitas Terbuka dapat mengaksesnya melalui layanan Microsoft Office 365 yang disediakan secara resmi.
+
+### Cara Mengakses Sway
+ Terdapat dua metode utama untuk masuk ke dalam aplikasi:
+* **Melalui Dashboard Office 365:**
+    * Login ke akun Office 365.
+    * Pilih menu Sway pada daftar aplikasi. Jika tidak terlihat, pilih "All apps" untuk menemukan ikon Sway.
+* **Melalui Portal Web Langsung:**
+    * Membuka peramban (browser) dan langsung menuju alamat situs resmi Sway.
+    * Melakukan login menggunakan kredensial akun Microsoft.
+* **Tampilan Dashboard**: Setelah berhasil login, pengguna akan diarahkan ke halaman utama. Meskipun terdapat perbedaan visual minor antara akses melalui Office 365 dan portal langsung, fungsinya tetap sama:
+    * Memulai Baru: Opsi untuk membuat dari dokumen kosong atau mengimpor dari file dokumen yang sudah ada (seperti Word).
+    * Template: Koleksi gaya siap pakai untuk mempercepat proses pembuatan.
+    * My Sways: Daftar proyek yang pernah dibuat, sedang diedit, atau yang baru saja dilihat.
+
+___
+
+# Modul 7: Pendidikan Terbuka
+## Keterbukaan Akses
+### Aksees Terbuka Bagi Pendidikan
+ Akses terbuka adalah fondasi untuk mengatasi ketimpangan intelektual di era digital.
+* **Filosofi Kebebasan Belajar:** Mengutip Eric Hoffer, kekayaan sejati ditandai dengan kemampuan seseorang untuk memperoleh kepercayaan diri tanpa merampas hak orang lain. Sebaliknya, kemiskinan adalah kondisi ketergantungan yang diciptakan oleh pembatasan akses informasi.
+* **Kesenjangan Global:** Meskipun biaya distribusi digital sangat rendah, hambatan finansial (seperti biaya buku teks yang mencapai US$900/tahun) dan hambatan geografis (60% remaja di Sub-Saharan Afrika tidak bersekolah) tetap menjadi tantangan besar.
+* **Solusi Skalabilitas:** Sir John Daniel menekankan bahwa model pendidikan tradisional tidak cukup untuk memenuhi permintaan global. Diperlukan teknologi internet dan lisensi konten terbuka untuk mendistribusikan ilmu secara masif, legal, dan murah.
+
+### Publikasi Ilmiah di Era Digital
+ Transformasi model penyebaran ilmu pengetahuan dari komersial tertutup menuju transparansi publik.
+* **Kritik terhadap Komersialisasi:** Industri penerbitan ilmiah memiliki margin keuntungan sangat tinggi (30-35%), sementara biaya akses bagi mahasiswa meningkat drastis (800% sejak 1978).
+* **Kekuatan Akses Terbuka:** Kisah Jack Andraka menunjukkan bahwa akses bebas ke riset ilmiah dapat memicu inovasi tingkat tinggi tanpa memandang usia atau latar belakang formal.
+* **Konflik Hukum:** Munculnya gerakan perlawanan terhadap sistem "paywall" (seperti Sci-Hub dan perjuangan Aaron Swartz) menegaskan adanya ketegangan antara hukum hak cipta tradisional dengan hak publik atas informasi.
+
+### Dimensis Keterbukaan
+ Terdapat enam pilar utama dalam ekosistem keterbukaan pendidikan:
+* **Open Access (Akses Terbuka):** Akses digital gratis dan bebas lisensi restriktif terhadap output penelitian.
+* **FOSS (Free and Open Source Software):** Perangkat lunak kolaboratif dengan kode sumber terbuka (misal: Linux, Android).
+* **Open Textbook (Buku Teks Terbuka):** Buku berlisensi terbuka yang dapat diunduh gratis atau dicetak dengan biaya minimal.
+* **Open Policy (Kebijakan Terbuka):** Kebijakan yang mewajibkan sumber daya hasil pendanaan publik tersedia bagi masyarakat umum.
+* **Open Business Model (Model Bisnis Terbuka):** Strategi ekonomi yang menghasilkan nilai tanpa membatasi akses ke produk inti.
+* **Open Educational Practices (Praktik Pendidikan Terbuka):** Metode pengajaran yang aktif menggunakan dan memodifikasi sumber pembelajaran terbuka.
+
+### Sumber Pembelajaran Terbuka
+ Berdasarkan materi lanjutan, OER didefinisikan sebagai materi pembelajaran yang berada di domain publik atau dirilis dengan lisensi intelektual yang mengizinkan penggunaan gratis.
+* **Prinsip 5R dalam OER:**
+    * Retain (Memiliki): Hak untuk membuat, memiliki, dan mengendalikan salinan konten.
+    * Reuse (Menggunakan Kembali): Hak untuk menggunakan konten dalam berbagai cara (misal: di kelas atau situs web).
+    * Revise (Merevisi): Hak untuk mengadaptasi, menyesuaikan, atau mengubah konten (misal: menerjemahkan bahasa).
+    * Remix (Menggabungkan): Hak untuk menggabungkan konten asli atau yang telah direvisi dengan materi lain untuk membuat sesuatu yang baru.
+    * Redistribute (Mendistribusikan): Hak untuk membagikan salinan konten asli, revisi, atau hasil gabungan kepada orang lain.
+* **Tujuan Utama:** Meningkatkan efisiensi pembangunan ekonomi melalui pemerataan kualitas pendidikan dan pengurangan biaya investasi SDM.
+
+## Sumber Pembelajaran Terbuka
+### Konsep Dasar
+ Konsep OER berakar pada filosofi kepemilikan ide. Berbeda dengan benda fisik (seperti apel) yang jika dipertukarkan jumlahnya tetap satu pada setiap orang, ide/gagasan yang dipertukarkan akan menghasilkan kepemilikan ganda (setiap orang memiliki dua ide).
+* **Evolusi Hak Cipta:** Di era digital, biaya distribusi dan penggandaan informasi menjadi sangat rendah (hampir nol), memungkinkan akses luas terhadap sumber pembelajaran berkualitas.
+* **Filosofi Terbuka:** Kata "terbuka" dalam OER berarti sumber daya tersebut bebas dan memberikan izin kepada pengguna untuk menggunakan kembali, merevisi, menggabungkan (remix), dan mendistribusikan ulang sesuai kebutuhan tanpa mengurangi kepemilikan asli penggagasnya.
+
+### Definisi
+ OER didefinisikan sebagai materi pengajaran, pembelajaran, dan riset dalam media apa pun (digital atau non-digital) yang berada di domain publik atau dirilis di bawah lisensi kekayaan intelektual (seperti Creative Commons) yang mengizinkan penggunaan, adaptasi, dan distribusi gratis oleh orang lain.
+* **Prinsip OER mencakup tiga dimensi utama:**
+    * **Dimensi Nilai Pendidikan:** OER harus bersifat free (gratis/tanpa biaya) dan liberty (kebebasan penggunaan tanpa batasan).
+    * **Dimensi Nilai Pedagogik (Kerangka 5R):**
+        * Retain: Hak untuk membuat, memiliki, dan mengendalikan salinan materi.
+        * Reuse: Hak untuk menggunakan materi dalam format asli atau yang telah diubah.
+        * Revise: Hak untuk mengadaptasi, menyesuaikan, atau memodifikasi materi.
+        * Remix: Hak untuk mengombinasikan materi asli/revisi dengan materi lain untuk membuat materi baru.
+        * Redistribute: Hak untuk membagikan salinan materi asli, revisi, atau remix kepada orang lain.
+    * **Dimensi Teknologi:** OER harus menggunakan format berkas yang dapat diedit secara substantif (open standard) dan tidak membatasi akses melalui perangkat lunak komersial yang berbayar.
+
+### Pedagogi Berbasis OER
+ Pedagogi berbasis OER (Open Pedagogy) adalah praktik pembelajaran yang memanfaatkan kerangka 5R untuk meningkatkan kualitas pendidikan. Manfaat utamanya meliputi:
+* **Peningkatan Aksesibilitas:** Membantu pelajar yang memiliki kendala ekonomi dalam membeli buku teks mahal, sehingga meningkatkan angka partisipasi pendidikan.
+* **Efisiensi Asesmen:** Mengganti disposable assignment (tugas yang dibuang setelah dinilai) dengan open assessment, di mana hasil karya siswa dapat menjadi sumber belajar bagi orang lain atau digunakan untuk memecahkan masalah riil.
+* **Pengembangan Jejaring Profesional:** Melatih pelajar untuk mencari referensi, menggunakan sumber kepakaran internet, dan membangun koneksi profesional sebelum memasuki dunia kerja.
+* **Kreativitas Pembelajar:** Mendorong siswa untuk secara kreatif mengolah materi (misalnya membuat video dari riset teks) sebagai bagian dari penyelesaian tugas akademik.
+
+___
+
+# Modul 8: Hak Cipta dan Lisensi Terbuka Creative Commons
+## Hak Cipta
+### Definisi
+Hak Cipta adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata tanpa mengurangi pembatasan sesuai ketentuan peraturan perundang-undangan.
+
+### Sejarah
+Berawal dari **Statute of Anne (1710)** di Inggris yang pertama kali mengatur hak reproduksi buku oleh penulis, bukan penerbit. Konsep ini berevolusi melalui **Konvensi Berne (1886)** untuk melindungi karya literasi dan artistik lintas negara secara otomatis tanpa perlu registrasi formal.
+
+### Hak Cipta Dalam Konteks Global
+Diatur secara internasional melalui organisasi **WIPO (World Intellectual Property Organization)** dan perjanjian **TRIPS**. Standar global memastikan bahwa karya yang dilindungi di satu negara anggota juga mendapatkan perlindungan di negara anggota lainnya.
+
+### Ruang Lingkup Hak Cipta
+ Meliputi ciptaan dalam bidang ilmu pengetahuan, seni, dan sastra, yang mencakup:
+* Buku, pamflet, dan karya tulis lainnya.
+* Ceramah, kuliah, dan pidato.
+* Alat peraga untuk pendidikan.
+* Karya seni rupa, arsitektur, peta, dan karya sinematografi.
+
+### Kepemilikan Hak Cipta
+Pencipta adalah orang atau beberapa orang yang secara sendiri-sendiri atau bersama-sama menghasilkan suatu ciptaan yang bersifat khas dan pribadi. Kepemilikan dapat berpindah atau beralih melalui pewarisan, hibah, wasiat, atau perjanjian tertulis.
+
+### Hak dan Perlindungan
+Terdiri dari dua aspek utama:
+* **Hak Moral:** Hak yang melekat secara abadi pada diri Pencipta (untuk mencantumkan nama atau mengubah judul).
+* **Hak Ekonomi:** Hak eksklusif untuk mendapatkan manfaat ekonomi (penerbitan, penggandaan, pendistribusian, dan adaptasi).
+
+### Durasi Hak Cipta
+* **Hak Moral:** Berlaku tanpa batas waktu.
+* **Hak Ekonomi:** Umumnya berlaku selama hidup Pencipta ditambah 70 tahun setelah Pencipta meninggal dunia. Untuk ciptaan tertentu (seperti program komputer atau karya sinematografi), berlaku selama 50 tahun sejak pertama kali diumumkan.
+
+### Pengecualian
+Penggunaan ciptaan tidak dianggap pelanggaran jika dilakukan untuk kepentingan:
+* Pendidikan, penelitian, dan penulisan karya ilmiah.
+* Laporan berita dengan menyebutkan sumber secara lengkap.
+* Kutipan singkat yang tidak merugikan kepentingan wajar dari Pencipta.
+
+### Pengalihan Hak
+Hak Ekonomi dapat dialihkan seluruhnya atau sebagian kepada pihak lain. Namun, Hak Moral tidak dapat dialihkan selama Pencipta masih hidup (hanya dapat didelegasikan setelah meninggal melalui wasiat).
+
+### Kerangka Hukum Untuk Berbagi Secara Terbuka
+Mekanisme yang memungkinkan Pencipta memberikan izin kepada publik untuk menggunakan karyanya dengan batasan tertentu tanpa melepaskan Hak Cipta. Contoh utamanya adalah lisensi Creative Commons (CC), yang berfungsi sebagai jembatan antara perlindungan ketat (all rights reserved) dan domain publik (no rights reserved).
+
+## Lisensi Terbuka Creative Commons
+### Prinsip Dasar Creative Commons
+Creative Commons (CC) adalah organisasi nirlaba yang menyediakan lisensi standar gratis agar pencipta dapat memberikan izin kepada publik untuk menggunakan karya mereka secara legal sesuai dengan aturan yang dipilih sendiri oleh pencipta.
+
+### Mekanisme dan Jenis Lisensi Creative Commons
+ Terdapat empat elemen kunci yang dikombinasikan untuk membentuk jenis lisensi:
+* **BY (Attribution):** Wajib mencantumkan nama pencipta.
+* **NC (Non-Commercial):** Tidak untuk tujuan komersial/keuntungan.
+* **ND (No-Derivatives):** Tidak boleh ada karya turunan (harus tetap asli).
+* **SA (Share-Alike):** Karya turunan harus dilisensikan dengan syarat yang sama.
+
+### Creative Commons Sebagai Perangkat Domain Publik
+CC menyediakan alat CC0 (Creative Commons Zero) yang memungkinkan pencipta melepaskan semua hak cipta mereka ke domain publik secara global, serta Public Domain Mark untuk menandai karya yang sudah bebas dari hak cipta.
+
+### Anatomi Lisensi Creative Commons
+ Lisensi CC memiliki tiga lapisan struktur teknis:
+* **Legal Code:** Bahasa hukum yang mengikat di pengadilan.
+* **Commons Deed:** Versi ringkas yang mudah dibaca manusia (ikon dan ringkasan).
+* **Machine Readable:** Format data yang dapat dibaca oleh mesin/mesin pencari.
+
+### Remix dan Kompabilitas
+Remix adalah proses menggabungkan berbagai materi untuk menciptakan karya baru. Kompatibilitas menentukan apakah dua materi dengan lisensi CC yang berbeda dapat digabungkan secara legal tanpa melanggar syarat lisensi masing-masing.
+
+### Definisi Karya Turunan
+Karya turunan (derivative works) adalah karya yang dibuat berdasarkan satu atau lebih karya yang sudah ada sebelumnya, seperti terjemahan, aransemen musik, atau adaptasi film dari buku.
+
+### Tantangan Kompabilitas
+Tantangan utama muncul ketika dua lisensi memiliki aturan yang bertentangan, misalnya menggabungkan materi **SA (Share-Alike)** dengan materi **ND (No-Derivatives)**. Materi ND secara teknis melarang pembuatan karya turunan untuk dipublikasikan.
+
+### Kompabilitas Antar Lisensi Creative Commons
+ Tidak semua lisensi CC bisa saling "bercampur". Contohnya:
+* Lisensi CC BY paling kompatibel dengan hampir semua lisensi.
+* Lisensi CC BY-SA hanya bisa digabung dengan sesama SA atau lisensi yang lebih terbuka.
+
+### Creative Commons Sebagai Media Publikasi OER
+CC adalah standar utama untuk mempublikasikan Sumber Pembelajaran Terbuka (OER) karena memberikan kepastian hukum bagi pendidik dan pelajar untuk membagikan serta mengembangkan materi ajar secara legal tanpa biaya lisensi.
+___
+
+# Modul 9: Digital Citizenship
+## Target Kompetensi Modul
+ Setelah menyelesaikan modul ini, pembelajar diharapkan mampu menguasai enam poin utama:
+* **Dimensi Kewarganegaraan Digital:** Memahami konsep menjadi warga digital yang sesuai untuk bekerja dan belajar di abad ke-21 serta perbedaannya dengan komunitas luring (offline).
+* **Keberadaan Web (Web Presence):** Mengadopsi pendekatan proaktif untuk memperluas jaringan pembelajaran daring dan mendukung keterlibatan dalam ekosistem digital.
+* **Kebersihan Online (Cyber Hygiene):** Mempraktikkan kebiasaan daring yang baik untuk menjaga privasi dan keamanan data pribadi di lingkungan digital.
+* **Etika dan Masalah Sosial:** Menjelaskan perilaku daring yang bermasalah dan mampu menghadapi tantangan sosial di dunia digital secara etis.
+* **Identitas dan Jejak Digital:** Mengembangkan identitas digital yang positif serta mengelola jejak digital untuk mendukung proses pembelajaran.
+* **Kesehatan Fisik dan Mental:** Mengidentifikasi faktor penyebab ketidaknyamanan fisik (visual), stres, dan kelelahan akibat penggunaan komputer yang berlebihan.
+
+## Apa arti warga digital dalam konteks belajar di era digital
+### Literasi Digital
+Bukan sekadar kemampuan menggunakan perangkat, melainkan kemampuan untuk menemukan, mengevaluasi, dan mengomunikasikan informasi melalui berbagai platform digital secara efektif dalam proses belajar.
+
+### Kesantunan Digital
+Penerapan standar perilaku dan etika dalam berinteraksi di ruang digital. Dalam pembelajaran, ini mencakup cara berkomunikasi yang sopan di forum diskusi, menghargai pendapat orang lain, dan memahami norma budaya daring.
+
+### Literasi Informasi
+Kemampuan teknis untuk menyaring kebenaran informasi, mengidentifikasi sumber yang kredibel, dan menghindari misinformasi (hoaks) saat melakukan riset akademik atau belajar mandiri.
+
+### Sembilan Unsur Warga Digital
+Mencakup aspek perlindungan, pendidikan, dan penghormatan, yaitu: akses digital, perdagangan, komunikasi, literasi, etiket, hukum, hak & kewajiban, kesehatan, serta keamanan digital.
+
+### Menggunakan Media Sosial Untuk Pembelajaran
+Transformasi media sosial dari sekadar alat hiburan menjadi platform kolaboratif untuk berbagi sumber daya, berdiskusi dengan ahli, dan mengikuti komunitas praktik di bidang pendidikan tertentu.
+
+### Menggunakan Media Sosial Secara Strategis
+Kemampuan mengatur penggunaan media sosial untuk mendukung tujuan pembelajaran, seperti membangun personal branding sebagai pelajar atau menyusun portofolio digital yang terarah.
+
+### Cara Menggunakan Media Sosial yang Berbeda
+Memahami karakteristik fungsional setiap platform (misalnya, LinkedIn untuk profesional, YouTube untuk tutorial visual, atau blog untuk refleksi mendalam) dan menyesuaikan gaya komunikasi sesuai fungsinya.
+
+### Identitas Online untuk Pembelajaran
+Pembentukan citra diri digital yang mencerminkan profil pembelajar yang kredibel. Ini melibatkan pengelolaan konten yang diunggah agar mendukung reputasi akademik atau profesional.
+
+### Anda dan Informasi Anda
+Kesadaran akan pentingnya privasi data pribadi. Mengetahui informasi apa yang aman untuk dibagikan dan bagaimana melindungi data sensitif dari ancaman siber selama beraktivitas di lingkungan belajar digital.
+
+## Lingkungan Digital
+### Kesehatan Online
+ Merupakan praktik rutin untuk menjaga keamanan dan kesehatan perangkat serta data digital.
+* **Data Privasi Anda**: Pemahaman tentang informasi personal yang boleh dibagikan dan risiko eksploitasi data oleh pihak ketiga.
+* **Kata Sandi**: Standar keamanan pembuatan password yang kuat (kombinasi karakter, angka, dan simbol) untuk mencegah peretasan.
+* **Pengelola Kata Sandi**: Penggunaan alat bantu (password manager) untuk menyimpan kredensial secara terenkripsi agar tidak mudah lupa atau dicuri.
+* **Kebersihan Pengiriman Pesan yang Baik**: Etika dan kewaspadaan dalam berkomunikasi melalui aplikasi pesan singkat (menghindari klik tautan mencurigakan/phishing).
+* **Jagalah Milik Pribadimu**: Perlindungan fisik dan digital terhadap perangkat keras pribadi yang digunakan untuk mengakses jaringan.
+* **Bertransaksi Atas Nama Orang Lain**: Kesadaran hukum dan etika mengenai penyalahgunaan identitas digital dalam transaksi daring.
+* **Praktik Digital di Tempat Kerja**: Kepatuhan terhadap protokol keamanan siber dalam lingkungan profesional atau institusi pendidikan.
+
+### Masalah Kemasyarakatan dan Internet
+ Membahas dampak internet terhadap tatanan sosial, termasuk bagaimana teknologi mengubah interaksi antar kelompok masyarakat dan memicu ketidaksetaraan akses informasi.
+
+### Netralitas Internet
+ Konsep bahwa penyedia layanan internet (ISP) harus memperlakukan semua data di internet secara setara, tanpa mendiskriminasi atau mengenakan biaya berbeda berdasarkan konten, situs web, atau platform tertentu.
+
+### Menabur Kebencian di Internet
+ Fenomena hate speech atau ujaran kebencian. Materi ini menekankan pada identifikasi perilaku toksik, perundungan siber (cyberbullying), dan bagaimana menghadapi penyebaran kebencian secara etis.
+
+### Permasalahan Psikologis Berkaitan dengan Internet
+Dampak mental dari penggunaan teknologi yang tidak terkontrol, yang meliputi:
+* **Kecanduan Internet:** Gangguan kontrol impuls terhadap aktivitas daring.
+* **FOMO (Fear of Missing Out):** Kecemasan sosial karena merasa tertinggal dari tren atau aktivitas orang lain di media sosial.
+* **Stres Digital:** Kelelahan mental akibat arus informasi yang berlebihan (information overload) dan tuntutan untuk selalu terhubung.

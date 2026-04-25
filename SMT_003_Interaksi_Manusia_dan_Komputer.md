@@ -33,20 +33,6 @@ IMK merupakan ilmu multidisiplin yang melibatkan berbagai bidang:
 * **Linguistik:** Penggunaan bahasa untuk dialog antara manusia dan mesin.
 * **Perancangan Industri:** Membahas produk interaktif seperti teknologi layar sentuh.
 
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                             | Alasan Singkat Berdasarkan Materi                                                                                     |
-| :--- | :---------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| 1    | D. input, proses, output            | Sesuai paragraf pertama materi: prinsip dasar sistem komputer adalah masukan, proses, dan keluaran.                   |
-| 2    | D. media                            | Interaksi dapat terjadi jika tersedia media interaksi yang diwujudkan dalam bentuk antarmuka (interface).             |
-| 3    | A. program aplikasi                 | Karakter user-friendly merujuk pada antarmuka paket aplikasi (seperti MS Office) yang konsisten dan mudah dipelajari. |
-| 4    | D. mengetikkan sesuatu              | Interaksi terjadi ketika pengguna memasukkan data (seperti contoh pengetikan pada program Python/Java).               |
-| 5    | D. manusia dengan komputer          | Fokus utama disiplin ilmu IMK adalah interaksi antara manusia (pengguna) dengan mesin (komputer).                     |
-| 6    | D. Ergonomi                         | Ergonomi mempelajari kenyamanan fisik dan lingkungan kerja antara manusia dan mesin.                                  |
-| 7    | A. Psikologi                        | Bidang ini membahas penerapan teori proses kognitif untuk memahami sifat dan perilaku pengguna.                       |
-| 8    | C. Perancangan Grafis dan Tipografi | Bidang ini menggunakan gambar dan elemen visual sebagai sarana dialog yang efektif.                                   |
-| 9    | B. Linguistik                       | Linguistik membahas penggunaan bahasa (alami maupun formal) sebagai sarana komunikasi/dialog.                         |
-| 10   | D. Teknik Elektronika               | Bidang ini memberikan pengetahuan dasar mengenai aspek perangkat keras (hardware) komputer.                           |
-
 ## Kegiatan Belajar 2 Pengembangan Antarmuka
 ### Peranti Bantu Pengembang Sistem
 Merancang antarmuka yang ramah pengguna (user-friendly) adalah pekerjaan sulit karena harus menangani berbagai peranti kontrol secara asinkron dan keberagaman kebiasaan pengguna.
@@ -70,22 +56,6 @@ Pengembangan bagian antarmuka perlu memperhatikan empat hal berikut:
 * Karakteristik Dialog: Memperhatikan ragam dialog, struktur, tanggapan waktu, dan kecepatan tampilan.
 * Penggunaan Prototipe: Berdasarkan spesifikasi dialog formal yang disusun bersama calon pengguna dan perancang sistem.
 * Teknik Evaluasi: Mengevaluasi hasil prototipe melalui analisis transaksi dialog, uji coba empiris, umpan balik pengguna (kuesioner), dan analisis ahli.
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban                    | Alasan Singkat Berdasarkan Materi                                                                              |
-| :--- | :------------------------- | :------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | A. user-friendly           | Disebutkan pada paragraf awal bahwa predikat "ramah dengan pengguna" merujuk pada kriteria user-friendly.      |
-| 2    | B. heterogen               | Teks menyebutkan bahwa selera dan kebiasaan pengguna sangat beragam (tidak seragam/bermacam-macam).            |
-| 3    | C. bantu                   | Diperlukan peranti bantu pengembang sistem (development tools) untuk mempercepat proses perancangan.           |
-| 4    | B. prototipenya            | Strategi yang tepat adalah membuat prototipe terlebih dahulu sebelum dikembangkan secara umum.                 |
-| 5    | A. program bantu yang sama | Konsistensi tercapai karena sejumlah aplikasi dibangun menggunakan peranti bantu yang sama.                    |
-| 6    | A. antarmuka dan aplikasi  | Program terdiri dari dua bagian: bagian antarmuka (sarana dialog) dan bagian aplikasi (algoritma).             |
-| 7    | B. manusia dengan komputer | Antarmuka berfungsi sebagai sarana dialog antara manusia sebagai pengguna dengan komputer.                     |
-| 8    | A. penyajian informasi     | Bagian antarmuka berurusan dengan cara penyajian informasi yang mudah dan menarik bagi pengguna.               |
-| 9    | C. frustrasi               | Desain yang buruk atau keterlambatan tanggapan sistem dapat membuat pengguna merasa takut atau frustrasi.      |
-| 10   | D. rigid                   | Keuntungan peranti bantu adalah membuat program modular, reusable, dan mudah dimodifikasi, bukan kaku (rigid). |
-
 ___
 
 # Modul 2 Faktor Manusia
@@ -114,21 +84,6 @@ Sistem komputer terdiri dari hardware, software, dan brainware. Manusia dimodelk
 
 ### Pengendali Motorik
     Respon fisik manusia terhadap hasil pengolahan (tangan, kaki, suara). Kecepatan pengendalian (seperti mengetik) dapat ditingkatkan secara signifikan melalui latihan yang konsisten.
-
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                    | Alasan Singkat Berdasarkan Materi                                                                    |
-| :--- | :------------------------- | :--------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | D. brainware               | Merujuk pada aspek manusia dalam sistem komputer yang mengolah informasi.                            |
-| 2    | A. Central Processing Unit | CPU adalah pusat pengolahan data pada komputer, analog dengan otak manusia.                          |
-| 3    | B. multitasking            | Kemampuan sistem untuk menjalankan beberapa pekerjaan sekaligus dalam satu waktu.                    |
-| 4    | A. sadar                   | Tindakan yang jarang dilakukan membutuhkan perhatian penuh dan waktu olah lebih lama.                |
-| 5    | B. latihan                 | Melalui latihan dan pengalaman, tindakan baru dapat berubah menjadi otomatis (refleks).              |
-| 6    | C. perseptual              | Pengolahan yang melayani hubungan dari organ sensorik ke otak disebut pengolahan perseptual.         |
-| 7    | C. 3-4-1-2                 | Urutan: sandi (3), banding (4), keputusan (1), lalu eksekusi tindakan (2).                           |
-| 8    | A. 0,2 detik               | Register sensori penglihatan memiliki persistensi atau waktu simpan sekitar 0,2 detik.               |
-| 9    | C. chunking                | Teknik membagi informasi menjadi beberapa kelompok untuk memudahkan memori jangka pendek.            |
-| 10   | C. long-term memory        | Kemampuan motorik (seperti mengendarai sepeda) disimpan secara permanen dalam memori jangka panjang. |
 
 ## Kegiatan Belajar 2 Panca Indra dan Lingkungan Sekitar
 ### Indra Penglihatan
@@ -212,21 +167,6 @@ Perancangan harus mempertimbangkan dinamika kognitif pengguna:
     * Derajat Pengetahuan Teknis: Fungsionalitas sistem harus disesuaikan dengan latar belakang teknis pengguna agar efisien.
     * Fokus: Sistem harus mendukung tingkat fokus yang berbeda (misal: pemain game vs pengawas polusi suara).
     * Tekanan Kognitif: Lingkungan dengan risiko tinggi (medis, militer, penerbangan) membutuhkan antarmuka yang sangat jelas dan tidak membingungkan karena tidak ada toleransi terhadap kesalahan.
-
-### Kunci Jawaban Tes Formatif 2
-| No   | Jawaban                 | Alasan Singkat Berdasarkan Materi                                                                   |
-| :--- | :---------------------- | :-------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | C. luminance            | Definisi luminansi adalah banyaknya cahaya yang dipantulkan oleh permukaan obyek.                   |
-| 2    | A. meningkatkan fokus   | Diameter bola mata mengecil pada luminansi tinggi untuk meningkatkan kedalaman fokus.               |
-| 3    | B. kontras              | Kontras didefinisikan sebagai selisih antara luminansi obyek dengan latar belakangnya.              |
-| 4    | D. 4 daerah             | Medan penglihatan dibagi menjadi 4 daerah: binokuler, monokuler kiri, monokuler kanan, dan buta.    |
-| 5    | C. 94° sampai 104°      | Rentang daerah penglihatan monokuler saat kepala dan mata diam menurut teks.                        |
-| 6    | D. ± 60                 | Mata dapat membedakan warna secara akurat ketika obyek membentuk sudut sebesar ± 60° terhadap mata. |
-| 7    | A. merah dan biru       | Efek chromostereopsis menyebabkan warna merah tampak lebih dekat dan biru lebih jauh.               |
-| 8    | D. magenta, biru, hijau | Contoh kombinasi warna yang baik untuk garis tebal dan teks (berdasarkan Tabel 2.2).                |
-| 9    | A. biru                 | Biru dikategorikan sebagai warna dingin yang digunakan untuk status atau informasi latar belakang.  |
-| 10   | A. primer               | Merah, kuning, dan biru adalah warna dasar atau primer dalam fotopigmen sel cones.                  |
 ___
 
 # Modul 3 Kerangka Kerja dan Paradigma Interaksi
@@ -265,21 +205,6 @@ Abowd dan Beale memperluas siklus Norman dengan memasukkan elemen sistem secara 
     * Kesulitan sering muncul pada langkah Artikulasi jika pemetaan antara bahasa tugas dan bahasa masukan tidak jelas (misal: bingung mencari ikon untuk fungsi tertentu).
     * Keberhasilan Penyajian diukur dari tingkat ekspresivitas penerjemah status sistem (misal: penggunaan ikon jam pasir untuk menunjukkan sistem sedang bekerja).
 
-#### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                        | Alasan Singkat Berdasarkan Materi                                                             |
-| :--- | :----------------------------- | :-------------------------------------------------------------------------------------------- |
-|      |
-| 1    | A. gol                         | Goal adalah kejadian atau hasil akhir yang diinginkan oleh pengguna.                          |
-| 2    | B. membentuk keinginan         | Termasuk dalam langkah ke-2 dari fase eksekusi menurut siklus Norman.                         |
-| 3    | A. memahami status dunia nyata | Langkah pertama dalam fase evaluasi untuk memvalidasi hasil tindakan.                         |
-| 4    | A. pengguna dan sistem         | Gulf of execution adalah perbedaan antara keinginan pengguna dan dukungan sistem.             |
-| 5    | B. dua fase                    | Kerangka kerja SPMK terdiri dari fase eksekusi dan fase evaluasi.                             |
-| 6    | A. eksekusi                    | Penerjemahan bahasa masukan ke mesin terjadi pada langkah pengerjaan (fase eksekusi).         |
-| 7    | B. evaluasi                    | Mencocokkan hasil layar dengan gol semula adalah inti dari fase evaluasi (langkah observasi). |
-| 8    | C. penyajian                   | Sistem menyajikan hasil operasi dalam bahasa keluaran merupakan bagian dari eksekusi.         |
-| 9    | B. pengerjaan                  | Proses sistem menggunakan data masukan untuk operasi internal disebut pengerjaan.             |
-| 10   | A. eksekusi                    | Indikator proses (seperti jam pasir) muncul saat fase eksekusi (langkah penyajian).           |
-
 ## Kegiatan 2 Mengatasi Kompleksitas
 ### Model Mental
 Model mental adalah penyajian kognitif tentang perkiraan logis bagaimana suatu benda dibentuk atau berfungsi.
@@ -310,21 +235,6 @@ Hubungan antara obyek dengan pengguna melalui persepsi.
 * Perancang harus meyakinkan bahwa affordance nampak nyata dan tidak kontradiktif (contoh kesalahan: kotak teks yang terlihat seperti tombol label, atau sebaliknya).
 * Persepsi yang tepat terhadap affordance membantu pengguna memahami kebergunaan (usability) sistem.
 
-### Kunci Jawaban Test Formatif
-| No   | Jawaban                                                                      | Alasan Singkat Berdasarkan Materi                                                                                 |
-| :--- | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | C. mental                                                                    | Model mental adalah kerangka kerja kognitif yang diciptakan pengguna saat berinteraksi dengan sistem.             |
-| 2    | A. kognitif                                                                  | Model mental didefinisikan sebagai penyajian kognitif dari suatu proses atau obyek.                               |
-| 3    | C. pengalaman                                                                | Pembentukan model mental sangat bergantung pada pengetahuan dan pengalaman yang diperoleh sebelumnya.             |
-| 4    | C. merasa senang menggunakan sistem tersebut                                 | Jika model mental sesuai dengan cara kerja sistem, pengguna dapat menggunakannya tanpa kesulitan.                 |
-| 5    | D. parsial                                                                   | Salah satu sifat model mental adalah tidak lengkap (parsial) atau tidak menjelaskan sistem secara keseluruhan.    |
-| 6    | A. wawancara dengan pengguna                                                 | Melalui wawancara atau discovery phase, perancang dapat memahami model mental yang dimiliki pengguna.             |
-| 7    | B. fungsionalitas suatu peranti dengan yang sesungguhnya diinginkan pengguna | Jarak semantik mengukur kecocokan antara fungsi sistem dengan kebutuhan tugas pengguna.                           |
-| 8    | A. penampakan fisik suatu peranti dengan fungsi yang sesungguhnya            | Jarak artikulatori mengacu pada seberapa jelas bentuk fisik peranti menunjukkan fungsinya.                        |
-| 9    | D. sulit menggunakannya                                                      | Rendahnya affordance berarti sedikit petunjuk penggunaan, sehingga pengguna sulit mempelajari dan menggunakannya. |
-| 10   | C. pelat besi                                                                | Pintu dengan pelat besi sering membingungkan (apakah ditarik atau didorong) dibandingkan dengan hendel atau knop. |
-
 ## Kegiatan 3 Paradigma Interaksi
 ### Antarmuka Berpusat-Pada-Implementasi (BPI)
 Antarmuka ini diekspresikan berdasarkan cara sistem dibentuk atau cara kerjanya.
@@ -353,22 +263,6 @@ Paradigma ini didasarkan pada cara manusia belajar menggunakan "idiom" visual ta
 Menurut Cooper dan Reimann (2003), perancangan idiomatik adalah masa depan antarmuka.
 * Manusia memiliki kemampuan belajar idiom yang sangat cepat tanpa perlu perbandingan dengan benda nyata.
 * Idiom visual lebih fleksibel dan memberikan manfaat yang lebih besar dibandingkan beban tambahan dari metafora yang dipaksakan.
-
-### Jawaban Test Formatif 3
-| No   | Jawaban               | Alasan Singkat Berdasarkan Materi                                                                        |
-| :--- | :-------------------- | :------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | D. teknis             | Kalangan teknis (insinyur) lebih menyukai BPI karena menunjukkan cara kerja mesin secara jelas.          |
-| 2    | C. model implementasi | Perancangan BPI mengharuskan perancang berfokus secara eksklusif pada model implementasi sistem.         |
-| 3    | B. metaphoric         | Paradigma metaforik didasarkan pada intuisi pengguna tentang cara kerja suatu benda nyata.               |
-| 4    | C. idiomatic          | Paradigma idiomatik didasarkan pada proses pembelajaran manusiawi yang alami terhadap simbol visual.     |
-| 5    | B. metaphoric         | Ikon gunting adalah metafora visual untuk fungsi memotong (cut) yang diambil dari benda nyata.           |
-| 6    | B. metaphoric         | Menggunakan pengetahuan tentang keranjang sampah nyata untuk memahami fungsi ikon adalah ciri metaforik. |
-| 7    | C. pembelajaran       | Paradigma idiomatik difokuskan pada bagaimana pengguna belajar menggunakan idiom visual secara cepat.    |
-| 8    | D. desktops           | Desktop, file, dan folder adalah elemen GUI yang menggunakan metafora dari lingkungan kantor nyata.      |
-| 9    | A. visual             | Simbol keranjang belanja (shopping cart) adalah metafora visual untuk menyajikan maksud tertentu.        |
-| 10   | B. indexical metaphor | Tanda seru berfungsi sebagai metafora indeksikal yang menunjukkan peringatan atau status penting.        |
-
 ___
 
 # Modul 4 Kebergunaan
@@ -397,21 +291,6 @@ Kepuasan adalah kriteria penting untuk menentukan kebergunaan (usability) sistem
     * **Pembalikan Tindakan yang Mudah:** Tindakan harus dapat dibatalkan (reversible) untuk mengurangi kecemasan dan mendorong eksplorasi.
     * **Dukungan pada Locus of Control Internal:** Pengguna harus merasa bahwa merekalah yang menguasai sistem, bukan sebaliknya.
     * **Pengurangan Beban Memori Jangka Pendek:** Tampilan harus sederhana, konsolidasi jendela harus dilakukan, dan waktu pelatihan harus cukup agar pengguna tidak perlu menghafal terlalu banyak kode/perintah.
-
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                                          | Alasan Singkat Berdasarkan Materi                                                            |
-| :--- | :----------------------------------------------- | :------------------------------------------------------------------------------------------- |
-|      |
-| 1    | C. penundaan evaluasi "sampai waktu luang"       | Termasuk dalam daftar kesalahan klasik perancang (poin ke-7).                                |
-| 2    | A. karakter                                      | Karakter (fitur tampilan) digunakan untuk menangkap kesan subjektif pengguna.                |
-| 3    | D. konsistensi                                   | Aturan pertama Shneiderman untuk mencapai kepuasan berinteraksi.                             |
-| 4    | B. fasilitas kunci-cepat                         | Fitur untuk mempercepat interaksi bagi pengguna yang sering menggunakan sistem.              |
-| 5    | D. umpan balik yang inovatif                     | Penyajian visual yang menunjukkan perubahan eksplisit adalah bagian dari aturan umpan balik. |
-| 6    | A. awal, tengah, dan akhir                       | Urutan tindakan harus diorganisir ke dalam tiga bagian kelompok tersebut (closure).          |
-| 7    | C. pencegahan kesalahan dan penanganan kesalahan | Aturan yang mensyaratkan deteksi kesalahan dan instruksi pemulihan konstruktif.              |
-| 8    | B. pembalikan tindakan yang mudah                | Fitur reversible (dapat dibatalkan) untuk mengurangi kecemasan pengguna saat bereksplorasi.  |
-| 9    | D. locus of control internal                     | Aturan yang mendukung keinginan pengguna untuk merasa berkuasa/mengendalikan sistem.         |
-| 10   | C. sederhana                                     | Tampilan sederhana meminimalkan beban pengolahan informasi pada memori jangka pendek.        |
 
 ## Kegiatan 2 Kebergunaan
 ### Definisi Kebergunaan
@@ -448,22 +327,6 @@ Terdapat tiga metode utama yang dijelaskan dalam materi:
 * **Uji Berbasis Skenario:**
     * Menggunakan partisipan (pengguna akhir) untuk menyelesaikan tugas atau skenario tertentu yang sudah dirancang.
     * Aktivitas dicatat (misal menggunakan log) dan hasilnya dianalisis secara empiris untuk memperbaiki sistem.
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban                                                  | Alasan Singkat Berdasarkan Materi                                                                           |
-| :--- | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | C. used                                                  | Sistem yang memotivasi pengguna untuk terus menggunakannya disebut dengan "digunakan" (used).               |
-| 2    | D. learnability                                          | Komponen kualitas yang merujuk pada kemudahan sistem untuk dipelajari oleh pengguna baru.                   |
-| 3    | B. memorability                                          | Kemampuan sistem untuk mudah diingat kembali oleh pengguna yang jarang menggunakannya.                      |
-| 4    | A. efficiency                                            | Cara sistem mendukung pengguna untuk melakukan pekerjaan secara cepat dan tepat.                            |
-| 5    | D. kebergunaan                                           | Uji kebergunaan adalah proses untuk mengukur karakteristik interaksi dan mengidentifikasi kelemahan sistem. |
-| 6    | A. uji eksploratori, uji threshold, dan uji perbandingan | Tiga jenis uji kebergunaan menurut klasifikasi Levi dan Conrad (1997).                                      |
-| 7    | D. sumatif                                               | Uji sumatif memberikan penilaian pada produk jadi atau membandingkannya dengan produk sejenis.              |
-| 8    | D. besar menjadi bagian-bagian yang lebih kecil          | Tujuan pemilahan kartu (card sorting) adalah menyederhanakan hirarki informasi agar lebih intuitif.         |
-| 9    | A. heuristik                                             | Evaluasi yang melibatkan ahli IMK untuk mengidentifikasi masalah berdasarkan prinsip kebergunaan.           |
-| 10   | A. uji berbasis skenario                                 | Pengujian di mana pengguna akhir diminta menyelesaikan tugas tertentu yang sudah dirancang sebelumnya.      |
-
 ___
 
 # Modul 5 Manipulasi Langsung
@@ -509,21 +372,6 @@ Penerapan manipulasi langsung ditemukan pada berbagai bidang:
 | Memberikan tantangan untuk eksplorasi pekerjaan.     | Memerlukan peranti masukan khusus (mouse, trackball).        |
 | Penampilan visual yang bagus dan mudah dioperasikan. | Memerlukan perancangan tampilan dengan kualifikasi tertentu. |
 
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                                          | Alasan Singkat Berdasarkan Materi                                                                       |
-| :--- | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-|      |
-| 1    | B. tindakan fisik sebagai pengganti teks masukan | Tiga elemen manipulasi langsung: penyajian visual, tindakan fisik, dan reaksi langsung.                 |
-| 2    | A. ide utama dari manipulasi langsung            | Preece (1994) menyebutkan penggantian perintah ketik dengan tindakan menunjuk sebagai ide utama.        |
-| 3    | C. keterlibatan                                  | Hutchin et al. (1985) membagi directness menjadi dua aspek: jarak dan keterlibatan (engagement).        |
-| 4    | D. cara pengguna menggunakan program aplikasi    | Definisi manipulasi program yang berfokus pada pengelolaan peranti/program itu sendiri.                 |
-| 5    | B. Adobe Photoshop                               | Aplikasi grafis berorientasi pada manipulasi isi (data visual) daripada sekadar perintah program.       |
-| 6    | A. manipulasi langsung                           | Umpan balik segera (immediate feedback) adalah fitur utama dari antarmuka manipulasi langsung.          |
-| 7    | D. bebas                                         | Fase bebas adalah tahap sebelum tindakan dilakukan, di mana hanya jenis manipulasi yang ditunjukkan.    |
-| 8    | A. editor teks                                   | Konsep WYSIWYG pada editor teks memberikan kemudahan hasil cetak sesuai tampilan layar.                 |
-| 9    | C. mengurangi waktu pembelajaran                 | Salah satu keuntungan utama karena menggunakan analogi benda nyata yang sudah dikenal.                  |
-| 10   | B. memerlukan tampilan grafis berkinerja tinggi  | Manipulasi langsung membutuhkan sumber daya sistem yang besar untuk menampilkan reaksi visual seketika. |
-
 ## Kegiatan 2 : Piranti Penunjuk
 ### Piranti Penunjuk
 Tetikus (mouse) adalah peranti interaktif paling populer untuk menempatkan kursor, mengaktifkan menu, hingga menggambar. Informasi posisi dikirim ke komputer untuk memindahkan kursor secara real-time.
@@ -544,22 +392,6 @@ Interaksi dasar manusia dengan mouse melibatkan kombinasi operasi berikut:
 * **Meng-klik:** Menekan dan melepas tombol. Digunakan untuk memicu perubahan status obyek atau memilihnya. Sistem juga menyediakan "rute keluar" jika pengguna menekan tombol tapi tidak jadi melepasnya di atas obyek (berubah pikiran).
 * **Meng-klik dan Menggeser:** Operasi umum untuk memilih banyak obyek, mengubah bentuk, memindah obyek (drag and drop), atau menggambar.
 * **Meng-klik Ganda:** Dianggap sebagai dua kali klik tunggal, namun secara fungsional berbeda. Klik tunggal biasanya untuk memilih (select), sedangkan klik ganda untuk melakukan tindakan (action/open).
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban            | Alasan Singkat Berdasarkan Materi                                                                      |
-| :--- | :----------------- | :----------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | A. tetikus         | Mouse dalam Bahasa Indonesia secara resmi disebut sebagai tetikus.                                     |
-| 2    | D. satu            | Apple tetap menggunakan tetikus dengan satu tombol untuk Macintosh-nya demi kesederhanaan.             |
-| 3    | B. dua             | Microsoft menggunakan tetikus dua tombol untuk mendukung fungsi operasional sistemnya.                 |
-| 4    | C. kiri            | Tombol kiri adalah tombol utama yang digunakan untuk fungsi pemilihan dan manipulasi langsung.         |
-| 5    | B. tengah          | Tombol tengah masih jarang dimanfaatkan secara umum, biasanya untuk shortcut atau pengaturan khusus.   |
-| 6    | A. kanan           | Tombol kanan memungkinkan akses langsung ke properti obyek melalui context menu (pop-up menu).         |
-| 7    | C. menunjuk        | Operasi menunjuk (pointing) adalah dasar untuk menggerakkan kursor sampai berada di atas obyek target. |
-| 8    | B. menggeser       | Operasi drag and drop digunakan untuk memindah, menggambar, atau mengubah dimensi obyek.               |
-| 9    | D. meng-klik       | Definisi operasional meng-klik adalah menekan tombol tetikus lalu melepasnya dalam keadaan diam.       |
-| 10   | C. meng-klik ganda | Klik ganda diinterpretasikan sebagai klik tunggal yang diteruskan dengan tindakan (action) tertentu.   |
-
 ___
 
 # Modul 6 Antarmuka Berbasis Menu
@@ -610,21 +442,6 @@ Gabungan berbagai struktur untuk menangani sistem yang sangat kompleks.
 * **Peta Situs (Sitemap):** Ringkasan seluruh struktur hirarki situs Web untuk mencegah disorientasi pengguna.
 * **Jaring Menu Tak Berputar dan Berputar:** Memberikan keleluasaan bergerak antar cabang menu tanpa harus selalu kembali ke menu utama terlebih dahulu.
 
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                | Alasan Singkat Berdasarkan Materi                                                                               |
-| :--- | :--------------------- | :-------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | C. perancangan sistem  | Pengorganisasian tugas adalah salah satu faktor krusial dalam merancang antarmuka menu yang efektif.            |
-| 2    | D. jaring tak berputar | Skema tersebut menunjukkan struktur jaring tak berputar (non-cyclic network) di mana item memiliki jalur ganda. |
-| 3    | A. biner               | Dialog konfirmasi "Yakin/Tidak" adalah contoh klasik dari menu biner (dua pilihan).                             |
-| 4    | B. datar               | Menu yang menampilkan seluruh pilihan di layar (seperti terminal atau sistem lama) disebut menu datar.          |
-| 5    | C. gulung              | Menu gulung (scrolling menu) digunakan untuk menampilkan daftar panjang dalam area kerja yang terbatas.         |
-| 6    | C. kotak kombo         | Gambar menunjukkan combo box, peranti yang menggabungkan kotak teks dengan menu gulung.                         |
-| 7    | B. sambungan tertanam  | Embedded link memungkinkan pengguna melihat informasi sesuai konteks tanpa menghabiskan ruang layar.            |
-| 8    | A. mata ikan           | Menu mata ikan (fisheye) memberikan pembesaran pada item dekat kursor dan mengecilkan yang jauh.                |
-| 9    | D. berstruktur pohon   | Untuk jumlah pilihan sangat besar, perancang mengelompokkannya ke dalam hirarki atau struktur pohon.            |
-| 10   | B. disorientasi        | Disorientasi adalah fenomena di mana pengguna kehilangan arah saat menu terlalu dalam (deep menu).              |
-
 ## Kegiatan 2 Cara Mengorganisasi Pilihan
 ### Pengelompokkan Berbasis Tugas Pada Struktur Pohon
 Pengelompokan pilihan harus logis dan sesuai dengan tugas pengguna agar mudah dipahami.
@@ -659,21 +476,6 @@ Penilaian subjektif terhadap tata letak sangat mempengaruhi kebergunaan:
     * Penunjuk: Gunakan simbol atau tombol fungsi yang seragam untuk setiap menu.
     * Pesan Kesalahan: Harus muncul pada posisi konsisten dengan bahasa yang instruktif.
     * Laporan Status: Tunjukkan posisi pengguna saat ini dalam hierarki (seperti breadcrumb atau perubahan jenis huruf).
-
-### Kunci Jawaban Test Formatif 2
-
-| No  | Jawaban                                             | Alasan Teknis & Logika                                                                                                          |
-| --- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | C. satukan pilihan-pilihan yang secara logis serupa | Pengelompokan semantik meminimalkan beban kognitif dalam pencarian informasi di dalam hierarki.                                 |
-| 2   | D. sifat fisik                                      | Penyajian menu harus didasarkan pada atribut fisik yang terukur (seperti panjang teks atau frekuensi) untuk optimalisasi akses. |
-| 3   | A. sudah dikenal dan konsisten                      | Terminologi yang familier memastikan kesesuaian antara model mental pengguna dengan sistem.                                     |
-| 4   | D. satu kali lebih lama...                          | Konsistensi posisi memungkinkan pemanfaatan motor memory; perubahan posisi memaksa mata melakukan pemindaian ulang.             |
-| 5   | C. penulisan judul                                  | Rata kiri pada judul merupakan standar konsistensi visual untuk mempercepat proses scanning teks.                               |
-| 6   | C. penempatan pilihan                               | Penggunaan ruang kosong dan penomoran adalah teknik organisasi spasial untuk membedakan kategori pilihan.                       |
-| 7   | B. pesan kesalahan                                  | Merupakan mekanisme umpan balik (feedback) saat sistem menerima input yang tidak sesuai dengan batasan fungsi.                  |
-| 8   | A. laporan status                                   | Indikator posisi (seperti highlight) memberikan informasi real-time mengenai lokasi pengguna dalam struktur menu.               |
-| 9   | D. alfabetis                                        | Data disusun berdasarkan urutan leksikografis (A ke Z) untuk memudahkan pencarian nama secara linear.                           |
-| 10  | B. Data Pribadi & Data Pendidikan                   | Pengelompokkan paling logis: Data identitas disatukan, dan data pendidikan disusun secara kronologis (SD → SMP → SMA).          |
 
 ___
 
@@ -718,21 +520,6 @@ Paradigma interaksi ini memungkinkan komunikasi antara manusia dan komputer meng
 * **Tantangan:**
     * Ambiguitas: Kalimat manusia seringkali mengandung kerancuan yang dapat mengakibatkan salah interpretasi oleh penerjemah komputer.
     * Sintaksis vs Semantik: Meskipun bebas, sistem tetap memiliki batasan dalam memahami arti (semantik) yang sesungguhnya dari sebuah instruksi jika struktur kalimatnya terlalu kompleks atau tidak logis.
-
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban                                             | Alasan Singkat Berdasarkan Materi                                                                               |
-| :--- | :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | A. D: >DIR                                          | Perintah DIR digunakan untuk menampilkan daftar berkas, dan D: merujuk pada drive/partisi D.                    |
-| 2    | C. lpr                                              | Dalam sistem UNIX, perintah lpr (line printer) digunakan untuk mencetak berkas ke printer.                      |
-| 3    | B. gambar                                           | Ekstensi .png merujuk pada jenis berkas gambar (Portable Network Graphics).                                     |
-| 4    | A. C:\DOS>FORMAT A: /S                              | FORMAT adalah perintah luar (external command) karena memerlukan berkas sistem FORMAT.COM.                      |
-| 5    | B. ls                                               | Perintah ls (list) pada UNIX memiliki fungsi yang sama dengan DIR pada DOS.                                     |
-| 6    | C. appealing                                        | Keuntungan dialog perintah tunggal antara lain cepat, efisien, akurat, ringkas, luwes, dan menarik (appealing). |
-| 7    | B. UNIX lebih mudah diingat                         | Berdasarkan materi, perintah UNIX dianggap "lebih alamiah" dan lebih mudah diingat dibanding DOS.               |
-| 8    | B. batch file                                       | Sekumpulan perintah yang dikemas dalam satu berkas untuk otomatisasi disebut batch file (misal: .BAT).          |
-| 9    | D. Tampilkan semua mahasiswa yang mempunyai IPK > 3 | Kalimat ini menggunakan struktur bahasa manusia sehari-hari (Bahasa Alami).                                     |
-| 10   | B. passwd                                           | Perintah passwd (password) pada UNIX digunakan khusus untuk mengubah kata kunci akun pengguna.                  |
 
 ## kegiatan 2 Dialog Berbasis Pengisian Borang
 Dialog berbasis pengisian borang (form-filling dialogue) adalah teknik antarmuka di mana pengguna dihadapkan pada bentuk borang di layar untuk memasukkan data yang kemudian akan diintegrasikan ke dalam sistem.
@@ -779,21 +566,6 @@ Perancang harus memastikan data yang dimasukkan benar melalui validasi untuk men
 * Navigasi: Penggunaan tombol TAB untuk berpindah medan secara urut.
 * Pembetulan kesalahan: Penggunaan tombol Backspace.
 * Penyelesaian: Pemberitahuan bahwa proses telah selesai.
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban | Alasan Teknis                                                                                                                                     |
-| :--- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-|      |
-| 1    | C       | Berdasarkan sub-bab Struktur dan Organisasi, kualitas antarmuka bergantung pada kemampuannya mencerminkan struktur data masukan sistem.           |
-| 2    | B       | Komponen tersebut adalah Radio Button, digunakan untuk memilih satu opsi dari beberapa pilihan yang tersedia.                                     |
-| 3    | C       | Sesuai Tabel 7.2, salah satu keuntungan dialog borang adalah tersedianya berbagai peranti bantu (tools) untuk perancangan tampilan.               |
-| 4    | D       | Materi Evolusi menjelaskan bahwa pada dialog tekstual, perpindahan antar pilihan sulit karena belum digunakannya teknik penjendelaan (windowing). |
-| 5    | B       | Validasi sisi server diperlukan untuk data yang harus dicocokkan dengan basis data pusat, seperti verifikasi kata sandi (login).                  |
-| 6    | A       | Konsekuensi validasi sisi server adalah proses menjadi lebih lambat karena harus mengirim data ke server dan menunggu respons balik.              |
-| 7    | B       | Pengecekan sisi server (seperti login) mutlak membutuhkan data yang tersimpan di server, sehingga tidak bisa dilakukan hanya di sisi klien.       |
-| 8    | B       | Berdasarkan Tabel 7.2, salah satu kerugiannya adalah ketergantungan pada pengontrol kursor (seperti mouse/keyboard) untuk navigasi antar medan.   |
-| 9    | C       | Gambar tersebut menunjukkan Check Box, komponen yang memungkinkan pengguna memilih lebih dari satu opsi sekaligus.                                |
-| 10   | B       | Sesuai daftar aspek perancangan nomor 9, tombol Backspace digunakan oleh pengguna untuk melakukan pembetulan kesalahan isian.                     |
 
 ___
 
@@ -855,21 +627,6 @@ Kesalahan yang muncul saat program sedang berjalan, sering kali berakibat pada p
             * Logika Kondisional: Menggunakan struktur if-then-else untuk memvalidasi input sebelum diproses oleh fungsi aritmatika.
             * Tujuan: Meningkatkan robustness (ketahanan) program agar berhenti secara normal/terkendali.
 
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban | Alasan Teknis                                                                                                       |
-| :--- | :------ | :------------------------------------------------------------------------------------------------------------------ |
-|      |
-| 1    | B       | Merupakan salah satu metode dokumentasi awal desain sebelum masuk ke tahap prototipe GUI atau CASE.                 |
-| 2    | D       | Klasifikasi program aplikasi didasarkan pada target pengguna: spesifik (khusus) atau luas (umum/publik).            |
-| 3    | A       | Antarmuka terdiri dari model pengguna, bahasa perintah (command language), umpan balik, dan tampilan informasi.     |
-| 4    | A       | Tiga variabel utama dalam menentukan ragam dialog: populasi pengguna, tipe dialog, dan kendala teknologi.           |
-| 5    | C       | Tahap ini melibatkan analisis tugas mendalam melalui umpan balik pengguna pada diskusi dan prototipe dialog.        |
-| 6    | D       | Mekanisme pengamanan untuk mencegah eksekusi tindakan yang tidak disengaja, seperti konfirmasi penghapusan file.    |
-| 7    | B       | Dalam tampilan teks (berbasis frame), konsistensi ruang dan format krusial untuk kecepatan pemindaian informasi.    |
-| 8    | A       | Fokus pada reveal structure (seperti object handle) untuk menunjukkan batasan obyek pada manipulasi grafis.         |
-| 9    | B       | Compile-time error terjadi karena pelanggaran sintaksis saat kode sumber sedang diproses oleh kompilator.           |
-| 10   | C       | Run-time/fatal error terjadi saat eksekusi karena logika program gagal menangani kondisi (misal: division by zero). |
-
 ## Kegiatan 2 Piranti Bantu Perancangan Tampilan
 ### Peranti Bantu Sederhana: Lembar Kerja Tampilan (LKT)
 LKT atau screen design work sheet adalah lembaran kertas untuk mendokumentasikan wajah antarmuka secara statis. LKT terdiri dari empat bagian utama:
@@ -883,21 +640,6 @@ Digunakan untuk mempermudah pemrogram dalam memetakan navigasi aplikasi yang mem
 * Nomor Tampilan (Simbol Lingkaran): Merepresentasikan lembar kerja atau keadaan (state) tampilan tertentu (T1, T2, dst).
 * Transisi (Simbol Anak Panah): Menunjukkan perpindahan antar tampilan yang dipicu oleh suatu peristiwa (event).
 * Transisi Loop: Tanda panah yang kembali ke tampilan itu sendiri, biasanya berfungsi untuk meminta konfirmasi pengguna jika terjadi kesalahan eksekusi.
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban | Alasan Teknis                                                                                                            |
-| :--- | :------ | :----------------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | A       | Dokumentasi berfungsi sebagai spesifikasi teknis atau pedoman bagi pemrogram dalam mengodekan antarmuka.                 |
-| 2    | D       | Visualisasi rancangan membantu pengguna membayangkan alur sistem sebelum diimplementasikan secara fisik.                 |
-| 3    | B       | Navigator adalah bagian LKT yang mendefinisikan logika perpindahan antar jendela aplikasi berdasarkan event.             |
-| 4    | C       | Atribut visual seperti font, warna, dan ukuran elemen antarmuka dicatat pada bagian keterangan.                          |
-| 5    | A       | Jaring semantik secara spesifik memetakan alur navigasi dari seluruh lembar kerja yang ada untuk memudahkan penyesuaian. |
-| 6    | C       | Jaring semantik terdiri dari node (nomor tampilan/lingkaran) dan edge (transisi/panah).                                  |
-| 7    | C       | Loop transition digunakan untuk memvalidasi input atau memberikan konfirmasi saat terjadi galat eksekusi.                |
-| 8    | B       | Berdasarkan layout LKT standar, kotak bawah dialokasikan untuk penjelasan atribut atau keterangan (Atribut Visual).      |
-| 9    | D       | Dalam notasi jaring semantik, lingkaran bertuliskan nomor mewakili identitas atau nomor tampilan.                        |
-| 10   | A       | Label pada anak panah (seperti Alt-S, Simpan) adalah event atau peristiwa yang memicu transisi antar state.              |
 
 ___
 
@@ -1008,21 +750,6 @@ Merupakan komponen intermediary (sering disebut video display adapter) yang berf
 | **Red-Green-Blue (RGB)**    | Memproses sinyal warna (Merah, Hijau, Biru) secara terpisah; menghasilkan teks/grafik yang lebih tajam dan halus. |
 | **Variable-Frequency**      | Mampu menyesuaikan diri dengan berbagai jenis sinyal dari adapter yang berbeda (multisync).                       |
 
-### Kunci Jawaban Test Formatif 1
-| No   | Jawaban | Alasan Teknis                                                                                                                                   |
-| :--- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | D       | Berdasarkan klasifikasi peranti interaksi, keyboard adalah peranti standar untuk memasukkan data dalam bentuk teks (tekstual).                  |
-| 2    | C       | Papan ketik dikelompokkan menjadi empat bagian utama: tombol alfanumerik, tombol kontrol, tombol numerik, dan tombol fungsi.                    |
-| 3    | A       | Nama QWERTY diambil dari enam tombol pertama pada baris kedua (baris alfabet teratas) pada tata letak tersebut.                                 |
-| 4    | B       | Tata letak Dvorak dirancang untuk menyeimbangkan beban kerja, di mana tangan kanan dibebani lebih banyak (53%) dibandingkan tangan kiri (47%).  |
-| 5    | B       | Dvorak memasukkan unsur ergonomik pada distribusi beban jari, sedangkan Klockenberg pada posisi geometris papan ketik.                          |
-| 6    | D       | Secara definisi, peranti ini berfungsi menunjuk (pointing) posisi kursor dan mengambil (picking) item informasi untuk dipindahkan.              |
-| 7    | A       | Peranti ini memiliki ketelitian tinggi untuk menangkap koordinat (x, y), sehingga standar digunakan dalam aplikasi CAD atau pemetaan digital.   |
-| 8    | C       | Bekerja dengan mendeteksi gangguan pada matriks cahaya, perubahan kapasitansi, atau pantulan ultrasonik saat layar disentuh langsung.           |
-| 9    | B       | Dikembangkan pada pertengahan 70-an berdasarkan teknologi televisi, di mana citra dibentuk dari baris-baris pemindaian (scan lines).            |
-| 10   | B       | Monitor RGB memproses sinyal warna merah, hijau, dan biru secara terpisah, menghasilkan kualitas teks dan grafik warna yang paling halus/tajam. |
-
 ## Kegiatan 2 Risiko Penggunaan Piranti Interaksi
 ### Lingkungan Fisik
 Penggunaan komputer dalam durasi lama (berorde jam) memerlukan perhatian pada faktor ergonomik untuk menjaga efisiensi dan kesehatan operator. Isu utama dalam perancangan lingkungan fisik meliputi:
@@ -1059,21 +786,6 @@ Terdapat empat aspek kesehatan yang dipengaruhi oleh beban kerja: Visual, Otot, 
 | **2. Akuisisi Data**        | Menatap layar secara intensif (Operator telepon, ATC). | **Beban:** Visual tinggi, Kognitif/Persepsi tinggi. <br> **Solusi:** Layar kualitas tinggi, glare control, iluminasi ≈ 300 lux.                                            |
 | **3. Pekerjaan Interaktif** | Variatif (Pemrogram, Insinyur). Sering bergerak.       | **Beban:** Relatif lebih ringan karena variasi aktivitas. <br> **Solusi:** Iluminasi 300-500 lux, sandaran tangan pada kursi.                                              |
 | **4. Pengolahan Kata**      | Mengetik dan mengedit teks secara kontinu.             | **Beban:** Otot dan Postur sangat terasa bagi juru ketik; Visual lebih tinggi bagi editor. <br> **Solusi:** Kualitas tampilan layar dan posisi stasiun kerja yang presisi. |
-
-### Kunci Jawaban Test Formatif 2
-| No   | Jawaban                              | Alasan / Dasar Teori                                                                                                                               |
-| :--- | :----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | **A. ATM**                           | ATM dirancang sebagai mesin statis (diam di tempat) untuk lingkungan yang tetap, berbeda dengan PDA atau laptop yang bersifat *mobile*.            |
-| 2    | **D. keamanan**                      | Masalah radiasi (seperti kasus Therac-25) dikategorikan sebagai isu keamanan karena kesalahan perancangan dapat berakibat fatal bagi manusia.      |
-| 3    | **C. ruang pengguna**                | Kurangnya ruang yang memadai untuk bergerak atau duduk dengan nyaman menyebabkan kelelahan, rasa sakit, hingga cedera fisik.                       |
-| 4    | **B. polusi**                        | Penutup plastik pada keyboard dan layar sentuh yang dapat dicuci adalah solusi teknis untuk menghadapi lingkungan berdebu atau berminyak.          |
-| 5    | **A. Laubli**                        | Berdasarkan studi (Burns, 1995), Laubli dari Switzerland menunjukkan adanya berbagai keluhan iritasi dan ketegangan mata yang meningkat.           |
-| 6    | **A. Haider**                        | Haider dari Austria melaporkan hasil pengamatan bahwa durasi kerja di depan komputer berbanding lurus dengan peningkatan risiko miopi.             |
-| 7    | **B. sudut melihat dan papan ketik** | Sauter et al. (1991) menyimpulkan melalui analisis fotografik bahwa kedua faktor ini paling signifikan mempengaruhi beban leher, bahu, dan tangan. |
-| 8    | **D. akuisisi data**                 | Pekerjaan ini mengharuskan operator menatap layar secara intensif untuk mengambil informasi, mirip dengan tugas pengatur lalu lintas udara.        |
-| 9    | **B. beban otot dan beban visual**   | Petugas reservasi (pekerjaan interaktif) menghadapi beban visual (melihat layar kontinu) dan beban otot secara bersamaan.                          |
-| 10   | **B. beban otot dan beban tubuh**    | Juru ketik menghabiskan waktu dengan gerakan repetitif pada tangan (beban otot) dan posisi duduk yang lama (beban tubuh/punggung).                 |
 
 ## Kegiatan 3 Aspek Penting Kenyamanan Lingkungan Kerja
 Lingkungan kerja yang ergonomis tidak hanya bergantung pada stasiun kerja, tetapi juga pada faktor eksternal yang memengaruhi performa dan kesehatan pengguna secara langsung.
@@ -1124,17 +836,262 @@ Kenyamanan dapat ditingkatkan melalui manajemen aktivitas mandiri:
 * Mengambil istirahat pendek secara periodik daripada istirahat lama tapi jarang.
 * Melakukan variasi tipe pekerjaan agar tidak terjadi kejenuhan akibat tugas yang monoton.
 
-### Kunci Jawaban Test Formatif 3
-| No   | Jawaban | Alasan Teknis                                                                                                                                      |
-| :--- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      |
-| 1    | B       | Sesuai Tabel 9.1, keluhan pada leher, bahu, dan lengan secara spesifik disebabkan oleh tinggi meja yang tidak memungkinkan posisi ergonomis.       |
-| 2    | A       | Penggunaan anti-glare filter efektif untuk mereduksi pantulan cahaya pada layar yang mengganggu stabilitas visual.                                 |
-| 3    | C       | Tujuan utama perancangan adalah mencegah cahaya terang langsung/pantulannya mengenai layar agar tidak terjadi glare (silau).                       |
-| 4    | C       | Matahari didefinisikan sebagai sumber cahaya langsung, berbeda dengan tembok atau lantai yang merupakan sumber pantulan.                           |
-| 5    | D       | Cahaya yang dipantulkan oleh objek sekitar (tembok, lantai, langit-langit) dikategorikan sebagai cahaya tidak langsung.                            |
-| 6    | A       | Disarankan menggunakan cahaya tak langsung untuk menghindari bintik cerah dan silau pada layar tampilan.                                           |
-| 7    | B       | Panas (Thermal) yang dihasilkan oleh perangkat keras harus diatasi dengan pengontrol suhu udara (AC) untuk menjaga stabilitas sistem dan pengguna. |
-| 8    | D       | Kondisi fisik (seperti obesitas atau radang) meningkatkan risiko kelelahan pada sistem muskuloskeletal di stasiun kerja.                           |
-| 9    | C       | Mata adalah indra yang bekerja paling keras, sehingga sangat rentan terhadap iritasi dan kelelahan visual akibat beban kerja intensif.             |
-| 10   | B       | Mengubah posisi duduk secara periodik bertujuan untuk mencegah kelelahan otot statis dan memberikan kenyamanan durasi panjang.                     |
+___
+
+# Soal Formatif
+## Soal Modul 1
+
+| Pertanyaan                                                                                                                                                               | Pilihan Jawaban                     | Penjelasan Teknis                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Prinsip dasar suatu sistem komputer adalah ....                                                                                                                          | D. input, proses, output            | Berdasarkan model komputasi sekuensial; data masuk melalui periferal, diproses CPU, dan dikeluarkan ke register output. |
+| Interaksi antara pengguna dan komputer dapat terjadi jika tersedia ....                                                                                                  | D. media                            | Memerlukan antarmuka (layar, keyboard, GUI) sebagai saluran transmisi informasi antara subjek dan sistem.               |
+| User-friendly digunakan untuk merujuk pada karakter yang dimiliki oleh ....                                                                                              | A. program aplikasi                 | Atribut perangkat lunak yang meminimalkan beban kognitif pengguna melalui desain yang intuitif.                         |
+| Interaksi antara pengguna dan komputer dapat terjadi ketika pengguna ....                                                                                                | D. mengetikkan sesuatu              | Aktivitas ini memicu event listener pada level koding untuk mengeksekusi fungsi tertentu.                               |
+| Fokus interaksi manusia dan komputer ditinjau dari perspektif ilmu komputer adalah interaksi antara ....                                                                 | D. manusia dengan komputer          | Optimasi efisiensi pada loop umpan balik antara operator manusia dan mesin.                                             |
+| Seorang perancang antarmuka harus mempertimbangkan kenyamanan pengguna, oleh sebab itu dia membutuhkan pengetahuan dari bidang ilmu lain, yaitu ....                     | D. Ergonomi                         | Relevan dengan aspek fisik hardware, seperti tata letak tombol atau radiasi layar yang memengaruhi kenyamanan.          |
+| Seorang perancang antarmuka juga harus dapat memahami sifat dan kebiasaan pengguna. Pengetahuan ini dapat diperoleh dari bidang ilmu ....                                | A. Psikologi                        | Mempelajari model mental dan persepsi manusia agar alur program tidak membingungkan.                                    |
+| Antarmuka suatu sistem yang dilengkapi dengan gambar atau ilustrasi yang dapat mempermudah pengguna dapat dikembangkan dengan mempelajari ilmu ....                      | C. Perancangan Grafis dan Tipografi | Penggunaan elemen visual sebagai representasi data agar lebih cepat diproses oleh saraf optik pengguna.                 |
+| Melalui antarmuka pengguna berdialog dengan komputer. Dialog dapat terjadi jika ada sarana komunikasi yang memadai. Hal ini dapat diperoleh dengan mempelajari ilmu .... | B. Linguistik                       | Fokus pada struktur bahasa dan simbol dalam komunikasi antara pengguna dan terminal.                                    |
+| Perancangan antarmuka suatu sistem tidak dapat dilepaskan dari perangkat keras, oleh sebab itu diperlukan pengetahuan bidang ilmu ....                                   | D. Teknik Elektronika               | Penting untuk memahami low-level interaction, seperti latensi input atau kontrol register pada hardware.                |
+| Salah satu kriteria yang harus dimiliki oleh sebuah perangkat lunak adalah "ramah dengan pengguna", biasa disebut ....                                                   | A. user-friendly                    | Standar aksesibilitas agar sistem dapat digunakan oleh berbagai level keahlian tanpa pelatihan intensif.                |
+| Pengembangan fasilitas antarmuka, selain harus menangani sejumlah peranti kontrol, juga harus memperhatikan selera dan kebiasaan pengguna yang ....                      | B. heterogen                        | Menghadapi varians data pengguna yang luas, sehingga desain harus bersifat inklusif.                                    |
+| Proses perancangan dan pengembangan antarmuka memerlukan peranti ....                                                                                                    | C. bantu                            | Merujuk pada Integrated Development Environment (IDE) atau GUI Builder untuk mempercepat koding UI.                     |
+| Dalam pengembangan antarmuka lebih baik terlebih dahulu dikembangkan ....                                                                                                | B. prototipenya                     | Tahapan Rapid Prototyping untuk memvalidasi logika alur sebelum masuk ke tahap produksi massal/koding kompleks.         |
+| Antarmuka yang konsisten dapat dikembangkan untuk sejumlah aplikasi dengan memanfaatkan ....                                                                             | A. program bantu yang sama          | Memastikan reusability komponen koding agar pengalaman pengguna tetap seragam di berbagai modul.                        |
+| Sebuah program aplikasi terdiri dari dua bagian penting, yaitu ....                                                                                                      | A. antarmuka dan aplikasi           | Arsitektur pemisahan antara lapisan presentasi (Frontend) dan logika inti (Backend).                                    |
+| Antarmuka berfungsi sebagai sarana dialog antara ....                                                                                                                    | B. manusia dengan komputer          | Jembatan yang menerjemahkan niat manusia menjadi biner yang dapat dieksekusi mesin.                                     |
+| Bagian antarmuka lebih banyak berurusan dengan cara ....                                                                                                                 | A. penyajian informasi              | Bagaimana data di-render dari database ke layar agar bermakna bagi pengguna.                                            |
+| Pada antarmuka tidak boleh ada keterlambatan antara tindakan pengguna dan sistem, karena hal ini akan menyebabkan pengguna ....                                          | C. frustrasi                        | Latensi (delay) yang tinggi merusak real-time feedback yang krusial dalam interaksi manusia-mesin.                      |
+| Berikut adalah keuntungan menggunakan peranti bantu untuk pengembangan antarmuka, kecuali program antarmuka ....                                                         | D. rigid                            | Kaku (rigid) adalah kelemahan; peranti bantu seharusnya menciptakan antarmuka yang fleksibel dan modular.               |
+___
+
+## Soal Modul 2
+
+| Pertanyaan                                                                                                                   | Pilihan Jawaban            | Penjelasan Teknis                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Banyaknya cahaya yang dipantulkan oleh permukaan obyek disebut ....                                                          | C. luminance               | Kerapatan fluks cahaya yang dipantulkan/dipancarkan ke arah tertentu (satuan: cd/m²).                                         |
+| Semakin besar luminansi dari sebuah obyek, menyebabkan diameter bola mata mengecil karena ....                               | D. terlalu terang          | Respon fisiologis pupil (miosis) untuk mengatur intensitas cahaya yang masuk ke retina agar tidak overexposed.                |
+| Hubungan antara cahaya yang dipancarkan oleh suatu obyek dan cahaya dari latar belakang obyek tersebut disebut ....          | B. kontras                 | Rasio luminansi antara objek dan latar belakang, krusial untuk ketajaman visual (acuity).                                     |
+| Sudut yang dibentuk ketika mata bergerak ke kiri terjauh dan ke kanan terjauh dapat dibagi menjadi ....                      | D. 4 daerah                | Pembagian medan penglihatan berdasarkan derajat rotasi bola mata secara horizontal.                                           |
+| Ketika kepala dan mata dalam keadaan diam, daerah penglihatan monokuler mempunyai rentang antara ....                        | C. 94° sampai 104°         | Batas persepsi visual satu mata manusia tanpa adanya pergerakan kepala.                                                       |
+| Mata dapat membedakan warna secara akurat ketika posisi obyek terhadap mata membentuk sudut sebesar ....                     | A. ± 15                    | Fovea (titik pusat retina) memiliki konsentrasi sel kerucut tertinggi hanya pada sudut sempit di pusat sumbu visual.          |
+| Efek chromostereopsis seringkali timbul pada kombinasi warna ....                                                            | A. merah dan biru          | Fenomena visual di mana warna berbeda pada kedalaman yang sama tampak berada pada jarak berbeda akibat aberasi kromatik mata. |
+| Kombinasi warna yang baik adalah ....                                                                                        | C. merah, kuning, putih    | Kombinasi dengan kontras tinggi yang memudahkan pemrosesan informasi visual oleh saraf optik.                                 |
+| Warna dingin biasanya digunakan untuk menunjukkan status atau informasi latar belakang. Warna dingin antara lain adalah .... | A. biru                    | Dalam spektrum optik, biru memiliki panjang gelombang pendek dan memberikan efek tenang/latar belakang.                       |
+| Merah, kuning, biru termasuk warna ....                                                                                      | A. primer                  | Warna dasar yang tidak dapat dihasilkan melalui pencampuran warna lain dalam model subtraktif (RYB).                          |
+| Seorang perancang sistem perlu memahami cara manusia mengolah informasi, hal ini termasuk dalam aspek ....                   | D. brainware               | Merujuk pada komponen manusia sebagai subjek pengolah logika dan input.                                                       |
+| Manusia dan komputer memiliki beberapa persamaan, otak pada komputer adalah ....                                             | A. CPU                     | Unit pemrosesan pusat yang mengelola instruksi logika dan aritmatika.                                                         |
+| Komputer dapat melakukan beberapa pekerjaan sekaligus yang disebut ....                                                      | B. multitasking            | Manajemen thread dan process oleh OS untuk menjalankan aplikasi secara konkuren.                                              |
+| Suatu tindakan yang jarang dilakukan akan diolah dalam diri manusia secara ....                                              | A. sadar                   | Memerlukan sumber daya kognitif tinggi karena belum terbentuk jalur memori prosedural.                                        |
+| Suatu tindakan baru dapat diolah dalam diri manusia secara otomatis melalui ....                                             | B. latihan                 | Proses pembentukan muscle memory dan otomatisasi kognitif melalui pengulangan.                                                |
+| Pengolahan yang melibatkan organ-organ sensori ke otak disebut pengolahan ....                                               | C. perseptual              | Transformasi sinyal fisik (cahaya/suara) menjadi representasi data di otak.                                                   |
+| Urutan langkah pengolahan informasi adalah ....                                                                              | C. 3-4-1-2                 | Penyandian → Komparasi Memori → Keputusan → Eksekusi Tindakan.                                                                |
+| Register sensori penglihatan memegang informasi selama ....                                                                  | A. 0,2 detik               | Durasi buffer pada iconic memory sebelum data luruh atau ditransfer ke STM.                                                   |
+| Teknik membagi nomor telepon menjadi beberapa kelompok dalam memori disebut ....                                             | C. chunking                | Optimasi kapasitas memori jangka pendek (7±2 chunks) dengan pengelompokkan data.                                              |
+| Kemampuan motor skills (seperti naik sepeda) termasuk dalam ....                                                             | C. long-term memory        | Disimpan dalam memori prosedural yang bersifat persisten dan tahan lama.                                                      |
+| Prinsip dasar suatu sistem komputer adalah ....                                                                              | D. input, proses, output   | Siklus hidup data dalam arsitektur komputasi standar.                                                                         |
+| Interaksi antara pengguna dan komputer terjadi jika tersedia ....                                                            | D. media                   | Adanya lapisan abstraksi (UI) sebagai jembatan komunikasi.                                                                    |
+| User-friendly merujuk pada karakter yang dimiliki oleh ....                                                                  | A. program aplikasi        | Parameter kegunaan (usability) sistem terhadap pengguna manusia.                                                              |
+| Fokus IMK ditinjau dari perspektif ilmu komputer adalah interaksi antara ....                                                | D. manusia dengan komputer | Studi tentang optimasi antarmuka untuk meningkatkan produktivitas manusia.                                                    |
+___
+
+## Soal Modul 3
+
+| Pertanyaan                                                                                                                              | Pilihan Jawaban                                                                | Penjelasan Teknis                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Kejadian yang diinginkan oleh pengguna dalam struktur tindakan disebut                                                                  | A. gol                                                                         | Dalam model Donald Norman, goal adalah kondisi psikologis awal yang ingin dicapai (state to be achieved).                             |
+| Satu langkah tindakan pada fase eksekusi adalah                                                                                         | B. membentuk keinginan                                                         | Fase eksekusi melibatkan formulasi intensi (forming the intention) sebelum urutan aksi fisik dikirim ke hardware.                     |
+| Satu langkah tindakan pada fase evaluasi hasil interpretasi adalah                                                                      | A. memahami status dunia nyata                                                 | Evaluasi melibatkan perbandingan antara status sistem saat ini (perceived state) dengan goal awal.                                    |
+| Gulf of execution adalah jarak pemisah eksekusi antara                                                                                  | A. pengguna dan sistem                                                         | Secara teknis, ini adalah perbedaan antara formulasi mental pengguna dengan aksi fisik yang diizinkan oleh interface sistem.          |
+| Kerangka Kerja Interaksi SPMK terdiri dari                                                                                              | D. empat fase                                                                  | Siklus interaksi (Sistem, Pengguna, Masukan, Keluaran) melibatkan artikulasi, pengerjaan, penyajian, dan observasi.                   |
+| Ketika bahasa masukan diterjemahkan ke dalam bahasa mesin merupakan langkah dalam fase                                                  | C. artikulasi                                                                  | Proses mapping dari input pengguna (bahasa manusia/perangkat) ke instruksi yang dimengerti core sistem.                               |
+| Pengguna mengartikan hasil di layar dan mencocokkannya dengan kejadian yang diinginkan masuk dalam fase                                 | B. evaluasi                                                                    | Tahap kognitif untuk memvalidasi apakah output sistem sesuai dengan mental model dan goal pengguna.                                   |
+| Sistem menunjukkan perubahan statusnya dalam bahasa keluaran merupakan langkah dalam eksekusi, yaitu                                    | C. penyajian                                                                   | Transformasi status internal sistem menjadi representasi visual/auditori yang dapat ditangkap sensor manusia.                         |
+| Ketika sistem menggunakan data yang diperoleh dari bahasa masukan untuk melakukan suatu operasi                                         | B. pengerjaan                                                                  | Fase di mana core sistem mengeksekusi logika atau kalkulasi berdasarkan parameter input yang diterima.                                |
+| Proses yang ditunjukkan dengan adanya indikator yang bergerak atau ikon berbentuk jam                                                   | B. evaluasi                                                                    | Memberikan feedback sistem agar pengguna dapat mengevaluasi bahwa proses latar belakang sedang berjalan (mencegah deadlock persepsi). |
+| Model yang diciptakan oleh pengguna ketika berinteraksi dengan suatu sistem adalah model                                                | C. mental                                                                      | Representasi internal (skema kognitif) yang dibangun pengguna mengenai cara kerja sistem secara logika.                               |
+| Model mental merupakan representasi pribadi yang dihasilkan oleh seseorang selama berlangsung proses                                    | A. kognitif                                                                    | Proses pemrosesan informasi di otak yang melibatkan memori kerja (RAM manusia) dan memori jangka panjang.                             |
+| Kemampuan pengguna memformulasikan kerangka kerja suatu sistem bergantung pada                                                          | C. pengalaman                                                                  | Akumulasi dataset pengalaman sebelumnya menentukan akurasi prediksi pengguna terhadap perilaku sistem baru.                           |
+| Apabila model mental pengguna cukup dekat dengan cara bekerjanya suatu sistem, maka pengguna akan                                       | C. merasa senang menggunakan sistem tersebut                                   | Meminimalkan cognitive load karena prediksi mental selaras dengan state sistem yang sebenarnya.                                       |
+| Model mental bersifat                                                                                                                   | D. parsial                                                                     | Pengguna jarang memahami seluruh source code atau struktur hardware; mereka hanya memahami fragmen fungsi yang sering digunakan.      |
+| Perancang antarmuka paling efektif memperoleh pemahaman model mental melalui                                                            | C. penelitian melibatkan pengguna                                              | Menggunakan metode seperti usability testing untuk memetakan alur logika pengguna secara empiris.                                     |
+| Jarak semantik antara pengguna dengan sistem adalah jarak antara                                                                        | B. fungsionalitas suatu peranti dengan yang sesungguhnya diinginkan pengguna   | Selisih antara ekspresi goal pengguna dengan kemampuan fungsional yang disediakan oleh program.                                       |
+| Jarak artikulatori adalah jarak antara                                                                                                  | C. penampakan fisik suatu peranti dengan yang sesungguhnya diinginkan pengguna | Fokus pada mapping fisik: apakah bentuk tombol/ikon merepresentasikan fungsinya secara intuitif.                                      |
+| Semakin rendah tingkat affordance suatu perangkat, semakin                                                                              | D. sulit menggunakannya                                                        | Affordance adalah petunjuk visual pada objek yang menunjukkan cara interaksinya. Rendahnya ini meningkatkan error rate.               |
+| Contoh perancangan perangkat yang memiliki affordance rendah adalah pintu dengan                                                        | C. pelat besi                                                                  | Pelat datar sering kali membingungkan (apakah harus ditarik atau didorong) tanpa adanya pegangan (handle) yang jelas.                 |
+| Antarmuka berpusat-pada-implementasi lebih disukai oleh kalangan                                                                        | D. teknis                                                                      | Pengguna teknis lebih suka akses langsung ke parameter sistem daripada abstraksi visual yang menyederhanakan logika.                  |
+| Perancangan antarmuka berpusat-pada-implementasi berfokus pada                                                                          | C. model implementasi                                                          | Desain mengikuti struktur internal koding atau database, bukan alur kerja manusia.                                                    |
+| Paradigma perancangan berdasarkan intuisi bagaimana sesuatu bekerja adalah                                                              | B. metaphoric                                                                  | Menggunakan analogi dunia fisik (misal: "Desktop") untuk membantu pengguna memahami fungsi digital.                                   |
+| Paradigma perancangan berdasarkan pada proses manusiawi yang alami adalah                                                               | C. idiomatic                                                                   | Berfokus pada perilaku yang dipelajari secara konsisten (seperti double click), bukan sekadar analogi fisik.                          |
+| Penggunaan gambar gunting pada Microsoft Word merupakan penerapan paradigma                                                             | B. metaphoric                                                                  | Mengambil fungsi fisik gunting untuk merepresentasikan operasi cut pada memori buffer (clipboard).                                    |
+| Ikon keranjang sampah yang langsung diketahui cara menggunakannya karena pernah mempelajari cara kerjanya merupakan penerapan paradigma | C. idiomatic                                                                   | Meski awalnya metafora, penggunaannya telah menjadi standar perilaku (idiom) dalam komputasi modern.                                  |
+| Paradigma idiomatik berfokus pada                                                                                                       | C. pembelajaran                                                                | Mengandalkan kemampuan manusia untuk mempelajari pola interaksi yang konsisten tanpa perlu analogi dunia nyata yang ketat.            |
+| Elemen-elemen GUI yang merupakan metafora adalah                                                                                        | D. desktops                                                                    | Merepresentasikan ruang kerja fisik di atas meja ke dalam lingkungan sistem operasi virtual.                                          |
+| Simbol keranjang (shopping cart) pada web toko online merupakan metafora                                                                | B. fungsional                                                                  | Menghubungkan fungsi pengumpulan barang di dunia nyata dengan pengumpulan entitas data produk di sistem.                              |
+| Tanda seru pada dialog box Microsoft Word merupakan penerapan                                                                           | B. indexical metaphor                                                          | Tanda seru berfungsi sebagai indikator (indeks) yang menunjuk pada status peringatan atau perhatian khusus.                           |
+___
+
+## Soal Modul 4
+
+| Pertanyaan                                                                                                                               | Pilihan Jawaban                                                                       | Penjelasan Teknis                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Salah satu kesalahan umum yang sering dilakukan oleh perancang sistem adalah ....                                                        | C. penundaan evaluasi "sampai waktu luang"                                            | Dalam SDLC, evaluasi yang tertunda meningkatkan akumulasi technical debt dan risiko kegagalan integrasi pada fase akhir.                |
+| Salah satu jenis fitur tampilan yang dapat menangkap kesan subjektif pengguna adalah ....                                                | A. karakter                                                                           | Representasi visual atau personalisasi sistem yang mempengaruhi persepsi psikologis pengguna terhadap sistem.                           |
+| Salah satu aturan dalam kepuasan berinteraksi adalah ....                                                                                | D. konsistensi                                                                        | Redundansi fungsional melalui desain yang seragam untuk mengurangi beban kognitif (O(1) pencarian mental bagi pengguna).                |
+| Seiring dengan frekuensi pengguna yang meningkat, pengguna berkeinginan untuk mengurangi jumlah interaksi... dikenal dengan istilah .... | B. fasilitas kunci-cepat                                                              | Implementasi shortcuts meningkatkan efisiensi temporal (Δt) dengan mengurangi langkah navigasi seiring meningkatnya kemahiran pengguna. |
+| Penyajian secara visual pada kepuasan berinteraksi, dapat digunakan untuk menunjukkan suatu perubahan yang bersifat eksplisit...         | D. umpan balik yang inovatif                                                          | Prinsip observability dalam sistem; memastikan status internal sistem terpeta dengan jelas ke output visual.                            |
+| Suatu rancangan dialog yang mengarah pada penutupan (closure), dibagi ke dalam tiga kelompok bagian yaitu ....                           | A. awal, tengah, dan akhir                                                            | Struktur sekuensial yang memastikan atomisitas transaksi atau interaksi selesai secara utuh.                                            |
+| Suatu sistem memiliki kemampuan untuk mendeteksi kesalahan, dengan memberikan instruksi yang sederhana, spesifik...                      | A. penetapan kesalahan dan penanganan kesalahan                                       | Mekanisme error handling yang tidak hanya menangkap exception tapi juga menyediakan jalur pemulihan (recovery path).                    |
+| Fitur kepuasan berinteraksi yang dapat mengurangi kecemasan pengguna... fitur tersebut adalah ....                                       | B. pembalikan tindakan yang mudah                                                     | Implementasi fungsi Undo untuk menjamin keamanan state sistem dan mengurangi risiko data loss.                                          |
+| Saat pengguna berasumsi bahwa sistem akan memberikan tanggapan yang sesuai dengan tindakan pengguna...                                   | D. locus of control internal                                                          | Memberikan pengguna kendali penuh atas sistem, sehingga sistem bersifat deterministik terhadap input pengguna.                          |
+| Keterbatasan manusia untuk mengolah informasi pada memori jangka pendek, mensyaratkan bahwa tampilan suatu sistem harus ....             | C. sederhana                                                                          | Berdasarkan Miller's Law, kapasitas memori jangka pendek manusia terbatas pada 7±2 unit informasi.                                      |
+| Sebuah sistem yang mampu memotivasi penggunanya untuk menggunakannya, menarik, menyenangkan, dan lain-lain, disebut dengan ....          | D. usable                                                                             | Usability mencakup efektivitas, efisiensi, dan kepuasan pengguna dalam mencapai tujuan tertentu.                                        |
+| Jika sistem mudah dipelajari dan digunakan maka termasuk ke dalam salah satu komponen kualitas untuk menentukan kebergunaan...           | D. learnability                                                                       | Metrik yang mengukur seberapa cepat pengguna dapat memahami logika operasional sistem pada penggunaan pertama.                          |
+| Untuk memberi kemudahan pada pengguna yang jarang menggunakan sistem, sistem harus memiliki kemampuan untuk ....                         | B. memorability                                                                       | Kemampuan sistem untuk mempertahankan kemudahan penggunaan tanpa perlu proses pembelajaran ulang setelah jeda waktu tertentu.           |
+| Suatu cara yang dilakukan sistem untuk mendukung pengguna dalam melakukan pekerjaannya, disebut dengan ....                              | A. efficiency                                                                         | Optimasi sumber daya dan waktu dalam eksekusi tugas di dalam lingkungan sistem.                                                         |
+| Proses untuk mengukur karakteristik interaksi manusia dan komputer dari sebuah sistem, dan mengidentifikasi kelemahannya...              | D. kebergunaan                                                                        | Evaluasi komprehensif terhadap antarmuka untuk memastikan kompatibilitas antara logika mesin dan kognisi manusia.                       |
+| Menurut Levi dan Conrad (1997), uji kebergunaan dibagi menjadi tiga jenis, yaitu ....                                                    | A. uji eksploratori, uji threshold, dan uji perbandingan                              | Metodologi pengujian untuk fase awal (eksplorasi), pencapaian standar (threshold), dan komparasi dengan sistem lain.                    |
+| Sebuah pengujian untuk memberikan penilaian terhadap produk jadi... atau untuk membandingkannya dengan produk sejenis...                 | D. sumatif                                                                            | Evaluasi akhir untuk mengukur efektivitas keseluruhan produk setelah siklus pengembangan selesai.                                       |
+| Tujuan metode pemilihan kartu dalam uji kebergunaan adalah mengelompokkan informasi dalam jumlah ....                                    | D. besar menjadi bagian-bagian yang lebih kecil dan dapat dikelola dengan lebih mudah | Teknik Information Architecture untuk menyusun hierarki data berdasarkan skema mental pengguna.                                         |
+| Uji kebergunaan yang melibatkan ahli AMK (Analisis Multi Kriteria) adalah evaluasi ....                                                  | A. heuristik                                                                          | Inspeksi usability oleh pakar berdasarkan prinsip-prinsip desain yang sudah mapan.                                                      |
+| Pengguna akhir (end user) diberi kesempatan untuk menguji sistem menggunakan tugas tertentu yang sudah dirancang...                      | A. uji berbasis skenario                                                              | Pengujian validitas fungsional berdasarkan alur kerja riil yang dihadapi pengguna di lapangan.                                          |
+___
+
+## Soal Modul 5
+
+| Pertanyaan                                                       | Pilihan Jawaban                                                               | Penjelasan Teknis                                                                                                                                                  |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Elemen manipulasi langsung                                       | B. tindakan fisik sebagai pengganti teks masukan                              | Secara teknis, ini memindahkan kontrol dari syntax-driven (perintah teks) ke action-driven. Dalam robotika, ini mirip dengan teleoperation berbasis sensor posisi. |
+| Penggantian perintah ketik dengan tindakan menunjuk              | A. ide utama dari manipulasi langsung                                         | Ide dasarnya adalah visualisasi objek yang dapat dimanipulasi secara real-time untuk mengurangi beban kognitif memori perintah.                                    |
+| Dua aspek penting pada manipulasi langsung adalah jarak dan .... | C. keterlibatan                                                               | Jarak mengacu pada semantic/articulatory distance, sedangkan keterlibatan (engagement) adalah perasaan subjek bahwa ia mengendalikan objek secara langsung.        |
+| Manipulasi program adalah ....                                   | D. cara pengguna menggunakan program aplikasi untuk menyelesaikan suatu tugas | Fokus pada task execution melalui antarmuka fungsional perangkat lunak.                                                                                            |
+| Contoh aplikasi manipulasi isi adalah ....                       | B. Adobe Photoshop                                                            | Photoshop memanipulasi data piksel secara langsung pada kanvas visual, berbeda dengan pengolah angka atau teks murni.                                              |
+| Tindakan bertahap dengan umpan balik segera                      | A. manipulasi langsung                                                        | Implementasi ini membutuhkan latensi rendah (target ±100ms) untuk mempertahankan kontinuitas logika aksi-reaksi.                                                   |
+| Fase sebelum pengguna melakukan tindakan                         | B. aktivasi                                                                   | Pada fase ini, sistem dalam keadaan idle atau menunggu trigger input untuk mengubah state variabel dari S0 ke S1.                                                  |
+| Pengolah kata modern dengan prinsip WYSIWYG                      | D. kontrol lalu lintas (Konteks: WYSIWYG/Desktop Publishing)                  | WYSIWYG (What You See Is What You Get) memastikan output buffer grafis identik dengan output cetak/hardcopy.                                                       |
+| Keuntungan manipulasi langsung                                   | C. mengurangi waktu pembelajaran                                              | Menggunakan analogi dunia fisik sehingga meminimalkan kurva pembelajaran sintaksis pemrograman yang kompleks bagi pengguna awam.                                   |
+| Kerugian manipulasi langsung                                     | B. memerlukan tampilan grafis berkinerja tinggi                               | Membutuhkan refresh rate dan pengolahan GPU yang intensif untuk merender transformasi geometri secara kontinu.                                                     |
+| Kata lain peranti penunjuk mouse                                 | C. tikus                                                                      | Terminologi standar dalam lokalisasi bahasa Indonesia untuk perangkat pointing device.                                                                             |
+| Jumlah tombol mouse Macintosh                                    | D. satu                                                                       | Desain klasik Apple (Macintosh) menggunakan pendekatan minimalis dengan satu tombol fisik untuk menyederhanakan interaksi.                                         |
+| Jumlah tombol mouse Borland                                      | C. tiga                                                                       | Beberapa periferal khusus pengembangan software pada masanya menyediakan lebih banyak tombol untuk shortcut fungsi IDE.                                            |
+| Tombol mouse untuk manipulasi langsung (pilih, gambar)           | C. kiri                                                                       | Secara teknis, tombol kiri (Primary) dipetakan pada interrupt utama untuk eksekusi fungsi seleksi dan drag-and-drop.                                               |
+| Tombol mouse untuk tombol singkat (shortcut)                     | D. kanan                                                                      | Tombol kanan (Secondary) biasanya memicu pemanggilan context menu atau fungsi makro tambahan.                                                                      |
+| Akses langsung ke properti dan fungsi berdasar konteks           | A. kanan                                                                      | Tindakan ini melakukan kueri pada objek di koordinat (x,y) kursor untuk menampilkan daftar atribut yang tersedia.                                                  |
+| Proses menggerakkan mouse sampai kursor di atas obyek            | C. menunjuk                                                                   | Operasi pointing secara matematis adalah pemetaan koordinat sensor mouse ke koordinat layar P(x,y).                                                                |
+| Operasi memilih, mengubah bentuk, menggambar, dsb                | B. menggeser                                                                  | Melibatkan fungsi dragging, di mana state tombol mouse dipertahankan dalam kondisi High (1) sambil koordinat kursor berubah.                                       |
+| Memegang mouse diam, klik satu tombol lalu lepas                 | D. mengklik                                                                   | Operasi diskrit yang mengirimkan sinyal down diikuti segera oleh sinyal up pada satu titik koordinat tetap.                                                        |
+| Proses klik tunggal diteruskan dengan tindakan lain              | C. mengklik ganda                                                             | Urutan dua sinyal klik dalam interval waktu t < Δt_threshold untuk memicu aksi eksekusi (seperti membuka file).                                                    |
+___
+
+## Soal Modul 6
+
+| Pertanyaan                                                                                                        | Pilihan Jawaban                                                              | Penjelasan Teknis                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pengorganisasian tugas adalah salah satu faktor yang perlu diperhatikan dalam ....                                | C. perancangan sistem                                                        | Secara teknis, task analysis dilakukan pada fase desain (perancangan) untuk menentukan alur logika program dan struktur data yang akan digunakan pengguna.                    |
+| Gambar skema jenis menu (Graf dengan banyak jalur)                                                                | D. jaring tak berputar                                                       | Secara matematis, gambar tersebut merepresentasikan Directed Acyclic Graph (DAG) atau jaring tak berputar, di mana node terhubung secara hierarkis tanpa adanya loop balik.   |
+| Gambar contoh jenis menu (Dialog Konfirmasi)                                                                      | A. biner                                                                     | Menu konfirmasi (Ya/Tidak) adalah implementasi logika biner f(x) ∈ {0,1}, memberikan tepat dua pilihan yang saling eksklusif.                                                 |
+| Ragam menu yang menuliskan pilihan dengan menampilkan menu dalam keseluruhan layar                                | B. datar                                                                     | Menu datar (flat menu) memanfaatkan seluruh workspace layar untuk menampilkan semua opsi secara simultan, mengurangi kedalaman navigasi.                                      |
+| Menu yang menampilkan sejumlah pilihan sesuai dengan ukuran daerah kerja layar tampilan                           | B. datar                                                                     | Konsep ini berkaitan dengan optimasi pemanfaatan area kerja (viewport) agar semua opsi tersedia tanpa perlu melakukan scrolling atau navigasi tambahan.                       |
+| Gambar merupakan contoh penerapan menu (Daftar font dengan scrollbar)                                             | B. gulung                                                                    | Secara koding, ini adalah scrolling menu. Ketika jumlah elemen n melebihi kapasitas display k, sistem menggunakan fungsi offset untuk menggeser indeks data yang ditampilkan. |
+| Jenis menu yang memungkinkan pengguna melihat pilihan sesuai konteks dan menghindari pilihan lain yang mengganggu | C. tarik                                                                     | Pull-down menu bersifat kontekstual dan efisien dalam penggunaan ruang (space-saving), hanya aktif saat dipicu, mengurangi beban kognitif (noise).                            |
+| Menu yang menggunakan font/ikon kecil untuk yang jauh dari kursor dan normal untuk yang dekat                     | A. mata ikan                                                                 | Ini adalah teknik Fisheye View. Secara matematis, ia menggunakan fungsi distorsi untuk memberikan resolusi tinggi pada titik fokus dan resolusi rendah pada periferal.        |
+| Perancang dapat mengelompokkan pilihan berdasarkan kriteria tertentu jika jumlah pilihan besar                    | D. berstruktur pohon                                                         | Untuk kompleksitas data tinggi, struktur pohon (O(log n)) lebih efisien bagi manusia daripada pencarian linear (O(n)) dalam daftar panjang.                                   |
+| Situasi pengguna semakin kesulitan menentukan posisinya ketika kedalaman menu bertambah                           | B. disorientasi                                                              | Masalah ini terjadi ketika node aktif berada terlalu dalam pada struktur graf/pohon sehingga pengguna kehilangan referensi ke root node.                                      |
+| Salah satu pengelompokan pilihan dalam menu struktur pohon adalah ....                                            | C. satukan pilihan-pilihan yang secara logis serupa                          | Mengikuti prinsip kohesi dalam koding, elemen dengan semantik atau fungsi yang mirip dikelompokkan dalam satu sub-pohon untuk mempermudah pemetaan mental.                    |
+| Salah satu urutan penyajian menu yang tepat adalah berdasarkan ....                                               | D. sifat fisik                                                               | Dalam robotik/hardware, pengelompokan fisik (misal: semua kontrol motor, semua kontrol sensor) memudahkan operator melakukan korelasi antara UI dan realitas fisik.           |
+| Salah satu pemilihan ungkapan yang tepat yaitu menggunakan terminologi yang ....                                  | A. sudah dikenal dan konsisten                                               | Hal ini berkaitan dengan mapping antara variabel sistem dan bahasa pengguna untuk meminimalkan error interpretasi (logika validasi).                                          |
+| Studi Teitelbaum dan Granda (1983) mengenai judul menu menunjukkan bahwa ....                                     | A. satu kali lebih lama untuk memilih menu yang sama ketika posisi berpindah | Ini membuktikan pentingnya konstanta koordinat (x,y) pada UI. Perubahan posisi memaksa otak melakukan rekalkulasi posisi kursor, yang membuang waktu eksekusi.                |
+| Penulisan menu judul rapi kiri, menandakan bahwa perancang menu konsisten pada komponen ....                      | C. penulisan judul                                                           | Konsistensi sintaksis dan perataan (alignment) mempermudah algoritma scanning visual manusia dalam mengenali struktur informasi.                                              |
+| Pilihan menu ditulis rapi kiri, dengan nomor atau huruf tertentu yang mendahului judul pilihan                    | C. penempatan pilihan                                                        | Pemberian indeks (numerik/alfabetis) pada pilihan mempercepat akses melalui keyboard (short-key), yang secara teknis merupakan pemetaan langsung ke alamat fungsi.            |
+| Jika pengguna memilih pilihan yang tidak dapat diterima, maka harus disediakan komponen ....                      | B. pesan kesalahan                                                           | Secara logika program, ini adalah exception handling. Sistem harus memberikan feedback saat input tidak memenuhi kriteria validasi.                                           |
+| Tanda yang menunjukkan menu yang sedang dikunjungi, halaman yang dilihat, atau tugas yang dipilih                 | A. laporan status                                                            | Dalam sistem kendali, ini adalah feedback loop yang menginformasikan status state mesin saat ini kepada operator.                                                             |
+| Urutan menu nama anggota (Adeva, Dani, Egi, ...) disusun berdasarkan ....                                         | D. alfabetis                                                                 | Data disusun menggunakan algoritma sorting berdasarkan nilai ASCII/Unicode karakter pertama untuk memudahkan pencarian manual.                                                |
+| Pengelompokan menu (Sekolah Lanjutan, Alamat, Nama, ...) yang paling dapat diterima adalah ....                   | C. pengelompokan kategori                                                    | Data dikelompokkan secara kategoris (Data Pribadi, Pendidikan, Alamat) untuk menciptakan struktur data yang terorganisir secara semantik.                                     |
+___
+
+## Soal Modul 7
+
+| Pertanyaan                                                                                                                  | Pilihan Jawaban                                                   | Penjelasan Teknis                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Perintah DOS yang berfungsi untuk menampilkan nama-nama berkas yang tersimpan di dalam hard disk D adalah ....              | C. D:>DIR                                                         | Perintah DIR digunakan untuk enumerasi direktori. Awalan D:\> menunjukkan current working directory berada pada root drive D.                                           |
+| Perintah UNIX yang berfungsi untuk mencetak suatu berkas ke printer yang terhubung dengan sistem UNIX adalah ....           | C. lpr                                                            | lpr (line printer) adalah standar spooling pada sistem UNIX/Linux untuk mengirimkan job ke print queue.                                                                 |
+| Perintah DOS untuk menyalin berkas C:\>COPY *.png A:\NASKAH. Jenis berkas yang disalin adalah ....                          | B. gambar                                                         | Ekstensi .png (Portable Network Graphics) secara teknis adalah format kompresi data gambar lossless yang menggunakan algoritma DEFLATE.                                 |
+| Di bawah ini yang merupakan perintah luar (external command) pada DOS adalah ....                                           | A. C:\DOS>FORMAT A: /S                                            | FORMAT adalah external command (berupa file .com atau .exe terpisah), berbeda dengan DIR atau COPY yang merupakan internal command di dalam COMMAND.COM.                |
+| Perintah yang digunakan untuk menampilkan nama-nama berkas pada UNIX adalah ....                                            | B. ls                                                             | ls (list) melakukan system call untuk membaca struktur metadata inode pada filesystem dan menampilkannya di stdout.                                                     |
+| Keuntungan dari penggunaan dialog berbasis perintah tunggal adalah ....                                                     | B. membutuhkan penggunaan yang teratur                            | Command-line interfaces memiliki learning curve yang curam namun efisiensi tinggi bagi power user yang sudah menghafal sintaksnya.                                      |
+| Perbedaan mendasar dari perintah tunggal pada DOS dan UNIX adalah ....                                                      | A. UNIX tidak alamiah                                             | UNIX menggunakan singkatan yang sangat singkat (kriptik) seperti ls, cp, rm, yang kurang intuitif bagi pengguna awam dibandingkan perintah yang lebih deskriptif.       |
+| Dialog berbasis bahasa pemrograman memungkinkan pengguna untuk mengemas sejumlah perintah ke dalam berkas yang disebut .... | B. batch file                                                     | Pada DOS, berkas .bat memungkinkan eksekusi sekuensial dari serangkaian instruksi CLI untuk otomatisasi tugas.                                                          |
+| Contoh instruksi bahasa alami (Natural Language) adalah ....                                                                | A. Tampilkan semua mahasiswa yang meregistrasi matakuliah = IMK   | Bahasa alami dicirikan oleh penggunaan sintaksis manusia (subjek-predikat-objek) daripada sintaksis formal bahasa pemrograman atau kueri SQL.                           |
+| Perintah UNIX yang berfungsi untuk mengubah kata kunci (password) adalah ....                                               | B. passwd                                                         | Perintah passwd memodifikasi hash kata kunci pengguna yang biasanya tersimpan di /etc/shadow.                                                                           |
+| Aspek kualitas dari antarmuka pengisian borang (form filling) adalah ....                                                   | C. mencerminkan struktur data masukan yang diperlukan oleh sistem | Desain borang harus memiliki korespondensi satu-satu dengan skema database atau variabel yang diproses oleh backend.                                                    |
+| Jenis pengisian data (opsi pilihan tunggal) pada gambar di bawah ini disebut ....                                           | B. radio button                                                   | Secara logika, radio button mengimplementasikan fungsi exclusive OR (XOR), di mana hanya satu state yang dapat bernilai true dalam satu grup.                           |
+| Keuntungan dari penggunaan dialog berbasis pengisian borang adalah ....                                                     | C. tersedianya berbagai peranti bantu perancangan sistem          | Borang sangat modular dan didukung luas oleh berbagai library UI serta framework desain (seperti Visual Studio atau web-based tools).                                   |
+| Masalah pengisian data banyak adalah sulitnya berpindah antar pilihan karena belum adanya teknik ....                       | C. tab                                                            | Navigasi menggunakan tombol TAB memungkinkan perpindahan fokus antar input field secara sekuensial berdasarkan tab index.                                               |
+| Pengecekan validasi yang dilakukan oleh server adalah ....                                                                  | A. pengisian captcha                                              | Validasi server-side seperti CAPTCHA krusial untuk mencegah serangan otomasi (bot) karena logika verifikasi dilakukan di lingkungan yang tidak bisa dimanipulasi klien. |
+| Salah satu konsekuensi validasi yang dilakukan oleh server adalah ....                                                      | B. harus terkoneksi dengan internet                               | Validasi server-side memerlukan request-response cycle melalui protokol HTTP/HTTPS, sehingga ketergantungan pada network latency sangat tinggi.                         |
+| Alasan validasi pengecekan dilakukan di server adalah ....                                                                  | A. user dan password lebih aman                                   | Melakukan validasi kredensial di sisi klien (frontend) akan mengekspos logika keamanan dan data sensitif melalui inspeksi kode atau memori.                             |
+| Salah satu kerugian penggunaan dialog berbasis borang adalah ....                                                           | B. membutuhkan pengontrol kursor                                  | Berbeda dengan CLI yang murni menggunakan keyboard, borang sering kali memerlukan pointing device (mouse/trackpad) untuk navigasi yang efisien.                         |
+| Jenis pengisian data (opsi pilihan ganda) pada gambar berikut disebut ....                                                  | C. check box                                                      | Check box memungkinkan seleksi independen, di mana setiap elemen memiliki variabel boolean sendiri yang tidak saling mempengaruhi.                                      |
+| Tombol yang digunakan untuk pembetulan kesalahan pada saat pengisian borang adalah ....                                     | B. backspace                                                      | Secara teknis, backspace mengirimkan kode ASCII 0x08 untuk menghapus karakter terakhir pada buffer input.                                                               |
+___
+
+# Soal Modul 8
+
+| Pertanyaan                                                                                             | Pilihan Jawaban                                                                                     | Penjelasan Teknis & Logika Sistem                                                                                                           |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Salah satu dokumentasi rancangan adalah ....                                                           | B. membuat sketsa pada kertas                                                                       | Dalam fase low-fidelity prototyping, sketsa kertas adalah artefak teknis pertama untuk menentukan tata letak elemen tanpa beban komputasi.  |
+| Kategori program aplikasi adalah ....                                                                  | D. special purpose software dan public software                                                     | Klasifikasi perangkat lunak berdasarkan domain penggunaan: special purpose (spesifik/vertikal) dan public (umum/horizontal).                |
+| Salah satu komponen antarmuka pengguna adalah bahasa ....                                              | A. perintah                                                                                         | Merujuk pada Command Line Interface (CLI) di mana interaksi terjadi melalui sintaksis perintah yang diproses oleh interpreter.              |
+| Pemilihan ragam dialog dipengaruhi oleh ....                                                           | A. karakteristik populasi pengguna, tipe dialog yang diperlukan, dan kendala teknologi              | Variabel dalam fungsi pemilihan dialog f(p,d,t) di mana p adalah user, d adalah metode, dan t adalah limitasi infrastruktur.                |
+| Tahap perancangan yang melibatkan pengguna secara langsung untuk umpan balik informal/prototipe ....   | C. perancangan struktur dialog                                                                      | Ini adalah iterasi pada State Transition Diagram (STD) untuk memastikan alur logika sistem sesuai dengan ekspektasi input pengguna.         |
+| Sistem memberi peringatan ketika pengguna melakukan tindakan tidak disengaja ....                      | D. proteksi pengguna                                                                                | Mekanisme Error Prevention dan Safety untuk meminimalkan entropy kesalahan yang tidak dapat dipulihkan (irreversible actions).              |
+| Faktor yang harus dipertimbangkan saat perancangan tampilan untuk antarmuka berbasis teks ....         | B. konsistensi                                                                                      | Reduksi beban kognitif dicapai melalui konsistensi letak dan istilah agar prediksi state sistem oleh pengguna menjadi akurat.               |
+| Faktor yang harus dipertimbangkan saat perancangan tampilan untuk antarmuka berbasis grafis (GUI) .... | B. urutan visual dan fokus pengguna                                                                 | Implementasi hirarki visual untuk mengarahkan atensi (eye-tracking) pada komponen kritis dalam suatu form atau dashboard.                   |
+| Kesalahan sintaksis yang langsung dideteksi oleh kompiler (compile-time error) ....                    | B. penulisan program                                                                                | Kesalahan pada lexical atau syntax analysis saat proses parsing kode sumber menjadi object code.                                            |
+| Kesalahan ketika program sedang dijalankan (run-time error atau fatal error) ....                      | C. logika                                                                                           | Terjadi saat sintaks benar namun eksekusi melanggar aturan logika atau batasan memori (seperti NullPointerException atau Division by Zero). |
+| Pendokumentasian perancangan berguna sebagai pedoman implementasi bagi ....                            | A. pemrogram                                                                                        | Dokumentasi teknis berfungsi sebagai spesifikasi fungsional agar backend dan frontend engineer dapat melakukan pengkodean secara presisi.   |
+| Pendokumentasian perancangan yang berguna untuk membayangkan 'wajah' sistem ....                       | D. pengguna                                                                                         | Representasi visual (Mockup/Wireframe) membantu validasi kebutuhan end-user sebelum masuk ke tahap heavy coding.                            |
+| Bagian Lembar Kerja Tampilan (LKT) yang menjelaskan kapan tampilan muncul dan berubah ....             | B. navigator                                                                                        | Komponen LKT yang merepresentasikan transisi antar state dalam mesin status antarmuka.                                                      |
+| Bagian LKT yang merupakan penjelasan singkat tentang atribut tampilan yang dipakai ....                | C. keterangan                                                                                       | Metadata yang mendeskripsikan properti dari setiap elemen UI yang terdapat pada lembar kerja tersebut.                                      |
+| Jaring semantik tampilan adalah ....                                                                   | A. Suatu bagan yang dapat memudahkan pemrogram dalam menyesuaikan navigasi pada setiap lembar kerja | Struktur graf (node dan edge) yang memetakan konektivitas logis antar layar/modul dalam sistem.                                             |
+| Jaring semantik terdiri dari dua komponen yaitu ....                                                   | C. nomor tampilan dan transisi                                                                      | Dalam teori graf, nomor tampilan adalah Node (V) dan transisi adalah Edge (E) yang menghubungkan antar V.                                   |
+| Transisi loop pada jaring semantik berfungsi untuk ....                                                | C. meminta konfirmasi pengguna                                                                      | Mekanisme callback atau validasi di mana sistem tetap berada pada state yang sama sampai syarat transisi berikutnya terpenuhi.              |
+| Kotak yang diberi keterangan 'D' pada gambar LKT disebut ....                                          | A. navigasi                                                                                         | Area pada template LKT yang didedikasikan untuk mendefinisikan instruksi perpindahan ke layar lain.                                         |
+| Tanda lingkaran bertuliskan T1, T2, T3, T4, dan T5 menyatakan ....                                     | D. nomor tampilan                                                                                   | Representasi identitas unik bagi setiap state atau halaman dalam diagram transisi status.                                                   |
+| Tanda panah bertuliskan Alt-S, Cetak, Simpan, dan Selesai menyatakan ....                              | A. peristiwa                                                                                        | Event trigger atau input yang memicu perubahan state dari satu node ke node lainnya dalam logika navigasi.                                  |
+___
+
+# Soal Modul 9
+
+| Pertanyaan                                                        | Pilihan Jawaban                        | Penjelasan Teknis                                                                                                                           |
+| ----------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Peranti masukan tekstual                                          | D. keyboard                            | Mengonversi tekanan mekanik pada switch menjadi kode biner (ASCII/Scan Code) untuk diproses oleh CPU.                                       |
+| Pengelompokan tombol pada papan ketik                             | C. fungsi                              | Papan ketik standar memiliki blok tombol fungsi (F1-F12), alfanumerik, kontrol, dan numerik.                                                |
+| Tata letak papan ketik dengan enam tombol baris kedua alfanumerik | A. QWERTY                              | Standar tata letak yang dirancang untuk mengurangi kemacetan mekanik pada mesin tik manual.                                                 |
+| Tata letak yang membebankan tangan kanan lebih dari kiri          | B. Dvorak                              | Dirancang untuk efisiensi dengan menempatkan vokal dan konsonan umum pada baris "home", namun distribusi beban lebih berat ke tangan kanan. |
+| Tata letak papan ketik ergonomik                                  | B. Dvorak dan Klockenberg              | Klockenberg memisahkan bagian kiri dan kanan untuk mengurangi tekanan pada pergelangan tangan (ulnar deviation).                            |
+| Peranti penempatan kursor dan pengambilan item                    | D. penuding dan pengambil              | Definisi fungsional dari pointing device (seperti mouse) yang memanipulasi koordinat (x,y) pada GUI.                                        |
+| Peranti aplikasi CAD atau menyalin gambar                         | A. digitizing tablet                   | Menggunakan sensor elektromagnetik untuk akurasi tinggi dalam memetakan koordinat fisik ke ruang digital.                                   |
+| Peranti deteksi sentuhan tangan/stylus ke layar                   | C. touch-sensitive panel               | Menggunakan teknologi kapasitif atau resistif untuk mendeteksi perubahan arus/resistansi pada titik kontak.                                 |
+| Layar tampilan berdasarkan teknologi televisi                     | B. raster display                      | Menggunakan electron gun untuk memindai layar baris demi baris (scanning) secara periodik.                                                  |
+| Tipe layar teks dan grafik berwarna                               | A. composite color monitor             | Menggabungkan sinyal luminansi dan krominansi dalam satu sinyal kompleks untuk menghasilkan spektrum warna RGB.                             |
+| Mesin interaksi manusia dengan lingkungan tetap                   | A. ATM                                 | Sistem tertanam (embedded system) dengan I/O spesifik yang ditempatkan pada lokasi fisik statis.                                            |
+| Pengaruh radiasi dalam lingkungan fisik                           | D. keamanan                            | Radiasi elektromagnetik (EMI) dari monitor merupakan isu keamanan kesehatan kerja jangka panjang.                                           |
+| Masalah fisik akibat perancangan lingkungan tidak memadai         | C. ruang pengguna                      | Berkaitan dengan optimasi ruang kerja agar sesuai dengan dimensi antropometri pengguna untuk mencegah cedera.                               |
+| Solusi pelindung peralatan (tutup plastik/cuci)                   | B. polusi                              | Mencegah kontaminasi partikel debu atau cairan yang dapat merusak sirkuit dan mekanisme hardware.                                           |
+| Pengamatan keluhan mata/iritasi pada stasiun kerja                | A. Laubli                              | Studi epidemiologi oleh Laubli dkk. (1980) mengenai dampak visual pada operator komputer.                                                   |
+| Pengamatan hubungan lama kerja dengan miopi                       | C. Laubli                              | Menemukan korelasi antara durasi penggunaan VDT (Video Display Terminal) dengan peningkatan derajat miopi.                                  |
+| Faktor unjuk kerja operator menurut Sauter (1991)                 | B. sudut melihat dan papan ketik       | Variabel teknis utama yang menentukan beban biomekanik dan kelelahan visual operator.                                                       |
+| Tipe pekerjaan operator telepon/petugas pos elektronik            | A. pemasukan data                      | Aktivitas dengan throughput data tinggi yang membutuhkan input alfanumerik kontinu.                                                         |
+| Beban petugas reservasi                                           | C. beban visual dan beban otot         | Interaksi konstan dengan layar (visual) dan posisi duduk/mengetik statis (otot).                                                            |
+| Beban kerja juru ketik                                            | A. beban otot dan beban visual         | Memerlukan koordinasi motorik halus yang intens serta fokus visual pada dokumen dan layar.                                                  |
+| Penyebab keluhan leher, bahu, dan lengan                          | B. tinggi meja yang tidak memadai      | Ketidaksesuaian tinggi meja menyebabkan kontraksi otot statis pada trapezius dan deltoid.                                                   |
+| Cara menghindari kilau layar tampilan                             | A. memasang filter anti kilau          | Menggunakan lapisan optik untuk mendifusi cahaya pantul agar tidak mengganggu kontras visual.                                               |
+| Tujuan utama perancangan pencahayaan                              | C. menghindari cahaya langsung         | Mengurangi silau (glare) yang mengganggu proses akomodasi mata pada layar.                                                                  |
+| Contoh cahaya langsung                                            | C. matahari                            | Sumber radiasi elektromagnetik spektrum luas yang menyebabkan silau primer jika mengenai layar.                                             |
+| Cahaya yang dipantulkan dari bahan sekitar layar                  | B. cahaya ruangan                      | Dikenal sebagai indirect lighting yang intensitasnya harus dikontrol agar tidak melebihi luminansi layar.                                   |
+| Faktor pencahayaan ruang stasiun kerja                            | A. gunakan sumber cahaya tak langsung  | Mengarahkan cahaya ke langit-langit/dinding untuk menciptakan distribusi pencahayaan yang merata.                                           |
+| Mengatasi persoalan bertambah panasnya lingkungan                 | B. menggunakan alat pengontrol udara   | Pengaturan termodinamika ruangan (AC) untuk menjaga suhu operasional perangkat dan kenyamanan termal manusia.                               |
+| Risiko kondisi kesehatan di depan stasiun kerja                   | D. kelelahan otot dan persendian       | Akibat dari Repetitive Strain Injury (RSI) dan posisi statis dalam waktu lama.                                                              |
+| Indra yang bekerja keras selama bekerja                           | C. mata                                | Organ sensorik utama yang melakukan pengolahan data visual secara konstan.                                                                  |
+| Mengubah posisi duduk secara berkala                              | B. memberikan kenyamanan pada pengguna | Melancarkan sirkulasi darah dan redistribusi beban mekanik pada tulang belakang.                                                            |

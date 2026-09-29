@@ -1,3 +1,7 @@
+---
+marp: true
+size: A4
+---
 # Modul 5: Metodologi dan Implementasi Visualisasi Data Teks Menggunakan Perangkat Lunak R
 ### Pendahuluan: Karakteristik dan Tantangan Data Teks
 Dalam diskursus sains data kontemporer, ledakan data tekstual telah memicu pergeseran epistemologis dari pembacaan kualitatif tradisional menuju analitik teks kuantitatif berskala besar. Kemampuan mengekstraksi informasi dari data tidak terstruktur ( unstructured data ) kini menjadi kompetensi krusial bagi analis data. Data teks menyimpan potensi informasi yang masif, namun tantangan utamanya terletak pada ketiadaan skema tetap ( fixed schema ) yang memungkinkan pengolahan data secara langsung.

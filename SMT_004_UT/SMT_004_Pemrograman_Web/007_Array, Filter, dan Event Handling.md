@@ -1,0 +1,134 @@
+# MODUL 07: ARRAY, FILTER, DAN EVENT HANDLING
+
+## Bagian 01: Array
+
+### Konsep Dasar Array di Vue.js
+
+* **Pengertian:** Struktur data linier dalam JavaScript yang digunakan untuk menyimpan kumpulan nilai atau elemen (bisa berupa string, angka, boolean, maupun objek) di dalam satu variabel tunggal.
+* Di dalam Vue.js, *array* sering digunakan sebagai penampung data reaktif untuk menampilkan daftar item secara dinamis ke antarmuka pengguna (*UI*).
+___
+### Mengakses Array
+
+* Setiap elemen di dalam array memiliki nomor indeks (*index*) yang dimulai dari angka `0`.
+* Cara mengakses elemen spesifik di dalam komponen Vue:
+```javascript
+data() {
+  return {
+    buah: ["Apel", "Mangga", "Jeruk"]
+  }
+},
+// Mengakses elemen pertama ("Apel") di script:
+// this.buah[0]
+
+```
+___
+### Directive `v-for` (Perulangan Data)
+
+* **Pengertian & Fungsi:** Direktif Vue.js yang digunakan untuk merender daftar item atau elemen HTML secara berulang berdasarkan data dari sebuah *array* atau *object*.
+* **Sintaks Dasar (`item in items`):**
+```html
+<ul>
+  <li v-for="(item, index) in buah" :key="index">
+    {{ index + 1 }}. {{ item }}
+  </li>
+</ul>
+
+```
+
+* *Catatan Penting:* Atribut `:key` wajib disertakan pada elemen yang diulang menggunakan `v-for` agar Vue dapat melacak identitas setiap node secara efisien dan optimal.
+___
+### Object Array (Array dari Objek)
+
+* Struktur data yang paling sering digunakan dalam aplikasi web nyata, yaitu sebuah *array* di mana setiap elemen di dalamnya berupa sebuah *objek* yang memiliki properti kunci-nilai (*key-value*).
+* *Contoh Implementasi dengan `v-for`:*
+```html
+<template>
+  <div>
+    <h3>Daftar Produk</h3>
+    <ul>
+      <li v-for="produk in daftarProduk" :key="produk.id">
+        {{ produk.nama }} - Rp {{ produk.harga }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      daftarProduk: [
+        { id: 1, nama: "Laptop", harga: 7500000 },
+        { id: 2, nama: "Mouse", harga: 150000 },
+        { id: 3, nama: "Keyboard", harga: 300000 }
+      ]
+    }
+  }
+}
+</script>
+
+```
+___
+
+## Bagian 02: Filter (Manipulasi String & Data)
+
+Meskipun Vue 3 tidak lagi menyediakan *filter* bawaan seperti di Vue 2 (yang digantikan oleh *Computed Properties* atau *Methods*), konsep manipulasi string (*string methods*) sangat penting untuk memformat teks di dalam tampilan Vue.
+
+### Metode Manipulasi String yang Sering Digunakan:
+
+1\. **`toUpperCase()` dan `toLowerCase()`:**
+* `toUpperCase()`: Mengubah seluruh karakter string menjadi huruf kapital.
+* `toLowerCase()`: Mengubah seluruh karakter string menjadi huruf kecil.
+* *Contoh:* `{{ nama.toUpperCase() }}`
+
+2\. **`charAt(index)`:**
+* Mengambil karakter tunggal pada posisi indeks tertentu.
+* *Contoh:* `tekstur.charAt(0)` menghasilkan huruf pertama dari string.
+
+3\. **`slice(index_awal, index_akhir)`:**
+* Memotong bagian dari string berdasarkan indeks awal hingga sebelum indeks akhir.
+* *Contoh:* `"JavaScript".itekten(0, 4)` menghasilkan `"Java"`.
+
+4\. **`replace(target, pengganti)`:**
+* Mencari kata atau karakter tertentu di dalam string dan menggantinya dengan nilai baru.
+* *Contoh:* `teks.replace("anjing", "***")`.
+
+5\. **`split(separator)`:**
+* Memecah string menjadi sebuah *array* berdasarkan pemisah tertentu (seperti spasi atau koma).
+* *Contoh:* `"A,B,C".split(",")` menghasilkan array `["A", "B", "C"]`.
+___
+
+## Bagian 03: Event Handling
+
+### Directive `v-on` (Penanganan Event)
+
+* **Pengertian & Fungsi:** Direktif Vue.js yang digunakan untuk mendengarkan (*listen*) kejadian (*event*) DOM yang memicu interaksi pengguna (seperti klik, submit form, pergerakan kursor, atau penekanan tombol keyboard) dan menjalankan fungsi (*method*) tertentu.
+* **Sintaks Penulisan:** `v-on:nama_event="namaMethod"` atau menggunakan *shorthand* tanda *at* (`@nama_event="namaMethod"`).
+```html
+<button v-on:click="sapaUser">Klik Saya</button>
+<!-- Menggunakan Shorthand -->
+<button @click="sapaUser">Klik Saya</button>
+
+```
+___
+### Mouse Event
+
+* Event yang dipicu oleh interaksi perangkat tetikus (*mouse*).
+* **Contoh umum yang didukung Vue:**
+* `@click`: Saat elemen diklik.
+* `@dblclick`: Saat elemen diklik dua kali.
+* `@mouseenter` / `@mouseover`: Saat kursor mouse masuk ke area elemen.
+* `@mouseleave`: Saat kursor mouse keluar dari area elemen.
+* *Contoh:* `<div @mouseenter="ubahWarna" @mouseleave="kembalikanWarna">Kotak Interaktif</div>`
+___
+### Keyboard Event
+
+* Event yang dipicu saat pengguna menekan tombol pada keyboard.
+* Vue menyediakan **Event Modifiers** untuk menangkap tombol spesifik dengan sangat mudah (seperti `.enter`, `.tab`, `.delete`, `.esc`, `.space`, `.up`, `.down`).
+* *Contoh Penggunaan pada Input Text:*
+```html
+<!-- Menjalankan fungsi cariData hanya ketika tombol Enter ditekan -->
+<input type="text" @keyup.enter="cariData" placeholder="Tekan Enter untuk mencari...">
+
+```
+___

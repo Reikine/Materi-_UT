@@ -1,56 +1,160 @@
-# Modul 02: Transformasi Data (MSIM4310)
-### Landasan Konseptual dan Filosofi Transformasi Data
-#### Definisi dan Signifikansi Metodologis  
-Transformasi data didefinisikan sebagai aplikasi fungsi matematis pada skala pengukuran asli untuk menghasilkan struktur data baru yang memenuhi kriteria inferensi statistik. Secara strategis, transformasi bertujuan untuk:
-* Menstabilkan Varians:  Mengatasi masalah heteroskedastisitas (ketidaksamaan varians sisaan). Pelanggaran terhadap homoskedastisitas mengakibatkan estimasi galat baku ( standard error ) menjadi bias, yang secara langsung membatalkan validitas nilai-p ( p-value ) dan selang kepercayaan ( confidence interval ).
-* Normalisasi Distribusi:  Memperbaiki kemencengan ( skewness ) sebaran agar mendekati distribusi Gaussian.
-#### Kerangka Kerja Tukey (1957) dan Bulging Rule  
-John Tukey memperkenalkan  Tukey’s Ladder of Powers  sebagai metodologi sistematis untuk memilih transformasi berdasarkan pola data. Melalui pendekatan  Bulging Rule , analis mengamati arah "lengkungan" pada diagram pencar. Jika lengkungan mengarah ke kiri atas, analis dapat menurunkan pangkat pada tangga Tukey (misalnya ke logaritma atau resiprokal), sedangkan lengkungan ke kanan bawah menyarankan kenaikan pangkat (seperti kuadratik). Pendekatan ini memastikan pemilihan model dilakukan secara berbasis bukti ( evidence-based ) daripada sekadar spekulatif.
-___
-### Diagnostik Data: Identifikasi Ketidaknormalan dan Sebaran Gaussian
-#### Karakteristik Distribusi Gaussian  
-Sebaran normal atau Gaussian memiliki sifat simetris pada  $x = \mu$  (di mana nilai tengah, median, dan modus berhimpit). Sesuai aturan empiris, area di bawah kurva terdistribusi secara presisi: 68% data berada pada ±1σ, 95% pada ±2σ, dan 99% pada ±3σ.
-#### Prosedur Deteksi Teknis
-* Heuristik Skewness:  Dalam distribusi yang dibatasi oleh nilai nol (seperti pendapatan atau waktu), aturan praktis menunjukkan bahwa jika  mean  < 2x standar deviasi, data cenderung memiliki kemencengan positif ( positive skewness ).
-* Verifikasi Formal:  Penggunaan uji  Kolmogorov-Smirnov  (tersedia dalam package:stats pada lingkungan R) memberikan dasar inferensial yang lebih ketat untuk menolak atau menerima hipotesis nol mengenai normalitas.
-* Analisis Pencilan (  Outlier  ):  Keberadaan pencilan sering kali menjadi artefak penyebab ketidaknormalan. Analis harus membedakan antara kesalahan entri data (yang harus dikoreksi) dengan pengamatan berpengaruh ( influential observations ) yang memerlukan penanganan khusus.
+# Modul 02: Transformasi Data
 
-Implikasi "So What?":  Memaksakan uji parametrik pada data yang menyimpang secara signifikan dari normalitas tanpa transformasi akan mengompromikan integritas seluruh analisis regresi, menghasilkan model yang tidak memiliki daya prediksi maupun daya penjelasan yang valid.
-___
-### Taksonomi Transformasi Logaritma: Teori dan Efektivitas Model
-Transformasi logaritma sangat efektif untuk menangani hubungan non-linier dan model pertumbuhan, karena kemampuannya dalam mengonversi hubungan multiplikatif menjadi aditif (linier intrinsik).
-#### Bentuk Model dan Studi Kasus  
-Dalam lingkungan komputasi statistik R, fungsi log() secara  default  menerapkan logaritma natural ( $\ln$ ).
-* Bentuk 1: Eksponensial (  $y^* = \ln(y)$  ):  Mengubah persamaan  $y = e^{\alpha}e^{\beta x}$  menjadi model linier  $\ln(y) = \alpha + \beta x$ .
-* Bentuk 2: Logaritmik (  $x^* = \ln(x)$  ):  Kasus  Word Recall  (Proporsi ingatan vs Waktu).
-* Bentuk 3: Double Log (  $y^* = \ln(y), x^ = \ln(x)$  ):  Kasus  Biaya Marginal Wittink (1988) .
-#### Perbandingan Performa Model (Logaritma):  
-| Studi Kasus | Kondisi | Persamaan Regresi | R2 |
-| :--- | :--- | :--- | :--- |
-| **Word Recall** | Sebelum | $y = 0.526 - 0.0000557x$ | 57,09% |
-| | Sesudah | $y = 0.846 - 0.079\ln(x)$ | **98,99%** |
-| **Biaya Wittink** | Sebelum | $y = 70.467 - 4.503x$ | 81,68% |
-| | Sesudah | $\ln(y) = 4.386 - 0.401\ln(x)$ | **99,97%** |
+## Kegiatan Belajar 1: Konsep Dasar Transformasi Data
 
-Peningkatan  $R^2$  yang masif menunjukkan bahwa model linier awal sangat tidak memadai ( underfitting ) untuk menangkap dinamika data asli yang bersifat logaritmik atau pangkat.
-___
-### Taksonomi Transformasi Pangkat: Aplikasi pada Hubungan Non-Linier Spesifik
-#### Perbandingan Performa Model (Pangkat):  
-| Kasus & Referensi | Jenis Transformasi | Persamaan Regresi Final | $R^2$ Awal | $R^2$ Akhir |
-| :--- | :--- | :--- | :--- | :--- |
-| Wind Speed (Schrader, 2006) | Reciprocal ($1/x$) | $y = 2.979 - \frac{6.935}{x}$ | 87,45% | **98,00%** |
-| Yield Production (Pardoe, 2021) | Quadratic ($x^2$) | $y = 7.960 - 0.154x + 0.001x^2$ | 9,24% | **67,32%** |
-| Air Canon Ball (Roberg, 2017) | Sqrt ($\sqrt{x}$) | $y = -0.099 + 2.101\sqrt{x}$ | 96,23% | **99,89%** |
+### Pengertian Transformasi Data
 
-#### Analisis Kedalaman  
-Pada kasus  Yield , kenaikan  $R^2$  dari 9,24% ke 67,32% merupakan pergeseran dari model yang hampir tidak berguna menjadi model yang mampu menjelaskan dua pertiga variansi data. Namun, sesuai peringatan Draper dan Smith (1992), penggunaan transformasi yang lebih kompleks menuntut kehati-hatian dalam  Inverse Transformation  (transformasi balik ke skala asli). Analis harus mampu menyeimbangkan presisi statistik dengan kemudahan interpretasi substansial bagi pemangku kepentingan.
+* **Definisi:** Transformasi adalah perubahan bentuk atau mengubah struktur dasar menjadi struktur baru dengan menerapkan kaidah transformasi. Dalam konteks statistika, transformasi data berarti mengubah skala pengukuran data asli menjadi bentuk skala lain yang baru agar memenuhi asumsi-asumsi analisis, seperti homogenitas ragam dan sebaran data normal.
+* **Asal-usul & Konsep *Tukey’s Ladder of Powers*:** Diperkenalkan pertama kali oleh Tukey pada tahun 1957 dengan istilah *Tukey's Ladder of Powers* atau *Bulging Rule*, yaitu metode untuk mengubah bentuk sebaran yang menjulur (*skewed*) menjadi normal atau mendekati normal menggunakan pendekatan pemangkatan.
+* **Tujuan Utama:** Salah satu tujuan utamanya adalah mengatasi masalah **heteroskedastisitas** (kondisi tidak adanya kesamaan varians sisaan untuk semua pengamatan) agar memenuhi asumsi **homoskedastisitas** yang disyaratkan dalam metode statistika klasik seperti analisis regresi dan analisis varians.
 ___
-### Sintesis Akhir: Bukti Empiris dan Rekomendasi Prosedural
-Transformasi data adalah prosedur fundamental untuk mencapai akurasi ilmiah. Ringkasan kenaikan efektivitas ( $R^2$ ) dari seluruh studi kasus menunjukkan konsistensi manfaat metodologis:
-* Yield Production:  +58,08% (Kenaikan paling signifikan)
-* Word Recall:  +41,90%
-* Wittink Marginal Cost:  +18,29%
-* Wind Speed:  +10,55%
-* Air Canon Ball:  +3,66%
-#### Prinsip Operasional bagi Praktisi  
-Sebagaimana ditekankan oleh Pardoe et al. (2021), transformasi sering kali merupakan proses  trial and error  yang iteratif. Dalam lingkungan perangkat lunak R, penggunaan fungsi dari package:stats (seperti lm()) dan visualisasi melalui plot() memudahkan proses validasi asumsi secara cepat.
+
+### B. Kapan Melakukan Transformasi Data?
+
+#### Pola Sebaran Normal (Distribusi Gaussian): 
+Pola sebaran data normal pertama kali dijelaskan oleh K.F. Gauss yang berbentuk genta atau lonceng (*bell-shaped*).
+
+#### Sifat-sifat Penting Distribusi Normal:
+1. Grafiknya selalu berada di atas sumbu $x$.
+2. Bentuknya simetris pada $x = \mu$.
+3. Mempunyai satu buah modus, yaitu $x = \mu$.
+4. Luas grafiknya sama dengan satu unit persegi, dengan rincian:
+    * Sekitar **68%** luasnya berada di antara rentang $\mu - \sigma$ dan $\mu + \sigma$.
+    * Sekitar **95%** luasnya berada di antara rentang $\mu - 2\sigma$ dan $\mu + 2\sigma$.
+    * Sekitar **99%** luasnya berada di antara rentang $\mu - 3\sigma$ dan $\mu + 3\sigma$.
+
+#### Deteksi Sederhana Sebaran/Kemiringan Data:
+1. Jika nilai tengah (*mean*) kurang dari dua kali deviasi standar, distribusinya cenderung miring (*skewed*).
+2. Jika populasi mengikuti distribusi normal, nilai tengah (*mean*) dan deviasi standar sampel bersifat independen (tidak saling bergantung). Apabila deviasi standar meningkat seiring dengan peningkatan *mean* di seluruh kelompok populasi, maka data tersebut berdistribusi miring.
+
+
+#### Pengujian Statistik:
+Normalitas data secara inferensial dapat diverifikasi menggunakan uji statistik formal seperti uji Kolmogorov-Smirnov.
+
+#### Fungsi Transformasi:
+Dilakukan apabila sebaran data tidak normal agar dapat memenuhi persyaratan alat uji parametrik (seperti regresi linier dan ANAVA). Distribusi normal bukanlah tujuan akhir, melainkan sarana agar kesimpulan dan inferensi statistik yang ditarik menjadi valid.
+___
+
+### C. Transformasi Data dan Normalitas
+
+**Asumsi Normalitas dalam Analisis:** Uji parametrik (uji-t, regresi, ANAVA) memerlukan asumsi normalitas. Khusus pada model regresi, asumsi normalitas yang mendasar berlaku pada komponen *error*/sisaan model, bukan keharusan bahwa setiap variabel individual harus berdistribusi normal (meskipun variabel yang normal mempermudah pemenuhan asumsi sisaan).
+
+**Penanganan Nilai Pencilan (*Outlier*):** Ketidaknormalan data sering kali dipicu oleh adanya pencilan (*outlier*).
+
+**Pemeriksaan Awal:** Perlu dipastikan apakah pencilan timbul akibat kesalahan penginputan/pencatatan data; jika ya, data harus dikoreksi.
+
+**Penghapusan Pencilan:** Jika bukan karena kesalahan input, pencilan hanya boleh dicatat riwayatnya dan dihapus apabila penyebabnya bersifat khusus dan diyakini tidak akan terulang kembali di masa mendatang. Namun, jika pencilan tersebut berpeluang terjadi lagi dan merupakan pengamatan berpengaruh, pencilan tidak boleh langsung dihapus sembarangan dan membutuhkan penanganan khusus.
+___
+
+## Kegiatan Belajar 2: Bentuk-bentuk Transformasi Data
+
+### Prinsip Umum Transformasi Data
+
+#### Sifat *Trial and Error*:
+Menurut Pardoe et al. (2021), proses pemilihan transformasi data pada dasarnya bersifat coba-coba (*trial and error*) sampai ditemukan model yang sesuai dan memenuhi asumsi.
+
+#### Kompleksitas Model:
+Menurut Draper dan Smith (1992), semakin rumit transformasi yang dipilih, interpretasi model yang dihasilkan akan semakin sulit karena memerlukan proses transformasi balik (*back-transformation*).
+
+#### Klasifikasi Berdasarkan Peubah yang Ditransformasi:
+1. Transformasi pada peubah prediktor ($X$).
+2. Transformasi pada peubah respons ($Y$).
+3. Transformasi simultan pada peubah prediktor ($X$) maupun peubah respons ($Y$).
+
+#### Klasifikasi Berdasarkan Bentuk Matematis:
+1. **Transformasi Logaritma:** Menggunakan logaritma natural (basis konstanta Euler, $\ln A$), logaritma basis 10 ($\log_{10} A$), maupun basis lainnya.
+2. **Transformasi Pangkat:** Mengubah peubah ke dalam fungsi pangkat ($B^* = B^n$), di mana $n$ dapat berupa bilangan bulat positif, pecahan, atau bilangan bulat negatif.
+
+#### Tujuan Penyesuaian Linieritas:
+Transformasi digunakan untuk membentuk hubungan linier dari hubungan non-linier intrinsik antara peubah respons dan prediktor, sehingga mencegah terjadinya pelanggaran asumsi pemodelan linier.
+___
+
+### Transformasi Logaritma
+
+#### Transformasi $y^* = \ln(y)$
+* **Bentuk Model Asal:** $y = e^\alpha e^{\beta x}$
+* **Linearisasi:**
+
+$$\ln(y) = \ln(e^\alpha e^{\beta x}) = \ln(e^\alpha) + \ln(e^{\beta x}) = \alpha \ln(e) + \beta x \ln(e)$$
+
+Karena $\ln(e) = 1$, model liniernya menjadi:
+
+$$\ln(y) = \alpha + \beta x \quad \text{atau} \quad y^* = \alpha + \beta x$$
+
+dengan $y^* = \ln(y)$.
+* **Bentuk Pola Diagram Pencar:** Menunjukkan kurva eksponensial yang melengkung tajam ke atas jika $\beta_1 > 0$, atau melengkung turun mendekati asimtot sumbu horizontal jika $\beta_1 < 0$.
+* **Ilustrasi Grafik:**
+```
+y
+^             / (Eksponensial Naik: Beta > 0)
+|            /
+|           /
+|         .'
+|       .'
+|_____.____________________> x
+
+```
+
+#### Transformasi $x^* = \ln(x)$
+* **Bentuk Model Asal:** $e^y = e^\alpha x^\beta$
+* **Linearisasi:**
+
+$$\ln(e^y) = \ln(e^\alpha x^\beta) = \ln(e^\alpha) + \ln(x^\beta)$$
+
+$$y \ln(e) = \alpha \ln(e) + \beta \ln(x)$$
+
+Karena $\ln(e) = 1$, model liniernya menjadi:
+
+$$y = \alpha + \beta \ln(x) \quad \text{atau} \quad y = \alpha + \beta x^*$$
+
+dengan $x^* = \ln(x)$.
+* **Bentuk Pola Diagram Pencar:** Menunjukkan kurva logaritmik yang laju perubahannya melambat seiring bertambahnya $x$ (kurva menaik untuk $\beta_1 > 0$ dan menurun untuk $\beta_1 < 0$).
+* **Ilustrasi Grafik:**
+```
+y
+^              ------ (Logaritmik Melandai: Beta > 0)
+|           ---
+|         --
+|       /
+|     /
+|____/_____________________> x
+
+```
+
+#### Transformasi $y^* = \ln(y)$ dan $x^* = \ln(x)$
+* **Bentuk Model Asal:** $y = e^\alpha x^\beta$
+* **Linearisasi:**
+
+$$\ln(y) = \ln(e^\alpha x^\beta) = \ln(e^\alpha) + \ln(x^\beta) = \alpha \ln(e) + \beta \ln(x)$$
+
+Karena $\ln(e) = 1$, model liniernya menjadi:
+
+$$\ln(y) = \alpha + \beta \ln(x) \quad \text{atau} \quad y^* = \alpha + \beta x^*$$
+
+dengan $y^* = \ln(y)$ dan $x^* = \ln(x)$.
+* **Bentuk Pola Diagram Pencar:** Mengikuti pola kurva daya/pangkat (*power curve*) dengan variasi kelengkungan tergantung pada nilai parameter $\beta_1$ (misal: $\beta_1 > 1$, $0 < \beta_1 < 1$, atau $\beta_1 < 0$).
+___
+
+### Transformasi Pangkat
+
+#### Transformasi Reciprocal (Kebalikan): $x^* = x^{-1} = \frac{1}{x}$
+* **Bentuk Persamaan Regresi:**
+
+$$y = \alpha + \frac{\beta}{x}$$
+
+* **Bentuk Pola Diagram Pencar:** Menampilkan pola hubungan hiperbolik di mana nilai $y$ mendekati nilai batas tertentu (asimtot) saat $x$ membesar (pola melengkung tajam ke bawah untuk $\beta_1 > 1$ atau melengkung ke atas mendekati asimtot untuk $\beta_1 < 0$).
+
+#### Transformasi Kuadratik: $x^* = x^2$
+* **Bentuk Persamaan Regresi:**
+
+$$y = \alpha + \beta x^2$$
+
+* **Bentuk Pola Diagram Pencar:** Memperlihatkan pola parabola kuadratik; kurva melengkung ke atas dengan laju yang semakin cepat jika hubungan bernilai positif, atau melengkung turun jika hubungan bernilai negatif.
+
+### Transformasi Akar: $y^* = y^{1/2} = \sqrt{y}$ atau $x^* = x^{1/2} = \sqrt{x}$
+* **Bentuk Persamaan Regresi:**
+
+$$y = \alpha + \beta \sqrt{x} \quad \text{atau} \quad \sqrt{y} = \alpha + \beta x$$
+
+* **Bentuk Pola Diagram Pencar:** Memperlihatkan pola kurva akar di mana perubahan nilai variabel melandai secara gradual seiring meningkatnya variabel bebas (baik untuk arah kurva positif maupun negatif).
+___

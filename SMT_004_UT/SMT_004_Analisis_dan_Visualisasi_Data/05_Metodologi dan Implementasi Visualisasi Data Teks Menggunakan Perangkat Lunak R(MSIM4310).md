@@ -1,85 +1,133 @@
----
-marp: true
-size: A4
----
-# Modul 5: Metodologi dan Implementasi Visualisasi Data Teks Menggunakan Perangkat Lunak R
-### Pendahuluan: Karakteristik dan Tantangan Data Teks
-Dalam diskursus sains data kontemporer, ledakan data tekstual telah memicu pergeseran epistemologis dari pembacaan kualitatif tradisional menuju analitik teks kuantitatif berskala besar. Kemampuan mengekstraksi informasi dari data tidak terstruktur ( unstructured data ) kini menjadi kompetensi krusial bagi analis data. Data teks menyimpan potensi informasi yang masif, namun tantangan utamanya terletak pada ketiadaan skema tetap ( fixed schema ) yang memungkinkan pengolahan data secara langsung.
-#### Definisi dan Sifat Data Teks
-Data teks dicirikan oleh variabilitasnya yang ekstrem, yang mencakup:
-* Ketidakteraturan Struktur:  Tidak seperti data relasional, teks tidak menempati baris dan kolom secara alami.
-* Diversitas Format:  Teks tersimpan dalam beragam format digital seperti PDF, docx, HTML, hingga RTF, yang masing-masing memerlukan teknik ekstraksi berbeda.
-* Variansi Linguistik:  Adanya perbedaan panjang dokumen, gaya bahasa (formal, imperatif, interogatif), serta dialek yang menuntut pendekatan pemrosesan bahasa alami (NLP) yang canggih.
-#### Analisis Tantangan Teknis
-Secara metodologis, data teks tidak dapat langsung dikenakan operasi statistik karena:
-* Impossibilitas Aritmetika:  Sebagai objek  string , teks tidak mendukung operasi matematika (penjumlahan atau rata-rata). Kita harus mereduksi teks melalui pendekatan  bag-of-words  untuk mengubahnya menjadi representasi numerik.
-* Ambiguitas Representasi:  Penggunaan variasi penulisan untuk entitas yang sama (misal: "yogya", "jogja", "yogyakarta") memerlukan prosedur standarisasi otomatis agar frekuensi data dapat dihitung secara akurat.
-* Masalah Skalabilitas:  Mengolah ribuan dokumen secara manual adalah mustahil, sehingga diperlukan alur kerja komputasi yang sistematis dimulai dari prapemrosesan hingga interpretasi.
-___
-### Taksonomi Metodologi Analisis Data Teks
-Keberhasilan analisis teks bergantung pada kerangka kerja ( framework ) standar untuk menjamin validitas hasil interpretasi. Tanpa metodologi yang ketat, visualisasi teks hanya akan menjadi artefak estetika tanpa nilai analitis.
-#### Lima Pilar Langkah Visualisasi
-Proses transformasi teks mengikuti jalur linier berikut:
-* Pengambilan Teks:  Akuisisi dokumen dari sumber internal atau eksternal ( web crawling ).
-* Normalisasi (Preprocessing):  Reduksi kebisingan data melalui pembersihan terstruktur.
-* Konversi ke Representasi Angka:  Transformasi teks menjadi matriks statistik.
-* Aplikasi Metode Analisis:  Implementasi algoritma (seperti clustering atau pemodelan topik).
-* Interpretasi Hasil:  Penarikan kesimpulan berdasarkan konteks dokumen asli.
-#### Representasi Data di R:  Character Vector  vs  Corpus
-Dalam lingkungan R, sangat penting untuk membedakan antara wadah penyimpanan dan objek analitis. Teks pada tingkat dasar disimpan sebagai  string  dalam  character vector .
-* Fungsi  `length()` : Mengukur jumlah elemen (dokumen) dalam vektor.
-* Fungsi  `nchar()` : Mengukur jumlah karakter individual dalam setiap elemen teks.
+# Modul 05: Visualisasi Data Teks
 
-Namun, untuk analisis yang lebih dalam, kita harus meningkatkan derajat data menjadi sebuah  Corpus , yaitu himpunan teks dokumen yang terstruktur dan siap olah.
-___
-### Komparasi Paket Perangkat Lunak: quanteda vs tm
-Ekosistem R menawarkan pustaka canggih untuk menangani data teks. Pemilihan alat harus didasarkan pada kebutuhan efisiensi komputasi dan kedalaman fitur transformasi.
-#### Bedah Paket quanteda
-`quanteda` menonjol dalam efisiensi ekstraksi fitur. Salah satu fitur unggulannya adalah fungsi `summary()` yang memberikan metrik analitis standar:
-* Types:  Jumlah kata unik dalam dokumen.
-* Tokens:  Total keseluruhan kata dalam dokumen.
-* Sentences:  Jumlah kalimat yang terdeteksi. Selain itu, fungsi `tokens()` memungkinkan ekstraksi  bag-of-words , sementara `corpus()` membangun fondasi dokumen yang solid.
-#### Bedah Paket tm
-Paket `tm` ( Text Mining ) merupakan pionir dalam transformasi dokumen. Menggunakan mesin eksekutor `tm_map()`, analis dapat menjalankan fungsi transformasi yang dipetakan melalui `getTransformations()`:
-| Fungsi Transformasi | Kegunaan Metodologis |
-| :--- | :--- |
-| `removeNumbers` | Mengeliminasi digit yang tidak memiliki nilai semantik |
-| `removePunctuation` | Menghapus tanda baca untuk membersihkan fitur |
-| `removeWords` | Menghilangkan kata-kata non-informatif (*stopwords*) |
-| `stemDocument` | Mereduksi kata ke bentuk dasar (reduksionis) |
-| `stripWhitespace` | Menormalisasi spasi untuk konsistensi matriks |
-___
-### Implementasi Prapemrosesan: Studi Kasus Metadata "Auto-Mpg"
-Dalam studi kasus menggunakan metadata dari  UCI Machine Learning Repository , kita dihadapkan pada realitas bahwa data mentah hasil `readLines()` sangatlah "kotor" dan tidak informatif.
-#### Ekstraksi dan Analisis  Case-Sensitivity
-Pada inspeksi awal menggunakan `dfm()` dengan argumen `tolower = FALSE`, kita menemukan inefisiensi statistik: kata "the" dan "The" dihitung sebagai dua fitur yang berbeda. Melalui `topfeatures()`, terlihat jelas bahwa tanpa prapemrosesan, fitur teratas didominasi oleh simbol (`.`, `:`, `(`, `)`) dan angka tahun (1993) yang tidak memberikan wawasan kualitatif.
-#### Tahapan Normalisasi Bertahap
-Normalisasi dilakukan secara ketat menggunakan fungsi `tokens()`:
-* Eliminasi Fitur Non-Teks:  Penggunaan `remove_symbols`, `remove_punct`, dan `remove_numbers` secara instan membersihkan matriks dari kebisingan simbolik.
-* Lowercasing:  Menstandarisasi seluruh teks menjadi huruf kecil untuk menyatukan frekuensi kata yang sama.
-* Eliminasi Stopwords:  Menggunakan `tokens_remove(stopwords("english"))` untuk membuang kata-kata fungsional (seperti "the", "in", "of") yang memiliki frekuensi tinggi namun nilai informasi rendah.
-* Stemming:  Menggunakan `tokens_wordstem()`. Penting dicatat bahwa teknik ini bersifat reduksionis; hasil seperti "continu" atau "discret" (dari  continuous  dan  discrete ) adalah disengaja untuk mencegah duplikasi konsep dasar dan memetakan berbagai variasi kata ke dalam satu fitur tunggal.
-___
-### Strategi Visualisasi Wordcloud (Awan Kata)
-Visualisasi teks bukan sekadar estetika, melainkan jembatan komunikasi strategis yang mengubah data kualitatif menjadi wawasan bisnis yang dapat ditindaklanjuti.
-#### Justifikasi Metodologis Wordcloud
-1. Kecepatan Kognitif:  Memahami isu utama (misal: komplain pelanggan) dalam hitungan detik.
-2. Efisiensi Manajerial:  Meringkas laporan ratusan halaman menjadi satu visualisasi.
-3. Demokratisasi Data:  Memperoleh pemahaman dari audiens non-teknis tanpa hambatan statistik.
-4. Ekstraksi Pola:  Identifikasi kata kunci dominan secara instan.
-5. Optimasi SEO:  Memetakan kata kunci potensial untuk strategi peningkatan trafik situs web.
-#### Teknis dan Kegagalan Visualisasi Tanpa Preprocessing
-Fungsi `textplot_wordcloud()` di R memerlukan parameter presisi. Penggunaan `random_order = FALSE` sangat krusial secara akademis karena menciptakan hierarki visual di mana kata dengan frekuensi tertinggi diposisikan di pusat.Perbandingan visual menunjukkan bahwa wordcloud dari data mentah (Gambar 5.1a pada sumber) hanyalah "awan tanda baca" yang tidak berguna. Hanya melalui prapemrosesan yang ketat, visualisasi dapat menampilkan struktur data yang bermakna (seperti kata "attribut", "dataset", dan "origin").
-___
-### Analisis Lanjut: Matriks Dokumen-Fitur dan Pengelompokan Hierarkis
-Analisis tingkat lanjut mengharuskan kita untuk menelaah struktur internal data melalui statistik matriks dan keterkaitan antar dokumen.
-#### Analisis Sparsity
-Matriks dokumen-fitur (dfm) yang telah diurutkan dengan `dfm_sort()` seringkali menunjukkan nilai  Sparsity  yang tinggi, misalnya  88.0% . Secara teknis, ini menunjukkan "kerenggangan" di mana 88.0% sel dalam matriks bernilai nol. Hal ini mengindikasikan bahwa sebagian besar kata bersifat unik bagi dokumen tertentu, yang menuntut efisiensi struktur data dalam R untuk menangani matriks besar tersebut.
-#### Hierarchical Clustering dan Ruang Multi-Dimensi
-Untuk mengelompokkan dokumen, kita menggunakan `dist()` untuk menghitung jarak dalam ruang multi-dimensi berdasarkan frekuensi fitur, diikuti oleh `hclust()`.
-#### Interpretasi Dendrogram
-Dendrogram atau plot pohon klasifikasi memberikan bukti statistik atas kemiripan konten. Sebagai contoh, pengelompokan `text20` dan `text21` dalam satu cabang yang sama menunjukkan bahwa kedua dokumen tersebut memiliki  feature vectors  (vektor fitur) dengan jarak terpendek. Hal ini membuktikan adanya kesamaan konten yang signifikan secara kuantitatif di antara keduanya.
-___
-### Kesimpulan
-Visualisasi data teks yang valid adalah hasil akhir dari proses  data engineering  yang disiplin dan ketat. Dari prapemrosesan (normalisasi, eliminasi  stopwords , dan  stemming ) hingga analisis statistik matriks, setiap langkah bertujuan untuk mengubah teks yang tidak terstruktur menjadi representasi numerik yang akurat. Perangkat lunak R, melalui ekosistem `quanteda` dan `tm`, menyediakan otomatisasi yang sangat kuat untuk prosedur ini, memungkinkan para analis data untuk mengubah kebisingan tekstual menjadi wawasan visual yang kredibel dan mendukung pengambilan keputusan strategis.
+## Kegiatan Belajar 1: Konsep Data Teks
 
+### Konsep Dasar Data Teks
+
+* **Karakteristik Alami:** Data teks merupakan sumber informasi potensial yang bersifat tidak terstruktur (*unstructured data*) dan bersumber dari format yang sangat bervariasi (PDF, docx, HTML, RTF, maupun hasil pindai digital).
+* **Tantangan Pengolahan:** Keanekaragaman gaya penulisan (*style*), tata bahasa, panjang dokumen, serta format entri kategori yang berbeda untuk entitas yang sama memerlukan standarisasi dan prosedur pembersihan otomatis.
+___
+
+### Dasar Visualisasi Data Teks
+
+**Prinsip Konversi:** Data teks diperlakukan sebagai *string* yang tidak dapat langsung dikenai operasi aritmetika. Untuk menganalisisnya, dokumen teks harus diurai menjadi unit komponen terkecil (kata-kata tunggal) agar dapat dikonversi ke dalam bentuk kuantitatif (frekuensi kemunculan, jumlah kombinasi kata, dan karakteristik numerik lainnya).
+
+#### Langkah-langkah dalam Visualisasi Analisis Data Teks:
+
+1\. **Pengambilan Teks:** Mengambil dokumen atau korpus teks yang akan dianalisis.
+
+2\. **Normalisasi Teks (*Preprocessing*):** Menghilangkan rincian teks yang tidak relevan melalui tahapan:
+* *Case Folding:* Mengonversi seluruh huruf menjadi huruf kecil (*upper case to lower case*) untuk menghindari perbedaan perhitungan akibat sensitivitas huruf kapital (*case sensitive*).
+* *Pembersihan Karakter:* Menghapus angka, simbol, dan tanda baca (*punctuation*) yang tidak memuat makna esensial.
+* *Penguraian (Parsing/Tokenisasi):* Memecah struktur kalimat menjadi daftar kata-kata tunggal (*tokens*).
+* *Penghapusan Kata Henti (Stopwords Removal):* Mengeliminasi kata-kata umum yang sering muncul tetapi tidak membawa informasi tematik spesifik (misalnya kata hubung atau partikel).
+* *Stemming:* Menghilangkan imbuhan (awalan, akhiran, infiks) untuk mengembalikan setiap kata ke bentuk kata dasarnya (*stem/root word*) agar bentuk variasi kata tidak terhitung secara terpisah.
+
+3\. **Konversi Numerik:** Mengubah teks yang telah dinormalisasi menjadi representasi matriks atau angka.
+
+4\. **Penerapan Metode Analisis Data:** Menerapkan algoritma atau metode statistika pada data hasil konversi.
+
+5\. **Interpretasi Hasil:** Menginterpretasikan luaran yang diperoleh sesuai dengan konteks dokumen aslinya.
+
+> **Ilustrasi Alur Prapemrosesan Teks (*Preprocessing Pipeline*):**
+> ```text
+> "Data Mining adalah Ilmu yang HEBAT!" (Teks Asli)
+>                 │
+>                 ▼  (Case Folding & Cleaning)
+> "data mining adalah ilmu yang hebat"
+>                 │
+>                 ▼  (Tokenisasi / Parsing)
+> ["data", "mining", "adalah", "ilmu", "yang", "hebat"]
+>                 │
+>                 ▼  (Stopwords Removal & Stemming)
+> ["data", "mining", "ilmu", "hebat"] (Fitur Bersih Siap Analisis)
+> 
+> ```
+> 
+> 
+
+#### Struktur Representasi Data Teks:
+
+* **Vektor Karakter (*Character Vector*):** Representasi dasar teks dalam bentuk larik *string*.
+* **Token (*Bag-of-Words* / *Multiset*):** Kumpulan kata-kata tunggal yang diekstrak dari vektor karakter, di mana tata bahasa dan urutan kata diabaikan namun frekuensi kemunculannya tetap dipertahankan.
+* **Korpus (*Corpus*):** Kumpulan atau himpunan terstruktur dari beberapa dokumen teks yang memuat informasi metadata pengamatan.
+___
+
+### Implementasi ke Dokumen: Matriks Dokumen-Fitur (*Document-Feature Matrix* / DFM)
+
+**Konsep DFM:** Struktur matriks dua dimensi yang merangkum data teks, di mana setiap **baris** mewakili satu dokumen dan setiap **kolom** mewakili fitur (*feature*) berupa kata tunggal hasil ekstraksi.
+
+**Fungsi DFM:** Digunakan untuk mengidentifikasi fitur kata yang paling sering muncul (*top features*) di dalam dokumen.
+
+**Pentingnya Tahap Prapemrosesan:** Tanpa proses normalisasi yang tepat, matriks DFM akan didominasi oleh derau (*noise*) seperti tanda baca, angka, atau kata henti (*stopwords*) yang tidak memberikan informasi substansial.
+
+> **Ilustrasi Bentuk Matriks Dokumen-Fitur (DFM):**
+> ```text
+>               | Kata 1 (data) | Kata 2 (analisis) | Kata 3 (model) |
+> --------------+---------------+-------------------+----------------+
+> Dokumen 1     |       2       |         1         |       0        |
+> Dokumen 2     |       0       |         3         |       1        |
+> Dokumen 3     |       1       |         0         |       2        |
+> 
+> ```
+> 
+> 
+___
+
+## Kegiatan Belajar 2: Visualisasi Data Teks
+
+### Konsep dan Prinsip Kerja *Wordcloud* (Awan Kata)
+
+**Definisi:** Bentuk representasi grafis sederhana yang menyajikan kumpulan kata-kata penting penyusun dokumen dalam wujud awan kata.
+
+**Prinsip Visual:** Ukuran font dan ketebalan tampilan setiap kata berbanding lurus dengan frekuensi kemunculannya di dalam dokumen (semakin sering suatu kata disebut, semakin besar dan mencolok kata tersebut ditampilkan).
+
+**Parameter Visualisasi:** Tampilan awan kata dapat diperkaya melalui variasi orientasi/rotasi kata serta gradasi warna (*palette*) untuk memberikan penekanan visual yang lebih informatif.
+
+> **Ilustrasi Konseptual *Wordcloud*:**
+> ```text
+>        [ PENDIDIKAN ]
+>    ANALISIS      data
+> STATISTIKA   [ MATA ]   belajar
+>      MODEL    modul   REGRESI
+> 
+> ```
+> 
+> 
+> *(Kata dengan ukuran huruf lebih besar mencerminkan frekuensi kemunculan yang lebih tinggi di dalam korpus teks).*
+___
+
+### Manfaat dan Alasan Penggunaan *Wordcloud*
+
+Visualisasi berbasis teks menawarkan cara cepat dan efisien untuk mengekstrak intisari data kualitatif dibandingkan menelaah tabel numerik atau membaca ratusan halaman dokumen:
+
+1. **Memahami Masalah Pelanggan:** Mengidentifikasi secara instan keluhan, kebutuhan, atau topik utama yang berulang kali disampaikan pelanggan melalui media sosial atau ulasan terbuka.
+2. **Mempercepat Pelaporan Bisnis:** Membantu pembuat kebijakan menangkap poin-poin krusial dari laporan panjang secara cepat tanpa harus membaca narasi baris demi baris.
+3. **Menyederhanakan Teknik Data:** Menyajikan temuan kualitatif dalam format yang mudah dipahami oleh audiens non-teknis tanpa memerlukan penjelasan statistika yang rumit.
+4. **Menelusuri Pola dalam Data:** Membantu mengidentifikasi pola kunci serta keterkaitan istilah penting dari data teks yang sulit dirangkum oleh grafik numerik konvensional.
+5. **Optimasi Mesin Pencari (*Search Engine Optimization*):** Menemukan kata kunci populer yang sering dicari pengguna untuk meningkatkan keterlihatan informasi institusi atau perusahaan.
+___
+
+### Analisis Lanjutan Struktur Teks
+
+1\. **Kerapatan Matriks Dokumen-Fitur (*Sparsity*)**
+* Matriks DFM umumnya bersifat *sparse* (memiliki proporsi sel bernilai nol yang sangat tinggi), yang menunjukkan bahwa sebagian besar kata hanya muncul pada dokumen-dokumen tertentu dan tidak tersebar merata di seluruh korpus.
+
+2\. **Pengelompokan Hierarki Teks (*Hierarchical Clustering*)**
+* **Konsep:** Metode untuk mengelompokkan dokumen berdasarkan kedekatan atau kemiripan fitur kata yang dikandungnya menggunakan matriks jarak (*distance matrix*).
+* **Dendrogram (*Cluster Dendrogram*):** Diagram pohon yang memvisualisasikan tingkatan kesamaan antardokumen. Dokumen yang berada dalam cabang yang sama menunjukkan tingkat kemiripan konten yang lebih tinggi.
+
+> **Ilustrasi Struktur *Cluster Dendrogram*:**
+> ```text
+> Tinggi 
+>   ▲       ┌─── Doc 1 (Topik Statistik)
+>   │   ┌───┤
+>   │   │   └─── Doc 2 (Topik Statistik)
+>   │   │
+>   └───┴─────── Doc 3 (Topik Geografi)
+>       └─── Jarak Kemiripan Antarkelompok ──►
+> 
+> ```
+> 
+>
+___

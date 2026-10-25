@@ -78,8 +78,6 @@ Penggunaan warna harus diatur agar tidak menimbulkan ketidaknyamanan mata dan me
 | Hijau          | Hitam (100%), Cyan (81%)              |
 | Biru           | Putih (81%), Kuning (62%)             |
 
-![alt text](image.png)
-
 ### Indra Pendengaran
 Pendengaran adalah indera terpenting kedua setelah penglihatan dalam IMK, terutama untuk umpan balik (feedback) multimedia.
 * **Frekuensi dan Sensitivitas**

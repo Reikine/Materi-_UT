@@ -1,5 +1,4 @@
 # Jaringan Komputer
-![alt text](/asset/image.png)
 ___
 
 ## Modul 1: Arstektur, Sejarah, Standarisasi, dan Tren

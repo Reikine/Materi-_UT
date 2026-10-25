@@ -6,33 +6,29 @@
   --vp-layout-max-width: 100% !important;
 }
 
-.VPNavBarTitle {
+.VPNavBarTitle,
+.VPFlyout,
+.toggle-sidebar,
+.VPLocalNav {
   display: none !important;
 }
 
 .VPNavBar {
-  border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 24px !important;
+  height: var(--vp-nav-height) !important;
+  background-color: var(--vp-c-bg) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
 .VPNavBar::after {
-  content: '';
-  position: fixed !important;
-  top: var(--vp-nav-height) !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100vw !important;
-  height: 1px !important;
-  background-color: var(--vp-c-divider) !important;
-  z-index: 100 !important;
-  pointer-events: none;
+  display: none !important;
 }
 
-
 #native-sidebar-toggler {
-  position: fixed !important;
-  top: 12px !important;
-  left: 20px !important;
-  z-index: 100 !important;
+  position: static !important;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   color: var(--vp-c-text-2);
@@ -42,7 +38,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   margin: 0 !important;
 }
@@ -51,6 +47,13 @@
   border-color: #ef4444;
   color: #ef4444;
   background: rgba(239, 68, 68, 0.08);
+}
+
+.VPNavBar .content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px;
+  margin: 0 !important;
 }
 
 .VPContent, 
@@ -90,18 +93,4 @@ body.sidebar-collapsed .VPContent {
 ::selection {
   background-color: rgba(239, 68, 68, 0.2);
   color: inherit;
-}
-
-.VPNavBarMenu, 
-.VPNavAside, 
-.toggle-sidebar, 
-.VPFlyout,
-.menu-icon {
-  display: none !important;
-}
-
-#native-sidebar-toggler {
-  display: inline-flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
 }

@@ -3,7 +3,6 @@ import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
   title: "",
-  base: '/Materi-_UT/',
   markdown: {
     config: (md) => {
       // @ts-ignore

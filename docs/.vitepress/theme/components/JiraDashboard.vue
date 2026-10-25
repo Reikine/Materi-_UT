@@ -72,7 +72,6 @@ const navigateTo = (link) => {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
 }
 
-/* Efek hover dengan border dan bayangan merah elegan */
 .trello-card:hover {
   border-color: #ef4444;
   transform: translateY(-3px);
@@ -93,7 +92,6 @@ const navigateTo = (link) => {
   margin-bottom: 10px;
 }
 
-/* Badge ID dengan sentuhan merah minimalis */
 .card-badge-id {
   font-size: 0.7rem;
   font-weight: 600;
@@ -135,7 +133,6 @@ const navigateTo = (link) => {
   align-items: center;
 }
 
-/* Teks indikator akses materi menjadi warna merah */
 .status-indicator {
   font-size: 0.78rem;
   font-weight: 500;

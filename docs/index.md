@@ -27,7 +27,7 @@ layout: page
   {
     title: 'Semester 4',
     description: 'Sistem informasi, analisis perancangan, dan pengembangan web.',
-    link: '/Materi-_UT/SMT_004_UT/'
+    link: 'SMT_004_UT/'
   },
   {
     title: 'Semester 5',

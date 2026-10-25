@@ -111,10 +111,7 @@ export default defineConfig({
             { text: 'Modul 03', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/03' },
             { text: 'Modul 04', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/04' },
             { text: 'Modul 05', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/05' },
-            { text: 'Modul 06', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/06' },
-            { text: 'Modul 07', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/07' },
-            { text: 'Modul 08', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/08' },
-            { text: 'Modul 09', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/09' }
+            { text: 'Modul 06', link: '/SMT_004_UT/SMT_004_Proses_Bisnis/06' }
           ]
         }
       ],

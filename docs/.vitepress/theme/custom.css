@@ -91,3 +91,17 @@ body.sidebar-collapsed .VPContent {
   background-color: rgba(239, 68, 68, 0.2);
   color: inherit;
 }
+
+.VPNavBarMenu, 
+.VPNavAside, 
+.toggle-sidebar, 
+.VPFlyout,
+.menu-icon {
+  display: none !important;
+}
+
+#native-sidebar-toggler {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

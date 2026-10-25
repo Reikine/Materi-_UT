@@ -4,7 +4,7 @@ Repositori pembelajaran komprehensif untuk mata kuliah **Perilaku Organisasi**. 
 
 ---
 
-## 📖 Deskripsi Mata Kuliah
+## Deskripsi Mata Kuliah
 
 **Perilaku Organisasi (PO)** adalah bidang studi terapan (*applied science*) yang menginvestigasi dampak perilaku individu, kelompok, dan struktur organisasi terhadap pola kerja serta dinamika manusia di dalam organisasi, dengan tujuan utama meningkatkan efektivitas, produktivitas, dan kepuasan kerja organisasi.
 

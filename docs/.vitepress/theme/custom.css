@@ -1,0 +1,102 @@
+/* ==========================================================================
+   THEME: MERAH-PUTIH & CLEAN FULL-WIDTH WORKSPACE
+   ========================================================================== */
+
+/* 1. Variabel Warna Brand Utama (Override Biru ke Merah) */
+:root {
+  --vp-c-brand-1: #ef4444 !important;
+  --vp-c-brand-2: #dc2626 !important;
+  --vp-c-brand-3: #b91c1c !important;
+  --vp-c-brand-soft: rgba(239, 68, 68, 0.12) !important;
+  --vp-layout-max-width: 100% !important;
+}
+
+/* 2. Sembunyikan Judul Default VitePress di Kiri Atas */
+.VPNavBarTitle {
+  display: none !important;
+}
+
+/* 3. Posisi Navbar & Tombol Toggle Presisi di Pojok Kiri */
+.VPNavBar {
+  border-bottom: none !important;
+}
+
+/* 2. Buat garis pembatas baru yang membentang penuh 100% layar */
+.VPNavBar::after {
+  content: '';
+  position: fixed !important;
+  top: var(--vp-nav-height) !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+  height: 1px !important;
+  background-color: var(--vp-c-divider) !important;
+  z-index: 100 !important;
+  pointer-events: none;
+}
+
+
+#native-sidebar-toggler {
+  position: fixed !important;
+  top: 12px !important;
+  left: 20px !important;
+  z-index: 100 !important;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 !important;
+}
+
+#native-sidebar-toggler:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+}
+/* 4. Lebar Konten Utama Full-Width Maksimal */
+.VPContent, 
+.VPDoc, 
+.VPDoc .container, 
+.VPDoc .content {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
+
+/* 5. Animasi Pelipatan Sidebar */
+.VPSidebar {
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out !important;
+}
+
+body.sidebar-collapsed .VPSidebar {
+  transform: translateX(-100%) !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.sidebar-collapsed .VPContent {
+  padding-left: 36px !important;
+}
+
+/* 6. Footer & Seleksi Teks */
+.VPDoc footer .prev-next .link:hover {
+  border-color: #ef4444 !important;
+}
+
+.VPDoc footer .prev-next .link:hover .text {
+  color: #ef4444 !important;
+}
+
+::selection {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: inherit;
+}

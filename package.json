@@ -1,0 +1,29 @@
+{
+  "name": "materi-_ut",
+  "version": "1.0.0",
+  "description": "Repository ini berisi kumpulan catatan kuliah, rangkuman modul, dan materi pembelajaran untuk perkuliahan di Universitas Terbuka (UT), khususnya mencakup materi Semester 3 dan Semester 4.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reikine/Materi-_UT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Reikine/Materi-_UT/issues"
+  },
+  "homepage": "https://github.com/Reikine/Materi-_UT#readme",
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.44"
+  }
+}

@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from 'vitepress'
+import { useRouter, withBase } from 'vitepress'
 
 const router = useRouter()
 
@@ -12,7 +12,7 @@ defineProps({
 
 const navigateTo = (link) => {
   if (link && link !== '#') {
-    router.go(link)
+    router.go(withBase(link))
   }
 }
 </script>

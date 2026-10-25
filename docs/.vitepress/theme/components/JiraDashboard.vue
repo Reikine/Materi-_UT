@@ -12,7 +12,7 @@ defineProps({
 
 const navigateTo = (link) => {
   if (link && link !== '#') {
-    window.location.href = withBase(link)
+    router.go(withBase(link))
   }
 }
 </script>

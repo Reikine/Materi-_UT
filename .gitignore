@@ -34,3 +34,5 @@ docs/.vitepress/cache
 *.njsproj
 *.sln
 *.swp
+
+docs/SMT_003_UT/

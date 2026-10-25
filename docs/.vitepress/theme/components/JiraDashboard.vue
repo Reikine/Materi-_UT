@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from 'vitepress'
+import { useRouter, withBase1 } from 'vitepress'
 
 const router = useRouter()
 

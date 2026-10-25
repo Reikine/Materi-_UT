@@ -17,7 +17,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding: 0 24px !important;
+  padding: 0 36px !important; /* Disamakan dengan padding konten dokumen supaya sejajar */
   height: var(--vp-nav-height) !important;
   background-color: var(--vp-c-bg) !important;
   border-bottom: 1px solid var(--vp-c-divider) !important;

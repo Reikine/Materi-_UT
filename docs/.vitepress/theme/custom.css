@@ -21,6 +21,8 @@
   height: var(--vp-nav-height) !important;
   background-color: var(--vp-c-bg) !important;
   border-bottom: 1px solid var(--vp-c-divider) !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .VPNavBar::after {

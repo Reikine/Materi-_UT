@@ -1,28 +1,33 @@
 {
-  "name": "materi-_ut",
-  "version": "1.0.0",
-  "description": "Repository ini berisi kumpulan catatan kuliah, rangkuman modul, dan materi pembelajaran untuk perkuliahan di Universitas Terbuka (UT), khususnya mencakup materi Semester 3 dan Semester 4.",
-  "main": "index.js",
+  "name": "materi-ut",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Reikine/Materi-_UT.git"
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "katex": "^0.19.1",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-math": "^6.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Reikine/Materi-_UT/issues"
-  },
-  "homepage": "https://github.com/Reikine/Materi-_UT#readme",
   "devDependencies": {
-    "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "^1.6.4",
-    "vue": "^3.5.44"
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

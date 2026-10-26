@@ -1,38 +1,51 @@
-# Logs
-logs
-*.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+.pnpm-debug.log*
 
-# Diagnostic output from prettier
-.prettier-output
+# env files (can opt-in for committing if needed)
+.env*
 
-# Dependency directories
-node_modules
-jspm_packages
+# vercel
+.vercel
 
-# Optional Sass/LESS cache
-.sass-cache
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm run build'
-docs/.vitepress/dist
-docs/.vitepress/cache
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-docs/SMT_003_UT/
+# ignore folder semester lain yang masih kosong
+content/SMT_01_UT/
+content/SMT_02_UT/
+content/SMT_03_UT/
+content/SMT_05_UT/
+content/SMT_06_UT/
+content/SMT_07_UT/
+content/SMT_08_UT/
+content/Project Robotika/

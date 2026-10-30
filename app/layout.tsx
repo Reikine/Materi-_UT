@@ -13,6 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" suppressHydrationWarning>
+      <head>
+        {/* CSS KaTeX + Font CDN Resmi */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="bg-slate-50 dark:bg-[#0d1117] text-slate-900 dark:text-slate-100 antialiased min-h-screen flex flex-col">
         <ThemeProvider>
           {children}
@@ -20,8 +28,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-
-  <footer className="py-6 mt-auto text-center text-xs text-slate-400 border-t border-slate-200/80">
-    Sistem Informasi &bull; Universitas Terbuka &copy; 2026 Reikine
-  </footer>
 }

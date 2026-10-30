@@ -1,4 +1,4 @@
-# MODUL 03: ANALISIS SISTEM
+# Modul 03: Analisis Sistem
 
 ## Bagian 01: Penentuan Keluaran dan Kebutuhan
 

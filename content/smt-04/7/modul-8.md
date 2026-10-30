@@ -1,145 +1,192 @@
-# MODUL 08: COMPONENTS, CANVAS, DAN ANIMASI
+# Modul 08: Components, Canvas, dan Animasi 
 
-## Bagian 01: Components
+## Bagian 01: Modular Components
 
-### Template
+### 1. Structure & Data Isolation
 
-* **Pengertian:** Struktur HTML atau kerangka visual yang mendefinisikan tampilan dari sebuah *Component* di Vue.js.
-* Di dalam komponen tunggal (*Single File Component*), bagian `<template>` berfungsi sebagai wadah utama elemen UI yang akan dirender ke DOM.
-___
-### Multiline
+Komponen adalah blok pembangun UI yang terisolasi dan dapat digunakan kembali (*reusable*).
 
-* Teknik penulisan templat HTML yang panjang atau terdiri dari banyak baris (*multi-line template*).
-* Dalam JavaScript modern atau file `.vue`, template multi-baris dapat ditulis dengan rapi menggunakan bantuan *template literals* (tanda backtick ```) atau secara langsung di dalam blok tag `<template>` pada file `.vue` tanpa khawatir masalah pemenggalan baris.
-___
-### Data Property pada Components
+* Multi-line Template: Di dalam Single File Component (`.vue`), struktur HTML ditulis di dalam blok `<template>`.
+* Data Function Isolation: Di dalam komponen, `data` wajib berupa fungsi yang mengembalikan objek (`data() { return { ... } }`). Hal ini memastikan setiap kali komponen digunakan di tempat berbeda, komponen tersebut memiliki salinan state reaktif tersendiri dan tidak saling berbenturan.
 
-* Berbeda dengan komponen utama (root instance) di mana `data` bisa berupa objek biasa, **di dalam komponen modular Vue, `data` wajib berupa sebuah fungsi (`function`) yang mengembalikan objek**.
-* *Alasan:* Hal ini memastikan setiap instance komponen yang digunakan berulang kali memiliki salinan data reaktifnya masing-masing secara independen (tidak saling memengaruhi).
+### 2. Komunikasi Antar Komponen (Props & $emit)
+
+Prinsip utama komunikasi komponen Vue adalah **Props Down, Events Up**.
+
+* Props (Parent to Child): Mengirim data dari komponen induk ke komponen anak secara satu arah (*one-way data flow*).
 ```javascript
+// Child Component (Options API dengan Validasi Prop)
 export default {
-  data() {
-    return {
-      pesan: "Halo dari komponen!"
+  props: {
+    judulArtikel: {
+      type: String,
+      required: true
+    },
+    jumlahSuka: {
+      type: Number,
+      default: 0
     }
   }
 }
 
 ```
-___
-### Computed, Methods, dan Watcher Property pada Components
 
-Seluruh properti pengolahan logika Vue juga berlaku dan berjalan di dalam komponen secara mandiri:
 
-**Contoh penggunaan Computed Property pada components:** Memproses data lokal komponen secara reaktif dan efisien menggunakan *caching*.
-```javascript
-computed: {
-  formatNamaLengkap() {
-    return `${this.namaDepan} ${this.namaBelakang}`.toUpperCase();
-  }
-}
-
-```
-**Contoh penggunaan Methods Property pada components:** Menjalankan fungsi instruksi, *event handler*, atau tindakan aksi spesifik di dalam komponen.
-```javascript
-methods: {
-  tambahItem() {
-    this.counter++;
-  }
-}
-
-```
-**Contoh penggunaan Watcher Property pada components:** Memantau perubahan variabel data lokal di dalam komponen untuk memicu efek samping (*side effects*).
-```javascript
-watch: {
-  statusLogin(valBaru) {
-    console.log("Status login komponen berubah menjadi:", valBaru);
-  }
-}
-
-```
-___
-### Slot
-
-**Pengertian:** Mekanisme distribusi konten (*content distribution*) di Vue.js yang memungkinkan komponen induk (*parent component*) mengirim atau menyisipkan konten HTML/teks ke dalam kerangka komponen anak (*child component*).
-* Membuat komponen menjadi jauh lebih fleksibel dan dapat digunakan kembali (*reusable*).
+* Events / $emit (Child to Parent): Mengirim pemicu event atau data dari komponen anak kembali ke komponen induk.
 ```html
-<!-- Di dalam Child Component -->
+<!-- Di Child Component -->
+<button @click="$emit('tambah-suka', idArtikel)">Sukai</button>
+
+<!-- Di Parent Component -->
+<ChildComponent @tambah-suka="prosesTambahSuka" />
+
+```
+
+
+
+### 3. Slot System (Distribusi Konten)
+
+Slot digunakan untuk menyisipkan struktur HTML kustom dari komponen induk ke dalam komponen anak.
+
+* Default Slot: Menyediakan area default untuk disisipi konten.
+* Named Slots: Menyisipkan konten ke area spesifik menggunakan sintaks `v-slot:nama` atau `#nama`.
+
+```html
+<!-- Child Component (CardContainer.vue) -->
 <div class="card">
-  <slot>Konten default jika slot kosong</slot>
+  <header><slot name="header"></slot></header>
+  <main><slot></slot></main>
 </div>
 
-```
-___
-### Props
+<!-- Parent Component -->
+<CardContainer>
+  <template #header>
+    <h3>Judul Kartu</h3>
+  </template>
+  <p>Ini adalah isi konten utama yang masuk ke default slot.</p>
+</CardContainer>
 
-* **Pengertian:** Mekanisme komunikasi data **satu arah (one-way data binding)** dari komponen induk (*parent*) ke komponen anak (*child*).
-* Anak komponen menerima data melalui atribut `props`, sehingga komponen tersebut dapat bersifat dinamis dan menerima data berbeda dari induknya.
-```javascript
-// Di Child Component
-export default {
-  props: ['judulArtikel', 'penulis']
+```
+
+---
+
+## Bagian 02: HTML5 Canvas di Vue.js
+
+Akses elemen Canvas paling efisien dilakukan dengan memanfaatkan **Template Ref** dan *lifecycle hook* `onMounted`, sehingga pengaksesan konteks 2D dilakukan setelah DOM fisik dirender sepenuhnya.
+
+### Integrasi Canvas dengan Composition API
+
+```html
+<template>
+  <canvas ref="canvasRef" width="400" height="300"></canvas>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const canvasRef = ref(null)
+
+onMounted(() => {
+  const canvas = canvasRef.value
+  const ctx = canvas.getContext('2d')
+
+  // 1. Menggambar Persegi Padat & Kerangka
+  ctx.fillStyle = '#3498db'
+  ctx.fillRect(10, 10, 100, 100) // fillRect(x, y, width, height)
+
+  ctx.strokeStyle = '#2ecc71'
+  ctx.lineWidth = 3
+  ctx.strokeRect(120, 10, 100, 100)
+
+  // 2. Menggambar Path & Poligon (Segitiga)
+  ctx.beginPath()
+  ctx.moveTo(250, 110)
+  ctx.lineTo(300, 10)
+  ctx.lineTo(350, 110)
+  ctx.closePath()
+  ctx.fillStyle = '#e74c3c'
+  ctx.fill()
+
+  // 3. Menggambar Arc (Lingkaran Penuh)
+  ctx.beginPath()
+  ctx.arc(60, 200, 40, 0, Math.PI * 2) // arc(x, y, radius, startAngle, endAngle)
+  ctx.fillStyle = '#f1c40f'
+  ctx.fill()
+})
+</script>
+
+```
+
+---
+
+## Bagian 03: System Transisi dan Animasi
+
+Vue menyediakan komponen pembungkus `<Transition>` untuk memberikan animasi masuk (*enter*) dan keluar (*leave*) saat elemen muncul atau hilang (`v-if` / `v-show`).
+
+### 1. Struktur Kelas CSS Transisi Vue 3
+
+Ketika `<Transition name="fade">` digunakan, Vue akan secara otomatis menerapkan 6 kelas CSS berikut:
+
+* `fade-enter-from`: Kondisi awal saat elemen mulai masuk.
+* `fade-enter-active`: Durasi, delay, dan kurva efek saat proses masuk berjalan.
+* `fade-enter-to`: Kondisi akhir saat elemen selesai masuk.
+* `fade-leave-from`: Kondisi awal saat elemen mulai keluar.
+* `fade-leave-active`: Durasi, delay, dan kurva efek saat proses keluar berjalan.
+* `fade-leave-to`: Kondisi akhir saat elemen selesai keluar.
+
+Contoh CSS Fade Transition:
+
+```css
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 ```
-___
 
-## Bagian 02: Canvas
+### 2. Animasi Kompleks dengan Keyframes
 
-Elemen `<canvas>` HTML5 dikombinasikan dengan JavaScript di Vue untuk merender grafik, bentuk geometris, dan manipulasi gambar secara dinamis.
+Untuk animasi multi-langkah, gunakan properti CSS `animation` di dalam kelas `-active`.
 
-### Custom Directive
-
-* Membuat arahan kustom (*custom directive*) di Vue.js untuk mengontrol manipulasi DOM secara langsung pada elemen `<canvas>`.
-* *Contoh:* Mendaftarkan direktif `v-canvas-draw` untuk menginisialisasi konteks 2D saat komponen dimuat.
-___
-### Rectangles (Persegi & Kotak)
-
-* Menggambar bentuk persegi di atas area *canvas* menggunakan API konteks 2D (`canvas.getContext('2d')`).
-* Metode utama:
-* `ctx.fillRect(x, y, width, height)`: Membuat kotak padat terisi warna.
-* `ctx.strokeRect(x, y, width, height)`: Membuat kerangka kotak (garis tepi).
-* `ctx.clearRect(x, y, width, height)`: Menghapus area tertentu di dalam canvas.
-___
-### Paths (Jalur / Garis Kompleks)
-
-Untuk membuat bentuk bebas atau geometri khusus, kita menggunakan alur jalur (*path*): `ctx.beginPath()`, `ctx.moveTo()`, `ctx.lineTo()`, dan `ctx.stroke()` / `ctx.fill()`.
-
-* **Poligon:** Menggabungkan beberapa titik koordinat garis (`lineTo`) untuk membentuk bangun segi banyak (seperti segitiga, trapesium, atau bintang) lalu menutup jalurnya dengan `ctx.closePath()`.
-* **Arc (Busur & Lingkaran):** Menggambar kurva melingkar atau lingkaran penuh menggunakan metode `ctx.arc(x, y, radius, sudutMulai, sudutSelesai)`.
-___
-
-## Bagian 03: Animasi
-
-Vue.js menyediakan sistem transisi dan animasi bawaan yang sangat mulus menggunakan elemen pembungkus `<transition>` dan `<transition-group>`.
-
-### Transition (Transisi Elemen Tunggal)
-
-* Digunakan untuk memberikan efek animasi peralihan (seperti efek *fade*, *slide*, atau *scale*) saat sebuah elemen dimasukkan (*enter*) atau dihapus (*leave*) dari DOM (misalnya dikontrol oleh `v-if` atau `v-show`).
-* Vue otomatis menyisipkan kelas CSS transisi secara berurutan (`v-enter-active`, `v-leave-active`, dll.).
 ```html
-<transition name="fade">
-  <p v-if="tampil">Teks ini memiliki efek transisi fade.</p>
-</transition>
+<template>
+  <button @click="tampil = !tampil">Toggle Animasi</button>
+  <Transition name="bounce">
+    <div v-if="tampil" class="box">Elemen Memantul</div>
+  </Transition>
+</template>
 
-```
-___
-### Animation (Animasi Kompleks berbasis CSS Keyframes)
-
-* Menggabungkan transisi Vue dengan aturan `@keyframes` pada CSS untuk membuat animasi multi-langkah yang lebih kompleks (seperti efek memantul, berputar, atau berdenyut).
-* *Contoh CSS Keyframes:*
-```css
+<style>
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
 .bounce-leave-active {
   animation: bounce-in 0.5s reverse;
 }
+
 @keyframes bounce-in {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.25); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+</style>
 
 ```
-___

@@ -1,4 +1,4 @@
-# MODUL 08: PROSES ORGANISASI: STRUKTUR DAN KULTUR
+# Modul 08: Proses Organisasi: Struktur dan Budaya Organisasi
 
 ## Bagian 1: Struktur Organisasi
 

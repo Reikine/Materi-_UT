@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import 'katex/dist/katex.min.css';
 
 
 /* Custom scrollbar tipis ala Jira/Trello */
@@ -16,4 +15,36 @@
 }
 .dark ::-webkit-scrollbar-thumb {
   background: #475569;
+}
+
+/* Styling Kustom KaTeX agar menyatu dengan Tailwind */
+.katex-display {
+  margin: 1.25em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
+.katex {
+  font-size: 1.05em;
+  color: #0f172a; /* slate-900 */
+}
+
+/* Memastikan garis pecahan terlihat jelas */
+.katex .frac-line {
+  border-bottom-width: 1.2px !important;
+}
+
+/* Memperbesar ukuran font KaTeX agar lebih mudah dibaca */
+.katex {
+  font-size: 1.2em !important;
+  color: #0f172a;
+}
+
+/* Memperbesar dan memberi ruang untuk rumus blok ($$...$$) */
+.katex-display {
+  font-size: 1.25em !important;
+  margin: 1.25em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
 }

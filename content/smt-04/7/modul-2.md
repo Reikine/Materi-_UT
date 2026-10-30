@@ -1,165 +1,171 @@
-# MODUL 02: CSS DAN JAVASCRIPT
+# Modul 02: CSS dan JavaScript
 
 ## Bagian 01: CSS (*Cascading Style Sheets*)
 
-### Apa itu CSS
+### Apa itu CSS & Sejarah Singkat
 
-* **Pengertian CSS:** Bahasa *style sheet* yang digunakan untuk mengatur tampilan, tata letak (*layout*), warna, font, dan estetika elemen HTML pada halaman web.
-* **Fungsi Utama:** Memisahkan struktur konten (HTML) dari desain visual (CSS), sehingga kode menjadi lebih bersih, mudah dikelola, dan konsisten di berbagai ukuran layar.
-___
-### Sejarah CSS
-
-* **Tokoh di Baliknya:** **Håkon Wium Lie** mengusulkan gagasan CSS pertama kalinya pada tanggal 10 Oktober 1994, saat ia bekerja bersama Tim Berners-Lee di CERN.
-* **Perkembangan Singkat:**
-* W3C (*World Wide Web Consortium*) merekomendasikan CSS Level 1 (CSS1) pada tahun 1996.
-* CSS2 dirilis pada tahun 1998 dengan penambahan fitur posisi (*positioning*), tipe media, dan *selectors* yang lebih kompleks.
-* CSS3 memperkenalkan sistem modular (modul-modul terpisah) yang memungkinkan fitur canggih seperti animasi, transisi, *Flexbox*, dan *Grid layout*.
-___
-### Cara Penulisan CSS
-
-Ada tiga metode utama untuk menyisipkan kode CSS ke dalam dokumen HTML:
-
-1\. **Inline CSS:** Menuliskan kode CSS secara langsung pada elemen HTML tertentu menggunakan atribut `style`.
-```html
-<p style="color: blue; font-size: 16px;">Teks ini menggunakan Inline CSS.</p>
-
-```
+* **Pengertian:** Bahasa *style sheet* untuk mengontrol tampilan visual, tata letak, warna, font, dan estetika elemen HTML.
 
 
-2\. **Internal CSS:** Menuliskan kode CSS di dalam tag `<style>` yang diletakkan pada bagian `<head>` dokumen HTML.
-```html
-<head>
-    <style>
-        p { color: green; }
-    </style>
-</head>
-
-```
+* **Fungsi Utama:** Memisahkan struktur konten (HTML) dari desain visual (CSS) agar kode mudah dipelihara dan responsif di berbagai perangkat.
 
 
-3\. **External CSS:** Menyimpan kode CSS terpisah di dalam *file* berekstensi `.css` (contoh: `style.css`), lalu menghubungkannya ke dokumen HTML menggunakan tag `<link>` di bagian `<head>`.
-```html
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
+* **Sejarah & Tokoh:** Diusulkan oleh **Håkon Wium Lie** pada 10 Oktober 1994 di CERN.
 
-```
-___
-### Bagian-bagian CSS
 
-Aturan penulisan CSS (*CSS Rule Set*) terdiri dari beberapa komponen utama:
+* **CSS1 (1996):** Rekomendasi awal W3C untuk format teks dan warna.
 
-* **Selector:** Menentukan elemen HTML mana yang akan diberi gaya (contoh: `h1`, `.class`, `#id`).
-* **Declaration Block:** Blok kode yang diapit oleh kurung kurawal (`{ ... }`) yang berisi satu atau lebih deklarasi gaya.
-* **Property:** Aspek visual yang ingin diubah (contoh: `color`, `background-color`, `margin`).
-* **Value:** Nilai yang diberikan pada properti tersebut (contoh: `red`, `#ffffff`, `20px`).
-* *Contoh Struktur:*
+
+* **CSS2 (1998):** Menambahkan posisi (*positioning*), tipe media, dan *selector* lanjutan.
+
+
+* **CSS3 (Modern):** Sistem modular yang menghadirkan Flexbox, Grid Layout, Animasi, dan Transisi.
+
+
+
+
+
+---
+
+### Metode Penulisan CSS & Aturan Spesifisitas (*Specificity*)
+
+1. **Inline CSS:** Ditulis langsung pada atribut `style` elemen HTML. (Prioritas tertinggi, tetapi paling kaku).
+
+
+2. **Internal CSS:** Ditulis di dalam tag `<style>` pada bagian `<head>` HTML.
+
+
+3. **External CSS:** Disimpan terpisah di berkas `.css` dan dihubungkan via `<link rel="stylesheet" href="style.css">`.
+
+
+
+> **Aturan Spesifisitas (Urutan Prioritas Gaya):**
+> `Inline Style` > `ID Selector (#id)` > `Class / Pseudo-class (.class)` > `Element Selector (tag)`.
+> 
+> 
+
+---
+
+### Struktur Aturan CSS (*Rule Set*) & *Box Model*
+
+* **Komponen CSS:** `Selector` (target elemen), `Property` (aspek visual), dan `Value` (nilai yang diberikan).
+
+
 ```css
-selector {
-    property: value;
+/* Selector { Property: Value; } */
+p {
+    color: #333333;
+    margin: 10px;
 }
 
 ```
-___
-### Eksplorasi CSS
-
-1\. **Memberikan Komentar:** Digunakan untuk mencatat catatan atau menonaktifkan kode sementara. Ditulis di antara `/*` dan `*/`.
-```css
-/* Ini adalah komentar CSS */
-
-```
-
-2\. **Memberi Warna:**
-* **Warna Foreground (`color`):** Mengatur warna teks atau ikon.
-* **Warna Background (`background-color`):** Mengatur warna latar belakang suatu elemen.
 
 
-3\. **Mengatur Margin dan Padding:**
-* **Margin:** Jarak ruang di *luar* batas (*border*) elemen.
-* **Padding:** Jarak ruang di *dalam* batas elemen (antara konten dan *border*).
+* **CSS Box Model:**
+* **Content:** Area teks/gambar utama.
+* **Padding:** Ruang jarak di *dalam* batas elemen (antara konten dan border).
 
 
-4\. **Mengatur Garis Tepi (`border`):** Mengatur ketebalan, gaya, dan warna garis pinggir elemen (contoh: `border: 1px solid black;`).
-
-5\. **Mengatur Teks:** Mengatur jenis huruf (`font-family`), ukuran (`font-size`), ketebalan (`font-weight`), perataan teks (`text-align`), dan dekorasi teks (`text-decoration`).
-
-6\. **Combinator:** Menggabungkan beberapa selector untuk menentukan hubungan antar elemen:
-* *Descendant selector (Spasi):* Memilih semua elemen anak di dalam elemen leluhur (`div p`).
-* *Child selector (`>`):* Memilih elemen anak langsung (`div > p`).
-* *Adjacent sibling selector (`+`):* Memilih elemen tepat setelah elemen tertentu (`h1 + p`).
+* **Border:** Garis tepi pembatas elemen.
 
 
-7\. **Menggunakan Attribute Selector:** Memilih elemen HTML berdasarkan keberadaan atau nilai dari suatu atribut (contoh: `input[type="text"] { ... }`).
-___
-
-## Bagian 02: JavaScript
-
-### Sejarah JavaScript
-
-* **Pengertian JavaScript:** Bahasa pemrograman tingkat tinggi, dinamis, dan berbasis objek yang berjalan di sisi klien (*client-side*) maupun peladen (*server-side*) untuk memberikan interaktivitas pada halaman web.
-* **Tokoh di Baliknya:** **Brendan Eich**, seorang insinyur di Netscape, menciptakan bahasa ini hanya dalam waktu 10 hari pada tahun 1995 (awalnya dinamai *Mocha*, lalu *LiveScript*, sebelum resmi menjadi *JavaScript*).
-* **Standarisasi:** Spesifikasi resmi JavaScript diatur oleh ECMA International dengan nama standar **ECMAScript**.
-___
-### Penulisan JavaScript
-
-Sama seperti CSS, JavaScript dapat disematkan ke dalam halaman web melalui tiga cara:
-
-1\. **Inline JavaScript:** Disisipkan langsung pada atribut *event handler* HTML (seperti `onclick`).
-```html
-<button onclick="alert('Halo!')">Klik Saya</button>
-
-```
+* **Margin:** Jarak ruang di *luar* batas elemen.
 
 
-2\. **Internal JavaScript:** Ditulis di dalam tag `<script>` di dalam dokumen HTML.
-```html
-<script>
-    console.log("Ini Internal JavaScript");
-</script>
-
-```
+* **Properti Tambahan Wajib:** `box-sizing: border-box;` agar ukuran *padding* dan *border* tidak merusak total lebar/tinggi elemen.
 
 
-3\. **Eksternal JavaScript:** Disimpan dalam *file* terpisah berformat `.js` (contoh: `script.js`), lalu dipanggil menggunakan atribut `src` pada tag `<script>`.
-```html
-<script src="script.js"></script>
 
-```
-___
-### JavaScript Syntax
+---
 
-1\. **Komentar:**
-* Komentar satu baris menggunakan `//`.
-* Komentar banyak baris menggunakan `/* ... */`.
+### Selector & Combinator CSS
+
+* **Combinator:**
+* *Descendant Selector* (`div p`): Memilih semua elemen `<p>` di dalam `<div>`.
 
 
-2\. **Output:** Cara menampilkan data atau hasil eksekusi program:
-* `console.log("Teks");` (menampilkan di konsol *developer*).
-* `alert("Teks");` (memunculkan *pop-up* peringatan).
-* `document.getElementById("id").innerHTML = "Teks";` (mengubah konten HTML).
+* *Child Selector* (`div > p`): Memilih elemen `<p>` yang merupakan anak langsung dari `<div>`.
 
 
-3\. **Deklarasi Variabel:** Wadah untuk menyimpan data menggunakan kata kunci:
-* `let`: Variabel yang nilainya bisa diubah (*re-assignable*).
-* `const`: Variabel yang nilainya bersifat tetap/konstan (*tidak bisa diubah*).
-* `var`: Cara lama deklarasi variabel (cakupan fungsi).
+* *Adjacent Sibling Selector* (`h1 + p`): Memilih satu elemen `<p>` tepat setelah `<h1>`.
 
 
-4\. **Aritmatika Operator (`Arithmetic Operators`):** Digunakan untuk melakukan operasi matematika dasar seperti penjumlahan (`+`), pengurangan (`-`), perkalian (`*`), pembagian (`/`), dan sisa bagi/modulus (`%`).
-5\. **Comparison Operator:** Digunakan untuk membandingkan nilai, menghasilkan nilai boolean (`true` atau `false`):
-* `==` (sama dengan nilai), `===` (sama dengan nilai dan tipe data).
-* `!=` (tidak sama dengan), `>={` (lebih besar/sama dengan), `<=` (lebih kecil/sama dengan).
+* *General Sibling Selector* (`h1 ~ p`): Memilih seluruh elemen `<p>` saudara setelah `<h1>`.
 
 
-6\. **Array:** Variabel khusus yang dapat menyimpan banyak nilai dalam satu wadah bernomor indeks (dimulai dari indeks `0`).
+* **Attribute Selector:** Memilih elemen berdasarkan atribut/nilainya (contoh: `input[type="text"]`).
+
+
+
+---
+
+## Bagian 02: JavaScript (JS)
+
+### Sejarah & Cara Penulisan
+
+* **Pengertian:** Bahasa pemrograman tingkat tinggi, dinamis, dan berbasis objek yang berjalan di *client-side* maupun *server-side* untuk membuat web interaktif.
+
+
+* **Tokoh:** Diciptakan oleh **Brendan Eich** di Netscape dalam waktu 10 hari pada tahun 1995. Spesifikasi resminya distandardisasi oleh ECMA International sebagai **ECMAScript**.
+
+
+* **Metode Pemanggilan JS:**
+* **Inline JS:** Di dalam atribut event (contoh: `onclick="..."`).
+
+
+* **Internal JS:** Di dalam tag `<script>` pada berkas HTML.
+
+
+* **External JS (Disarankan):** Disimpan di berkas `.js` dan dipanggil menggunakan `<script src="script.js" defer></script>` (Gunakan atribut `defer` agar skrip dieksekusi setelah DOM selesai dimuat).
+
+
+
+
+
+---
+
+### Sintaks & Konsep Dasar JavaScript
+
+1. **Pencetakan Output:** `console.log()` (konsol developer), `alert()` (pop-up), atau `document.getElementById().innerHTML` (memanipulasi DOM).
+
+
+2. **Variabel Modern:**
+* `let`: Variabel *block-scoped* yang nilainya dapat diubah (*re-assignable*).
+
+
+* `const`: Variabel *block-scoped* yang nilainya bersifat tetap/konstan.
+
+
+* `var`: Cara lama (*function-scoped*, rawan bug karena *hoisting*, sebaiknya dihindari).
+
+
+
+
+3. **Operator Komparasi:**
+* `==` (Sama dengan nilai, melakukan tipe konversi otomatis).
+
+
+* `===` (**Sangat Direkomendasikan:** Sama dengan nilai DAN tipe data secara ketat).
+
+
+* `!=` (Tidak sama dengan), `>` (Lebih besar), `<` (Lebih kecil), `>=` (Lebih besar/sama dengan), `<=` (Lebih kecil/sama dengan).
+
+
+
+
+4. **Struktur Data Array:** Variabel untuk menyimpan banyak item berbasis indeks (dimulai dari `0`).
+
+
 ```javascript
 let buah = ["Apel", "Mangga", "Jeruk"];
+console.log(buah[0]); // Output: Apel
 
 ```
 
 
-7\. **Condition (Percabangan):** Digunakan untuk membuat keputusan berdasarkan kondisi tertentu menggunakan `if`, `else if`, `else`, atau struktur `switch`.
+5. **Percabangan (`if...else`) & Perulangan (`for`):**
 ```javascript
+// Percabangan
 let nilai = 80;
 if (nilai >= 75) {
     console.log("Lulus");
@@ -167,18 +173,9 @@ if (nilai >= 75) {
     console.log("Remedial");
 }
 
-```
-
-
-8\. **Looping (Perulangan):** Digunakan untuk menjalankan blok kode secara berulang-ulang, menggunakan struktur seperti `for`, `while`, atau `do...while`.
-```javascript
+// Perulangan
 for (let i = 1; i <= 5; i++) {
     console.log("Perulangan ke-" + i);
 }
 
 ```
-
-
-9\. **Dalam format .mjs buka di Github** [Lanjutan](https://github.com/Reikine/Resume-materi/tree/main/js-materi)
-
-___

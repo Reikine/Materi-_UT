@@ -56,13 +56,13 @@ Pendekatan eksplorasi mencari persamaan garis estimasi $\hat{Y} = a + bX$ melalu
 
 4\. **Perhitungan Nilai Kemiringan (*Slope* / $b$):**
 
-$$b = \frac{Y_A - Y_B}{X_A - X_B}$$
+$$b = \dfrac{Y_A - Y_B}{X_A - X_B}$$
 
 (Nilai $b$ dapat bertanda positif atau negatif).
 
 5\. **Perhitungan Nilai Intersep (*Intercept* / $a$):**
 
-$$a = \frac{a_A + a_T + a_B}{3}$$
+$$a = \dfrac{a_A + a_T + a_B}{3}$$
 
 dengan komponen penyusun:
 * $a_A = Y_A - bX_A$
@@ -105,13 +105,13 @@ ___
 
 1\. **Koefisien Kemiringan (*Slope* / $b$):**
 
-$$b = \frac{n \sum X_i Y_i - \sum X_i \sum Y_i}{n \sum X_i^2 - (\sum X_i)^2}$$
+$$b = \dfrac{n \sum X_i Y_i - \sum X_i \sum Y_i}{n \sum X_i^2 - (\sum X_i)^2}$$
 
 2\. **Konstanta Intersep (*Intercept* / $a$):**
 
 $$a = \bar{Y} - b\bar{X}$$
 
-dengan $\bar{Y} = \frac{\sum Y_i}{n}$ dan $\bar{X} = \frac{\sum X_i}{n}$.
+dengan $\bar{Y} = \dfrac{\sum Y_i}{n}$ dan $\bar{X} = \dfrac{\sum X_i}{n}$.
 ___
 
 ### Evaluasi Kebaikan Model dan Hubungan Antarvariabel
@@ -119,14 +119,14 @@ ___
 1\. **Nisbah Variansi Sisaan (*Error Ratio*):**
 * Mengukur kelayakan model melalui perbandingan variansi komponen sisaan ($Y - \hat{Y}$) terhadap variansi total peubah terikat $Y$:
 
-$$\text{Nisbah} = \frac{\text{Var}(\text{sisa})}{\text{Var}(Y)}$$
+$$\text{Nisbah} = \dfrac{\text{Var}(\text{sisa})}{\text{Var}(Y)}$$
 
 * **Makna:** Nisbah ini merepresentasikan proporsi variabilitas $Y$ yang **tidak dapat diterangkan** oleh persamaan garis regresi. Model dinyatakan baik apabila nilai nisbah ini semakin kecil (mendekati nol).
 
 2\. **Koefisien Determinasi ($r^2$):**
 * Proporsi keragaman total $Y$ yang **dapat diterangkan** oleh hubungan linier dengan variabel $X$ melalui persamaan regresi:
 
-$$r^2 = 1 - \frac{\text{Var}(\text{sisa})}{\text{Var}(Y)}$$
+$$r^2 = 1 - \dfrac{\text{Var}(\text{sisa})}{\text{Var}(Y)}$$
 
 * **Rentang & Interpretasi Nilai:**
 * $r^2 = 0$: Model regresi sama sekali tidak mampu menerangkan variasi peubah $Y$.
@@ -147,5 +147,5 @@ $$r = (\pm 1)\sqrt{r^2}$$
 * **Rumus Koefisien Korelasi Langsung (Pearson):**
 Dapat dihitung secara langsung tanpa menyusun model regresi terlebih dahulu:
 
-$$r = \frac{n \sum XY - \sum X \sum Y}{\sqrt{\left(n \sum X^2 - (\sum X)^2\right)\left(n \sum Y^2 - (\sum Y)^2\right)}}$$
+$$r = \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{\left(n \sum X^2 - (\sum X)^2\right)\left(n \sum Y^2 - (\sum Y)^2\right)}}$$
 ___

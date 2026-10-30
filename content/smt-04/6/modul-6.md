@@ -1,4 +1,4 @@
-# MODUL 06: PEMODELAN PROSES BISNIS DAN STRUKTURAL SISTEM
+# Modul 06: Pemodelan Proses Bisnis dan Struktural Sistem
 
 ## Bagian 01: Pemodelan Proses Bisnis dengan *Activity Diagram* 
 
@@ -127,3 +127,4 @@ ___
 *   **Karakteristik:** Menampilkan objek nyata dengan format nama instansiasi dan nilai atribut aktual yang terisi secara spesifik di dalam kompartemennya.
 *   **Kegunaan Analisis:** Digunakan sebagai alat bantu verifikasi untuk mendeteksi kerumitan koneksi antar-objek, memeriksa kelengkapan atribut, serta mengoreksi penempatan operasi atau hubungan yang keliru pada rancangan *class diagram*.
 ___
+

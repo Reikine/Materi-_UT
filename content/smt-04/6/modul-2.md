@@ -1,4 +1,4 @@
-# MODUL 02: PERANCANGAN SISTEM
+# Modul 02: Perancangan Sistem
 
 ## Bagian 01: Mendefinisikan Proyek Sistem
 

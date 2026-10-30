@@ -1,4 +1,4 @@
-# MODUL 07: PEMODELAN PERILAKU (*BEHAVIORAL*) OBJEK
+# Modul 07: Pemodelan Perilaku (Behavioral) Objek
 
 Pemodelan perilaku merepresentasikan aspek dinamis dari sistem berorientasi objek. Fokus diagram kelas (*class diagram*) berada pada tingkat kelas, sedangkan diagram interaksi (*interaction diagram*) memodelkan interaksi dinamis yang terjadi antar-objek di dalam sistem informasi.
 

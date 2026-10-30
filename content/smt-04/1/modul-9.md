@@ -1,4 +1,4 @@
-# MODUL 09: PERILAKU ORGANISASI LINTAS BUDAYA
+# Modul 09: Perilaku Organisasi Lintas Budaya
 
 ## Bagian 1: Pengaruh Budaya Masyarakat terhadap Praktik Perilaku Organisasi
 

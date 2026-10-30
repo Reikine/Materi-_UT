@@ -1,91 +1,148 @@
-# MODUL 04: VUE.JS
+# Modul 04: Vue.js
 
-## Bagian 01: Vue.js
+## Bagian 01: Vue.js & Ekosistem Modern
 
-### Mengenal Vue.js & JavaScript Framework
+### Mengenal Vue.js
 
-* **Pengertian JavaScript Framework:** Kerangka kerja (*framework*) berbasis JavaScript yang menyediakan struktur, pustaka, dan aturan standar bagi pengembang guna membangun aplikasi web atau *Single Page Application* (SPA) dengan lebih cepat, terorganisir, dan efisien dibandingkan menulis kode murni (*vanilla JavaScript*) dari awal.
-* **Pengertian Vue.js:** Sebuah *progressive JavaScript framework* yang dirancang secara fleksibel untuk membangun antarmuka pengguna (*user interface*). Vue berfokus pada lapisan *view* (tampilan) saja, sehingga sangat mudah diintegrasikan dengan pustaka lain atau proyek yang sudah ada.
-* **Fungsi Mustaches (`{{ }}`):** Dikenal juga sebagai *Text Interpolation*. Berfungsi untuk menghubungkan (*bind*) data reaktif dari komponen JavaScript ke dalam elemen HTML secara dinamis.
-* *Contoh:* `<span>Pesan: {{ message }}</span>`
-___
-### Persiapan
+* **JavaScript Framework:** Kerangka kerja berbasis JavaScript yang menyediakan struktur, aturan, dan pustaka standar untuk membangun aplikasi web dinamis atau *Single Page Application* (SPA) secara terorganisir dan efisien.
+* **Vue.js:** *Progressive JavaScript framework* yang dirancang fokus pada lapisan *view* (tampilan UI). Bersifat fleksibel sehingga mudah diintegrasikan ke proyek yang sudah ada maupun skala besar.
+* **Text Interpolation / Mustaches (`{{ }}`):** Sintaks untuk menghubungkan (*bind*) data reaktif dari logika JavaScript ke dalam templat HTML secara dinamis.
+```html
+<span>Pesan: {{ message }}</span>
 
-* Langkah-langkah awal untuk mulai menggunakan Vue.js, yang umumnya meliputi:
-* Menyiapkan lingkungan pengembangan (*Development Environment*) seperti *Node.js* dan *npm*.
-* Menginstal *Vue CLI* atau menggunakan *Vite* sebagai *build tool* modern.
-* Memuat Vue melalui CDN untuk pembelajaran dasar langsung di dalam *browser*.
-___
-### Organisasi File
+```
 
-* Struktur direktori standar dalam proyek Vue.js (khususnya menggunakan *Single File Component* atau `.vue`):
-* `src/main.js`: Titik masuk utama (*entry point*) aplikasi Vue.
-* `src/App.vue`: Komponen utama/akar (*root component*) dari aplikasi.
-* `src/components/`: Folder tempat menyimpan komponen-komponen modular yang dapat digunakan kembali (*reusable components*).
-___
-### Struktur Penulisan
 
-Struktur dasar dalam satu file komponen Vue (`.vue`) dibagi menjadi tiga bagian utama:
 
-1. **`<template>`:** Berisi struktur HTML/antarmuka visual yang akan dirender ke layar.
-2. **`<script>`:** Berisi logika JavaScript, data reaktif, fungsi (*methods*), dan pengaturan komponen.
-3. **`<style>`:** Berisi kode CSS untuk mempercantik tampilan elemen pada komponen tersebut (bisa bersifat lokal menggunakan atribut `scoped`).
-___
+---
 
-## Bagian 02: Menampilkan Data
+### Persiapan & Lingkungan Pengembangan
+
+1. **Node.js & npm:** Lingkungan eksekusi JavaScript dan manajer paket wajib untuk mengelola dependensi proyek.
+2. **Vite (Build Tool Resmi Modern):** Alat pembangun proyek (*scaffolding*) modern yang menggantikan Vue CLI karena proses *startup* dan *Hot Module Replacement* (HMR) yang jauh lebih cepat.
+```bash
+npm create vue@latest
+
+```
+
+
+3. **CDN (Content Delivery Network):** Cara tercepat memuat Vue langsung di dalam berkas HTML tanpa proses *build* untuk keperluan pembelajaran dasar.
+
+---
+
+### Organisasi File & Struktur Component (`.vue`)
+
+#### Struktur Direktori Standar:
+
+* `src/main.js`: Titik masuk utama (*entry point*) yang menginisialisasi aplikasi Vue dan menghubungkannya ke elemen DOM HTML.
+* `src/App.vue`: Komponen akar (*root component*) tempat seluruh komponen lain bersarang.
+* `src/components/`: Folder untuk menyimpan komponen modular yang dapat digunakan kembali (*reusable components*).
+
+#### Anatomi Single File Component (SFC) Modern (Vue 3 Composition API):
+
+```html
+<template>
+  <!-- Antarmuka Visual / HTML (Mendukung multiple root elements / Fragment) -->
+  <div class="card">
+    <h2>{{ title }}</h2>
+  </div>
+</template>
+
+<script setup>
+// Logika JavaScript & Data Reaktif menggunakan Composition API
+import { ref } from 'vue'
+
+const title = ref('Belajar Vue.js Modern')
+</script>
+
+<style scoped>
+/* CSS Komponen (atribut scoped memastikan style hanya berlaku lokal di komponen ini) */
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+</style>
+
+```
+
+---
+
+## Bagian 02: Menampilkan Data (*Data Rendering*)
 
 ### Declarative Rendering
 
-* Fitur inti Vue yang memungkinkan kita mendeklarasikan data JavaScript dan merendernya secara otomatis ke DOM HTML menggunakan sintaks reaktif (*reaktif data binding*). Ketika data berubah, tampilan di layar akan ikut memperbarui diri secara otomatis tanpa perlu manipulasi DOM manual.
-___
-### Show Multidata
+Fitur reaktivitas inti Vue yang otomatis menyinkronkan data JavaScript dengan DOM. Jika nilai variabel di dalam kode berubah, tampilan di layar akan langsung diperbarui secara otomatis.
 
-* Kemampuan Vue untuk menampilkan sekumpulan data kompleks (seperti array objek atau daftar item) menggunakan interpolasi atau perulangan direktif (seperti `v-for`) di dalam templat.
-___
-### Directive `v-text`
+### Menampilkan Multidata (`v-for`)
 
-* **Pengertian & Fungsi:** Sebuah direktif bawaan Vue yang digunakan untuk memperbarui isi teks dari suatu elemen HTML.
-* *Catatan:* `v-text` menggantikan seluruh isi teks di dalam elemen tersebut (serupa dengan `textContent` di JavaScript murni).
-* *Contoh:* `<span v-text="pesan"></span>` menghasilkan hasil yang sama dengan `<span>{{ pesan }}</span>`.
-___
-### Directive `v-html`
+Digunakan untuk merender daftar item dari array. Wajib menyertakan atribut `:key` yang unik sebagai identitas node DOM.
 
-* **Pengertian & Fungsi:** Direktif yang digunakan untuk merender data string mentah yang berisi tag-tag HTML ke dalam elemen target.
-* *Catatan:* Berbeda dengan interpolasi biasa (`{{ }}`) yang mencetak string sebagai teks biasa, `v-html` menerjemahkan tag HTML di dalamnya (misalnya mengubah teks `<strong>Halo</strong>` menjadi elemen tebal sesungguhnya).
-___
-
-## Bagian 03: Conditional (*Pengkondisian*)
-
-Dalam mengelola tampilan dinamis, Vue menyediakan berbagai direktif pengkondisian yang sering kali disandingkan dengan operator logika (seperti operator perbandingan: `==`, `===`, `!=`, `>`, `<`, `>=`, `<=`, serta operator aritmatika penunjang jika diperlukan di dalam ekspresi).
-
-### Directive `v-if`
-
-* **Pengertian & Fungsi:** Digunakan untuk merender suatu elemen secara bersyarat. Jika kondisi bernilai `true`, elemen akan dirender ke DOM; jika `false`, elemen tersebut benar-benar **dihapus** dari DOM.
-* *Contoh:* `<p v-if="isLogin">Selamat datang, Admin!</p>`
-___
-### Directive `v-else`
-
-* **Pengertian & Fungsi:** Berpasangan langsung dengan `v-if`. Blok kode ini akan dieksekusi dan dirender apabila kondisi pada `v-if` bernilai `false`.
-* *Contoh:*
 ```html
-<p v-if="isLogin">Selamat datang!</p>
-<p v-else>Silakan login terlebih dahulu.</p>
+<ul>
+  <li v-for="item in daftarProduk" :key="item.id">
+    {{ item.nama }} - Rp{{ item.harga }}
+  </li>
+</ul>
 
 ```
-___
-### Directive `v-else-if`
 
-* **Pengertian & Fungsi:** Berfungsi sebagai kondisi alternatif tambahan di antara `v-if` dan `v-else` ketika Anda perlu menguji lebih dari dua kondisi bercabang.
-* *Contoh:*
+### Direktif `v-text`
+
+Memperbarui seluruh isi teks dari suatu elemen target (setara dengan properti `.textContent` pada JavaScript murni).
+
 ```html
-<p v-if="nilai >= 85">Nilai A</p>
-<p v-else-if="nilai >= 70">Nilai B</p>
-<p v-else>Nilai C</p>
+<span v-text="pesan"></span>
+<!-- Identik dengan: <span>{{ pesan }}</span> -->
 
 ```
-___
-### Directive `v-show`
 
-* **Pengertian & Fungsi:** Mirip dengan `v-if` untuk menampilkan atau menyembunyikan elemen berdasarkan kondisi boolean. Namun, perbedaannya adalah `v-show` **tidak menghapus** elemen dari DOM, melainkan hanya mengubah properti CSS `display` (`display: none` jika kondisi `false`).
-* *Catatan Penggunaan:* Cocok digunakan jika elemen sering kali disembunyikan dan ditampilkan kembali secara berulang dalam waktu singkat (menghemat biaya render ulang DOM).
-___
+### Direktif `v-html` & Peringatan Keamanan
+
+Merender string yang berisi tag HTML langsung menjadi elemen DOM visual.
+
+```html
+<div v-html="rawHtmlContent"></div>
+
+```
+
+>**PERINGATAN KEAMANAN (XSS):** Jangan pernah menggunakan `v-html` pada data yang diinput oleh pengguna (*user-generated content*) karena dapat dimanfaatkan penyerang untuk menyisipkan skrip jahat (*Cross-Site Scripting*).
+
+---
+
+## Bagian 03: Pengkondisian Dinamis (*Conditional Rendering*)
+
+### Direktif `v-if`, `v-else-if`, dan `v-else`
+
+Menampilkan elemen secara bersyarat dengan cara memasang (*mount*) atau benar-benar menghapus (*unmount*) elemen dari struktur DOM.
+
+```html
+<div v-if="nilai >= 85">
+  <p>Predikat: Sangat Memuaskan (A)</p>
+</div>
+<div v-else-if="nilai >= 70">
+  <p>Predikat: Memuaskan (B)</p>
+</div>
+<div v-else>
+  <p>Predikat: Perlu Perbaikan (C)</p>
+</div>
+
+```
+
+### Direktif `v-show`
+
+Menampilkan atau menyembunyikan elemen dengan memanipulasi properti CSS `display: none`. Elemen tetap ada di dalam DOM.
+
+```html
+<p v-show="isVisible">Teks ini tetap berada di struktur DOM.</p>
+
+```
+
+### Perbandingan Ringkas: `v-if` vs `v-show`
+
+| Kriteria | `v-if` | `v-show` |
+| --- | --- | --- |
+| **Mekanisme DOM** | Menambah / menghapus elemen fisik dari DOM. | Hanya mengubah properti CSS `display: none`. |
+| **Beban Awal (*Initial Render*)** | Rendah (tidak dirender jika kondisi awal `false`). | Lebih tinggi (tetap dirender di awal meski disembunyikan). |
+| **Beban Peralihan (*Toggle Cost*)** | Tinggi (karena membongkar-pasang DOM). | Sangat rendah (hanya ganti nilai CSS). |
+| **Dukungan `<template>**` | Bisa digunakan pada tag `<template>`. | Tidak bisa digunakan pada tag `<template>`. |
+| **Penggunaan Ideal** | Kondisi yang jarang berubah saat aplikasi berjalan. | Elemen yang sangat sering dibuka-tutup (modal, tab, dropdown). |

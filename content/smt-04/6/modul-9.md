@@ -1,6 +1,6 @@
-# MODUL 09: DESAIN/PERANCANGAN SISTEM
+# Modul 09: Desain/Perancangan Sistem
 
-## Bagian 01: DESAIN ARSITEKTUR SISTEM
+## Bagian 01: Desain Arsitekstur Sistem
 
 Desain arsitektur menggambarkan perangkat keras, perangkat lunak, dan lingkungan jaringan sistem. Desain arsitektur mengalir terutama dari kebutuhan nonfungsional (operasional, kinerja, keamanan, budaya, dan politik) yang dikembangkan pada fase analisis. Hasil akhir dari tahap ini berupa rancangan arsitektur dan spesifikasi perangkat keras serta perangkat lunak.
 

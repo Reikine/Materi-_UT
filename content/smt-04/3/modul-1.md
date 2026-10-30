@@ -10,7 +10,7 @@ Ukuran pemusatan data (*central tendency*) atau nilai tengah merupakan nilai num
 * **Definisi:** Jumlah semua nilai data dibagi dengan banyaknya data.
 * **Rumus:**
 
-$$\bar{X} = \frac{\sum_{i=1}^n X_i}{n}$$
+$$\bar{X} = \dfrac{\sum_{i=1}^n X_i}{n}$$
 
 dengan $X_i$ adalah nilai amatan ke-$i$ dan $n$ adalah banyaknya data.
 * **Kondisi Penggunaan:** Sangat tepat digunakan apabila data berskala numerik (interval atau rasio), bentuk sebaran datanya simetris, serta tidak terdapat nilai ekstrem atau pencilan (*outlier*).
@@ -18,8 +18,8 @@ dengan $X_i$ adalah nilai amatan ke-$i$ dan $n$ adalah banyaknya data.
 2\. **Median ($Q_2$)**
 * **Definisi:** Nilai yang membagi sekumpulan data yang telah diurutkan menjadi dua bagian yang sama besar.
 * **Formulasi Data Tunggal:**
-    * Untuk $n$ ganjil: $\text{Median} = X_k$, dengan $k = \frac{n+1}{2}$
-    * Untuk $n$ genap: $\text{Median} = \frac{X_k + X_{k+1}}{2}$, $dengan k = \frac{n}{2}$
+    * Untuk $n$ ganjil: $\text{Median} = X_k$, dengan $k = \dfrac{n+1}{2}$
+    * Untuk $n$ genap: $\text{Median} = \dfrac{X_k + X_{k+1}}{2}$, $dengan k = \dfrac{n}{2}$
 
 * **Kondisi Penggunaan:** Sangat baik digunakan apabila data berskala ordinal atau data numerik yang sebarannya tidak simetris (memiliki nilai pencilan/ekstrem), karena nilai median tidak terpengaruh oleh besarnya amatan ekstrem.
 
@@ -41,22 +41,22 @@ $$\text{Range} = x_{\text{maks}} - x_{\text{min}}$$
 * **Definisi Keragaman:** Ukuran penyimpangan yang dihitung dari jumlah kuadrat selisih antara nilai amatan dengan rata-ratanya, kemudian dibagi dengan total amatan.
 * Keragaman Populasi:
 
-$$\sigma^2 = \frac{\sum_{i=1}^N (x_i - \mu)^2}{N}$$
+$$\sigma^2 = \dfrac{\sum_{i=1}^N (x_i - \mu)^2}{N}$$
 
 * Keragaman Sampel:
 
-$$s^2 = \frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1} = \frac{\sum_{i=1}^n x_i^2 - \frac{(\sum_{i=1}^n x_i)^2}{n}}{n-1}$$
+$$s^2 = \dfrac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1} = \dfrac{\sum_{i=1}^n x_i^2 - \dfrac{(\sum_{i=1}^n x_i)^2}{n}}{n-1}$$
 
 * **Simpangan Baku (*Standard Deviation*):** Akar kuadrat dari nilai keragaman yang digunakan agar satuan pengukuran kembali sama dengan satuan data asli.
 * Simpangan Baku Sampel:
 
-$$s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1}}$$
+$$s = \sqrt{s^2} = \sqrt{\dfrac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1}}$$
 
 3\. **Koefisien Keragaman (*Coefficient of Variation* / KK)**
 * **Definisi:** Perbandingan relatif antara simpangan baku dengan nilai rata-rata hitung yang dinyatakan dalam persentase.
 * **Rumus:**
 
-$$CV = \frac{s}{\bar{X}} \times 100\%$$
+$$CV = \dfrac{s}{\bar{X}} \times 100\%$$
 
 * **Fungsi:** Digunakan untuk membandingkan tingkat variabilitas atau keragaman antara dua atau lebih kelompok data yang memiliki satuan berbeda atau nilai rata-rata yang berbeda.
 ___
@@ -80,7 +80,7 @@ Penyajian data dalam bentuk baris dan kolom yang memuat kategori-kategori serta 
 * **Tahapan Penyusunan:**
     1. Menentukan jangkauan ($R = x_{\text{maks}} - x_{\text{min}}$).
     2. Menentukan banyaknya kelas ($k$) menggunakan pendekatan Sturges: $k = 1 + 3{,}3 \log(n)$.
-    3. Menentukan lebar interval kelas ($i = \frac{\text{Rentang}}{k}$).
+    3. Menentukan lebar interval kelas ($i = \dfrac{\text{Rentang}}{k}$).
     4. Menetapkan batas-batas kelas.
     5. Menghitung frekuensi amatan di setiap interval kelas.
     6. Menentukan titik tengah kelas serta frekuensi kumulatif dan relatif.

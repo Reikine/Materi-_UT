@@ -1,4 +1,4 @@
-# MODUL 02: DASAR-DASAR PERILAKU INDIVIDU: HUKUM PERBEDAAN INDIVIDU
+# Modul 02: Dasar-Dasar Perilaku Individu
 
 ## Bagian 1: Kepribadian dan Kemampuan Diri Karyawan
 

@@ -1,4 +1,4 @@
-# MODUL 08: TRANSISI DARI ANALISIS SISTEM KE DESAIN/PERANCANGAN SISTEM
+# Modul 08: Transisi dari Analisis Sistem ke Desain/Perancangan Sistem
 
 Fase peralihan dari model data logik menuju model data fisik dilakukan dengan merancang skema basis data tertentu. Model data relasional adalah model yang paling umum digunakan dalam implementasi sistem saat ini. Beberapa literatur mendefinisikan *Entity Relationship Diagram* (ERD) sebagai model data konseptual dan diagram relasi sebagai model data logik, sementara referensi lain menempatkan ERD sebagai model data logik.
 

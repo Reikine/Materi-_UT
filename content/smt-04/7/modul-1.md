@@ -1,110 +1,137 @@
-
-# MODUL 01: WEBSITE DAN HTML
+# Modul 01: Website dan HTML
 
 ## Bagian 01: Website
 
 ### Apa itu Website dan Manfaatnya
 
-* **Pengertian Website:** Kumpulan halaman web yang saling terhubung, yang biasanya diakses melalui alamat URL (Uniform Resource Locator) tertentu dan berada di bawah satu nama domain yang sama. Website dapat diakses melalui internet menggunakan perangkat seperti komputer, laptop, atau *smartphone* melalui aplikasi *browser*.
-* **Manfaat Website:**
-* **Media Informasi:** Menyampaikan informasi secara cepat, luas, dan *real-time* kepada publik (contoh: portal berita, situs edukasi).
-* **Branding & Identitas Profesional:** Meningkatkan kredibilitas dan memperkenalkan profil pribadi, organisasi, atau perusahaan ke kancah global.
-* **Sarana Bisnis & E-Commerce:** Memperluas jangkauan pasar, menjual produk atau jasa 24 jam tanpa batasan geografis.
-* **Wadah Portofolio & Komunitas:** Tempat berbagi karya, berdiskusi, serta membangun interaksi antarpengguna secara daring.
-___
-### Istilah-istilah Website
+* **Pengertian Website:** Kumpulan halaman web terhubung yang berada di bawah satu nama domain sama, disimpan pada server web, dan diakses via protokol HTTP/HTTPS menggunakan *browser*.
 
-* **Domain:** Alamat unik yang digunakan untuk mengakses sebuah website di internet (contoh: `universitas.ac.id`, `google.com`).
-* **Hosting:** Layanan atau tempat penyimpanan data website (file, gambar, skrip) di server agar dapat diakses secara *online* 24 jam.
-* **URL (Uniform Resource Locator):** Rangkaian karakter yang berfungsi sebagai alamat lengkap untuk mengakses suatu halaman atau file di internet.
-* **Browser:** Perangkat lunak yang digunakan untuk membuka dan menampilkan halaman web (contoh: Google Chrome, Mozilla Firefox, Microsoft Edge).
-* **IP Address:** Deretan angka biner yang unik sebagai identifikasi perangkat atau server di dalam jaringan internet.
-___
+
+* **Manfaat Utama:**
+* **Media Informasi:** Menyampaikan informasi secara cepat dan *real-time* (portal berita, situs edukasi).
+
+
+* **Branding & Identitas Profesional:** Meningkatkan kredibilitas profil pribadi, organisasi, atau perusahaan.
+
+
+* **E-Commerce & Bisnis:** Sarana transaksi produk/jasa 24/7 tanpa batasan geografis.
+
+
+* **Portofolio & Komunitas:** Wadah menampilkan karya dan ruang interaksi daring.
+
+
+
+
+
+### Istilah-Istilah Kunci Web
+
+* **Domain:** Alamat ramah manusia yang memetakan IP Address server (contoh: `universitas.ac.id`).
+
+
+* **Hosting:** Layanan penyewaan ruang server agar berkas website dapat diakses online 24 jam.
+
+
+* **URL (Uniform Resource Locator):** Alamat lengkap penunjuk lokasi berkas/halaman spesifik di internet.
+
+
+* **Browser:** Aplikasi *client* penjelajah web yang menerjemahkan kode HTML/CSS/JS menjadi tampilan visual (Chrome, Firefox, Edge).
+
+
+* **IP Address:** Identitas unik perangkat dalam jaringan. Terdiri dari **IPv4** (format biner 32-bit / 4 angka desimal) dan **IPv6** (format 128-bit heksadesimal).
+
+
+
+---
 
 ## Bagian 02: HTML (*HyperText Markup Language*)
 
-### Tim Berners-Lee dan Sejarah HTML
+### Sejarah & Standar HTML
 
-* **Pengertian HTML:** Bahasa *markup* (penanda) standar yang digunakan untuk merancang, menstrukturkan, dan menampilkan halaman serta konten di dalam web.
-* **Tokoh di Baliknya:** **Tim Berners-Lee**, seorang ilmuwan komputer berkebangsaan Inggris, adalah sosok yang menciptakan *World Wide Web* (WWW) sekaligus merancang versi awal HTML.
-* **Sejarah Singkat:**
-* Pada tahun 1989, Tim Berners-Lee mengusulkan proyek berbasis hiperteks di CERN (Organisasi Eropa untuk Riset Nuklir).
-* Tahun 1991, versi pertama HTML secara resmi dirilis ke publik dengan jumlah elemen dasar yang sangat terbatas.
-___
-### Perkembangan HTML
+* **Pengertian:** Bahasa *markup* standar untuk menstrukturkan halaman web.
 
-* **HTML 2.0 (1995):** Spesifikasi resmi pertama yang dirilis oleh IETF (*Internet Engineering Task Force*).
-* **HTML 3.2 (1997):** Dikembangkan oleh W3C (*World Wide Web Consortium*), menambahkan dukungan untuk tabel, *applet*, teks mengalir, dan pengaturan warna.
-* **HTML 4.01 (1999):** Menjadi standar yang sangat matang dan luas digunakan, berfokus pada pemisahan struktur dokumen dengan tampilan (CSS).
-* **XHTML (2000-an):** Penggabungan antara HTML dan XML yang memiliki aturan penulisan kode yang jauh lebih ketat.
-* **HTML5 (Standar Modern):** Diperkenalkan oleh WHATWG dan disahkan oleh W3C. Membawa fitur revolusioner seperti dukungan multimedia bawaan (`<video>`, `<audio>`), semantik baru (`<header>`, `<footer>`, `<article>`), serta kemampuan aplikasi web interaktif tanpa plugin tambahan.
-___
 
-## Bagian 03: Kode HTML
+* **Penemu:** **Tim Berners-Lee** mengusulkan konsep WWW dan HTML pada tahun 1989 di CERN, dan merilis versi awal pada tahun 1991.
 
-### Bagian-bagian pada Kode HTML
 
-Kode HTML pada umumnya disusun oleh komponen-komponen berikut:
+* **Evolusi Standar:**
+* **HTML 2.0 (1995):** Standar resmi pertama oleh IETF.
 
-* **Tag:** Penanda awal dan akhir dari suatu elemen yang diapit oleh tanda kurung siku (contoh: `<p>` dan `</p>`).
-* **Atribut:** Informasi tambahan yang diletakkan di dalam tag pembuka untuk memodifikasi perilaku atau tampilan elemen (contoh: `src`, `href`, `class`).
-* **Isi (Content):** Bagian teks atau objek yang berada di antara tag pembuka dan tag penutup.
-___
-### Elemen Bersarang (*Nested Elements*)
 
-* Elemen HTML dapat dimasukkan ke dalam elemen HTML lainnya (bersarang).
-* *Prinsip Utama:* Tag yang dibuka terakhir harus ditutup terlebih dahulu (aturan *Last In, First Out*).
-* *Contoh:*
+* **HTML 3.2 (1997):** Dikelola W3C, menambahkan tabel dan dukungan warna.
+
+
+* **HTML 4.01 (1999):** Pemisahan struktur dengan tampilan (CSS).
+
+
+* **XHTML (2000):** Penggabungan HTML dan XML dengan aturan sintaks sangat ketat.
+
+
+* **HTML5 (Modern Standard):** Dikembangkan oleh WHATWG & W3C. Menyediakan tag semantik (`<header>`, `<article>`, `<footer>`), dukungan audio/video native, serta API aplikasi web modern.
+
+
+
+
+
+---
+
+## Bagian 03: Anatomi & Struktur Kode HTML
+
+### Komponen Kode HTML
+
+Satu unit **Elemen HTML** terdiri dari:
+
+1. **Tag Pembuka & Penutup:** Penanda batas elemen (contoh: `<p>` dan `</p>`).
+
+
+2. **Atribut:** Pasangan *key-value* di tag pembuka untuk memberi konfigurasi/informasi tambahan (contoh: `class="utama"`, `href="url"`).
+
+
+3. **Isi (Content):** Teks atau elemen bersarang di antara tag pembuka dan penutup.
+
+
+
+### Elemen Bersarang (*Nested Elements*) & *Void Elements*
+
+* **Aturan Elemen Bersarang:** Mengikuti prinsip LIFO (*Last In, First Out*)—tag yang opened terakhir harus closed pertama kali.
+
+
 ```html
-<p>Ini adalah teks dengan <strong>kata bercetak tebal</strong> di dalamnya.</p>
+<p>Teks ini berisi kata <strong>penting</strong>.</p>
 
 ```
-___
-### Elemen Kosong (*Void Elements*)
 
-* Elemen yang tidak memiliki isi (konten) di dalamnya dan tidak memerlukan tag penutup.
-* *Contoh:* Tag `<br>` (baris baru), `<img>` (gambar), dan `<hr>` (garis horizontal).
-___
-### Struktur HTML
 
-Struktur dasar dokumen HTML standar yang wajib dipahami mencakup kerangka berikut:
+* **Void Elements (Elemen Kosong):** Elemen tanpa isi dan tidak membutuhkan tag penutup (`<br>`, `<img>`, `<hr>`, `<input>`, `<meta>`).
+
+
+
+### Struktur Dokumen Standar HTML5 (Lengkap & Responsive)
 
 ```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <!-- Meta Viewport: Wajib agar tampilan responsive di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman Web</title>
 </head>
 <body>
-    <!-- Konten utama website ditulis di sini -->
+    <!-- Seluruh konten visual diletakkan di dalam tag body -->
 </body>
 </html>
-
 ```
 
-* `<!DOCTYPE html>`: Deklarasi tipe dokumen untuk HTML5.
-* `<html>`: Akar (*root*) dari dokumen HTML.
-* `<head>`: Bagian informasi meta, pengaturan karakter, dan judul halaman (tidak tampak langsung di layar utama browser).
-* `<body>`: Bagian tubuh dokumen yang berisi seluruh elemen visual yang akan ditampilkan kepada pengguna.
-___
-### Berbagai Elemen HTML
 
-Berikut adalah elemen-elemen penting dalam HTML beserta fungsinya:
+## Bagian 04: Referensi Elemen HTML Penting
 
-1. **Tulisan Bercetak Tebal (`<strong>` atau `<b>`):** Digunakan untuk menebalkan teks guna memberikan penekanan penting.
-2. **Tulisan Bercetak Miring (`<em>` atau `<i>`):** Digunakan untuk memiringkan teks (biasanya untuk istilah asing atau penekanan ringan).
-3. **Tulisan Bergaris Bawah (`<u>`):** Digunakan untuk memberikan garis bawah pada teks.
-4. **Baris Baru (`<br>`):** Berfungsi untuk memindahkan teks atau elemen ke baris baru tanpa membuat paragraf baru.
-5. **Link (`<a>`):** Membuat tautan hiperteks untuk berpindah dari satu halaman web ke halaman web lainnya. Menggunakan atribut `href`.
-6. **Gambar (`<img>`):** Menampilkan gambar ke dalam halaman web. Memerlukan atribut `src` (sumber file) dan `alt` (teks alternatif).
-7. **Heading (`<h1>` sampai `<h6>`):** Digunakan untuk membuat judul atau sub-judul artikel dengan tingkat ukuran dari yang paling besar (`<h1>`) hingga paling kecil (`<h6>`).
-8. **Paragraf (`<p>`):** Digunakan untuk mengelompokkan blok teks menjadi sebuah paragraf.
-9. **Subscript (`<sub>`):** Membuat teks berukuran kecil yang posisinya agak turun ke bawah (biasanya untuk rumus kimia, misal: $H_2O$ ditulis `H<sub>2</sub>O`).
-10. **Superscript (`<sup>`):** Membuat teks berukuran kecil yang posisinya agak naik ke atas (biasanya untuk pangkat, misal: $x^2$ ditulis `x<sup>2</sup>`).
-11. **Ordered List (`<ol>`):** Membuat daftar atau list yang berurutan menggunakan angka atau huruf. Didalamnya menggunakan tag `<li>`.
-12. **Unordered List (`<ul>`):** Membuat daftar atau list yang tidak berurutan (menggunakan simbol titik/bullet). Didalamnya menggunakan tag `<li>`.
-13. **Meter (`<meter>`):** Menampilkan pengukuran skalar dalam rentang yang diketahui (seperti indikator kapasitas penyimpanan atau tingkat kekuatan sandi).
-14. **Tabel (`<table>`):** Digunakan untuk menampilkan data dalam bentuk baris dan kolom. Melibatkan elemen pembantu seperti `<tr>` (baris), `<th>` (sel kepala), dan `<td>` (sel data).
-15. **Formulir (`<form>`):** Digunakan untuk mengumpulkan data dari pengguna (seperti kolom *input* teks, tombol *submit*, *checkbox*, dan *radio button*).
-___
+1. **`<strong>` vs `<b>`:** `<strong>` untuk teks dengan penekanan penting (diperhatikan oleh *screen reader*), sedangkan `<b>` hanya tebal secara visual semata.
+2. **`<em>` vs `<i>`:** `<em>` (*emphasis*) untuk penekanan nada bicara, sedangkan `<i>` untuk istilah asing/teknis.
+3. **`<a>` (Anchor):** Membuat tautan hiperteks mengarah ke URL tertentu menggunakan atribut `href`.
+4. **`<img>` (Image):** Menyematkan gambar. Menggunakan atribut wajib `src` (sumber) dan `alt` (teks alternatif).
+5. **Heading (`<h1>` sampai `<h6>`):** Hirarki judul utama (`<h1>`) hingga sub-judul terkecil (`<h6>`).
+6. **`<sub>` & `<sup>`:** Teks subscript (misal: $H_2O$ ditulis `H<sub>2</sub>O`) dan superscript (misal: $x^2$ ditulis `x<sup>2</sup>`).
+7. **`ol`, `ul`, & `li`:** Draf daftar berurutan (`<ol>`), tidak berurutan (`<ul>`), dengan item daftar (`<li>`).
+8. **`<table>`:** Menampilkan data matriks dengan `<tr>` (baris), `<th>` (header sel), dan `<td>` (data sel).
+9. **`<form>`:** Wadah input interaktif pengguna (mengikutsertakan elemen `<input>`, `<select>`, `<button>`).
+10. **`<meter>`:** Indikator pengukuran nilai skalar dalam rentang berskala.

@@ -137,10 +137,10 @@ ___
 
 ### Transformasi Pangkat
 
-#### Transformasi Reciprocal (Kebalikan): $x^* = x^{-1} = \frac{1}{x}$
+#### Transformasi Reciprocal (Kebalikan): $x^* = x^{-1} = \dfrac{1}{x}$
 * **Bentuk Persamaan Regresi:**
 
-$$y = \alpha + \frac{\beta}{x}$$
+$$y = \alpha + \dfrac{\beta}{x}$$
 
 * **Bentuk Pola Diagram Pencar:** Menampilkan pola hubungan hiperbolik di mana nilai $y$ mendekati nilai batas tertentu (asimtot) saat $x$ membesar (pola melengkung tajam ke bawah untuk $\beta_1 > 1$ atau melengkung ke atas mendekati asimtot untuk $\beta_1 < 0$).
 

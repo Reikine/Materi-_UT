@@ -1,4 +1,4 @@
-# MODUL 04: MOTIVASI: TEORI DAN PENERAPANNYA
+# Modul 04: Motivasi: Teori dan Penerapannya
 
 ## Bagian 1: Teori Motivasi
 

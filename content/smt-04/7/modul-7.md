@@ -1,51 +1,27 @@
----
-outline: deep
----
+# Modul 07: Array, Filtering, dan Event Handling 
 
-# MODUL 07: ARRAY, FILTER, DAN EVENT HANDLING
-
-## Bagian 01: Array
+## Bagian 01: Array dan Perulangan Data
 
 ### Konsep Dasar Array di Vue.js
 
-* **Pengertian:** Struktur data linier dalam JavaScript yang digunakan untuk menyimpan kumpulan nilai atau elemen (bisa berupa string, angka, boolean, maupun objek) di dalam satu variabel tunggal.
-* Di dalam Vue.js, *array* sering digunakan sebagai penampung data reaktif untuk menampilkan daftar item secara dinamis ke antarmuka pengguna (*UI*).
-___
-### Mengakses Array
+Array adalah struktur data linier untuk menyimpan kumpulan nilai dalam satu variabel. Di Vue.js, array digunakan sebagai penampung data reaktif untuk merender daftar item secara dinamis ke antarmuka pengguna (UI).
 
-* Setiap elemen di dalam array memiliki nomor indeks (*index*) yang dimulai dari angka `0`.
-* Cara mengakses elemen spesifik di dalam komponen Vue:
-```javascript
-data() {
-  return {
-    buah: ["Apel", "Mangga", "Jeruk"]
-  }
-},
-// Mengakses elemen pertama ("Apel") di script:
-// this.buah[0]
+### Metode Reaktivitas Array (Mutation vs Non-Mutation)
 
-```
-___
-### Directive `v-for` (Perulangan Data)
+Vue secara otomatis memantau perubahan pada array jika menggunakan metode mutasi berikut:
 
-* **Pengertian & Fungsi:** Direktif Vue.js yang digunakan untuk merender daftar item atau elemen HTML secara berulang berdasarkan data dari sebuah *array* atau *object*.
-* **Sintaks Dasar (`item in items`):**
+* Metode Mutasi (Mengubah array asli): `push()`, `pop()`, `shift()`, `unshift()`, `splice()`, `sort()`, `reverse()`.
+* Metode Non-Mutasi (Mengembalikan array baru): `filter()`, `concat()`, `slice()`. Untuk metode ini, array asal harus diganti dengan hasil kembaliannya.
 
-```html
-<ul>
-  <li v-for="(item, index) in buah" :key="index">
-    {{ index + 1 }}. {{ item }}
-  </li>
-</ul>
+### Directive `v-for` dan Atribut `:key`
 
-```
+Digunakan untuk merender daftar item secara berulang.
 
-* *Catatan Penting:* Atribut `:key` wajib disertakan pada elemen yang diulang menggunakan `v-for` agar Vue dapat melacak identitas setiap node secara efisien dan optimal.
-___
-### Object Array (Array dari Objek)
+Catatan Kunci Atribut `:key`:
+Selalu gunakan identifier unik (seperti `id`) untuk nilai `:key`. Hindari menggunakan `index` array sebagai `key` jika daftar item dapat diubah, dihapus, atau diurutkan, karena dapat menimbulkan bug rendering.
 
-* Struktur data yang paling sering digunakan dalam aplikasi web nyata, yaitu sebuah *array* di mana setiap elemen di dalamnya berupa sebuah *objek* yang memiliki properti kunci-nilai (*key-value*).
-* *Contoh Implementasi dengan `v-for`:*
+Sintaks Dasar dengan Object Array:
+
 ```html
 <template>
   <div>
@@ -63,9 +39,9 @@ export default {
   data() {
     return {
       daftarProduk: [
-        { id: 1, nama: "Laptop", harga: 7500000 },
-        { id: 2, nama: "Mouse", harga: 150000 },
-        { id: 3, nama: "Keyboard", harga: 300000 }
+        { id: 101, nama: "Laptop", harga: 7500000 },
+        { id: 102, nama: "Mouse", harga: 150000 },
+        { id: 103, nama: "Keyboard", harga: 300000 }
       ]
     }
   }
@@ -73,62 +49,103 @@ export default {
 </script>
 
 ```
-___
 
-## Bagian 02: Filter (Manipulasi String & Data)
+---
 
-Meskipun Vue 3 tidak lagi menyediakan *filter* bawaan seperti di Vue 2 (yang digantikan oleh *Computed Properties* atau *Methods*), konsep manipulasi string (*string methods*) sangat penting untuk memformat teks di dalam tampilan Vue.
+## Bagian 02: Pengolahan & Pemformatan Data (Pengganti Filter Vue 2)
 
-### Metode Manipulasi String yang Sering Digunakan:
+Di Vue 3, fitur Filter bawaan (`|`) telah dihapus. Sebagai gantinya, pengolahan teks dan pencarian data dilakukan menggunakan Computed Properties atau Methods.
 
-1\. **`toUpperCase()` dan `toLowerCase()`:**
-* `toUpperCase()`: Mengubah seluruh karakter string menjadi huruf kapital.
-* `toLowerCase()`: Mengubah seluruh karakter string menjadi huruf kecil.
+### 1. Manipulasi String dalam JavaScript
 
-2\. **`charAt(index)`:**
-* Mengambil karakter tunggal pada posisi indeks tertentu.
+* `toUpperCase()` / `toLowerCase()`: Mengubah format huruf kapital / kecil.
+* `slice(awal, akhir)`: Memotong bagian string.
+* `replace(target, pengganti)`: Mengganti teks tertentu.
+* `split(separator)`: Memecah string menjadi array.
 
-3\. **`slice(index_awal, index_akhir)`:**
-* Memotong bagian dari string berdasarkan indeks awal hingga sebelum indeks akhir.
+### 2. Implementasi Filtering dengan Computed Property
 
-4\. **`replace(target, pengganti)`:**
-* Mencari kata atau karakter tertentu di dalam string dan menggantinya dengan nilai baru.
+Pendekatan terbaik untuk fitur pencarian atau penyaringan daftar item secara real-time:
 
-5\. **`split(separator)`:**
-* Memecah string menjadi sebuah *array* berdasarkan pemisah tertentu (seperti spasi atau koma).
-___
-
-## Bagian 03: Event Handling
-
-### Directive `v-on` (Penanganan Event)
-
-* **Pengertian & Fungsi:** Direktif Vue.js yang digunakan untuk mendengarkan (*listen*) kejadian (*event*) DOM yang memicu interaksi pengguna (seperti klik, submit form, pergerakan kursor, atau penekanan tombol keyboard) dan menjalankan fungsi (*method*) tertentu.
-* **Sintaks Penulisan:** `v-on:nama_event="namaMethod"` atau menggunakan *shorthand* tanda *at* (`@nama_event="namaMethod"`).
 ```html
-<button v-on:click="sapaUser">Klik Saya</button>
-<!-- Menggunakan Shorthand -->
-<button @click="sapaUser">Klik Saya</button>
+<template>
+  <div>
+    <input type="text" v-model="searchQuery" placeholder="Cari produk...">
+    <ul>
+      <li v-for="produk in filteredProduk" :key="produk.id">
+        {{ produk.nama }} - Rp {{ produk.harga }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup>
+import { ref, computed } from 'vue'
+
+const searchQuery = ref('')
+const daftarProduk = ref([
+  { id: 1, nama: 'Laptop Gaming', harga: 12000000 },
+  { id: 2, nama: 'Mouse Wireless', harga: 250000 },
+  { id: 3, nama: 'Keyboard Mechanical', harga: 850000 }
+])
+
+// Computed Property untuk menyaring produk secara reaktif
+const filteredProduk = computed(() => {
+  return daftarProduk.value.filter(produk => 
+    produk.nama.toLowerCase().includes(searchQuery.value.toLowerCase())
+  )
+})
+</script>
 
 ```
-___
-### Mouse Event
 
-* Event yang dipicu oleh interaksi perangkat tetikus (*mouse*).
-* **Contoh umum yang didukung Vue:**
-* `@click`: Saat elemen diklik.
-* `@dblclick`: Saat elemen diklik dua kali.
-* `@mouseenter` / `@mouseover`: Saat kursor mouse masuk ke area elemen.
-* `@mouseleave`: Saat kursor mouse keluar dari area elemen.
-* *Contoh:* `<div @mouseenter="ubahWarna" @mouseleave="kembalikanWarna">Kotak Interaktif</div>`
-___
-### Keyboard Event
+---
 
-* Event yang dipicu saat pengguna menekan tombol pada keyboard.
-* Vue menyediakan **Event Modifiers** untuk menangkap tombol spesifik dengan sangat mudah (seperti `.enter`, `.tab`, `.delete`, `.esc`, `.space`, `.up`, `.down`).
-* *Contoh Penggunaan pada Input Text:*
+## Bagian 03: Event Handling (`v-on` / `@`)
+
+### Directive `v-on`
+
+Digunakan untuk mendengarkan (*listen*) kejadian DOM (seperti klik, submit, tekan tombol) dan mengeksekusi logika JavaScript/method.
+
+* Sintaks: `v-on:click="namaMethod"`
+* Shorthand: `@click="namaMethod"`
+
+### Pengiriman Parameter & Objek Event Native (`$event`)
+
+Kita dapat mengirim parameter kustom ke dalam method sekaligus mengakses objek event asli DOM menggunakan `$event`.
+
 ```html
-<!-- Menjalankan fungsi cariData hanya ketika tombol Enter ditekan -->
+<button @click="hapusItem(produk.id, $event)">Hapus</button>
+
+```
+
+### Event Modifiers DOM
+
+Vue menyediakan pengubah (*modifiers*) untuk menangani perilaku event DOM tanpa perlu menulis kode manual seperti `event.preventDefault()`:
+
+* `.prevent`: Mencegah aksi bawaan elemen (misal: membatalkan reload halaman saat submit form).
+* `.stop`: Menghentikan perambatan event (*event bubbling*).
+* `.once`: Memastikan event handler hanya dijalankan 1 kali.
+* `.self`: Pemicu hanya berjalan jika event terjadi langsung pada elemen tersebut.
+
+Contoh Penggunaan Form Submit:
+
+```html
+<form @submit.prevent="simpanData">
+  <input type="text" v-model="nama">
+  <button type="submit">Simpan</button>
+</form>
+
+```
+
+### Mouse & Keyboard Event Modifiers
+
+* Mouse Events: `@click`, `@dblclick`, `@mouseenter`, `@mouseleave`.
+* Key Modifiers: `@keyup.enter`, `@keyup.tab`, `@keyup.delete`, `@keyup.esc`, `@keyup.space`.
+
+Contoh Input Keyboard:
+
+```html
 <input type="text" @keyup.enter="cariData" placeholder="Tekan Enter untuk mencari...">
 
 ```
-___

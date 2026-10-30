@@ -1,4 +1,4 @@
-# MODUL 01: ORGANISASI DAN PERILAKU ORGANISASI
+# Modul 01: Organisasi dan Perilaku Organisasi
 
 ## Bagian 1: Manusia, Organisasi, dan Manajemen
 

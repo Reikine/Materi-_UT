@@ -1,4 +1,4 @@
-# MODUL 07: KEPEMIMPINAN DAN KEKUASAAN
+# Modul 07: Kepemimpinan dan Kekuasaan
 
 ## Bagian 1: Kepemimpinan
 

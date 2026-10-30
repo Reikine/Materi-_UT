@@ -1,145 +1,169 @@
----
-outline: deep
----
-
-# MODUL 05: DATA BINDING DAN PENGOLAHANNYA
+# Modul 05: Data Binding dan Pengolahannya
 
 ## Bagian 01: Data Binding
 
-### Pengertian Data Binding & Konsepnya
+### Pengertian & Konsep Data Binding
 
-* **Pengertian Data Binding:** Mekanisme penghubung antara data di dalam komponen JavaScript (logic) dengan elemen tampilan (DOM/HTML) di template Vue.js.
-* **Konsep One-Way Data Binding (Satu Arah):**
-* Aliran data hanya bergerak dari komponen JavaScript menuju tampilan (*template*).
-* Jika data di script berubah, tampilan ikut berubah otomatis. Namun, perubahan pada tampilan (seperti input dari pengguna) tidak akan mengubah data di script secara otomatis.
-* *Contoh implementasi:* Menggunakan direktif **`v-bind`**.
+* **Pengertian Data Binding:** Mekanisme otomatis yang menghubungkan data di dalam logika komponen JavaScript (*script*) dengan elemen tampilan HTML (*template*).
+* **One-Way Data Binding (Satu Arah):**
+* Aliran data bergerak satu arah dari JavaScript menuju tampilan HTML.
+* Jika nilai variabel berubah, tampilan HTML langsung diperbarui. Namun, perubahan pada elemen tampilan tidak mengubah variabel di JavaScript.
+* *Implementasi:* Menggunakan direktif **`v-bind`** (shorthand: `:`).
 
-* **Konsep Two-Way Data Binding (Dua Arah):**
-* Aliran data bergerak dua arah: dari script ke tampilan, dan sebaliknya dari tampilan ke script.
-* Jika data di script berubah, tampilan ikut berubah. Begitu pula sebaliknya, jika pengguna mengubah nilai pada elemen form di layar, data reaktif di dalam script akan langsung ikut memperbarui diri secara otomatis.
-* *Contoh implementasi:* Menggunakan direktif **`v-model`**.
-___
+
+* **Two-Way Data Binding (Dua Arah):**
+* Aliran data bergerak dua arah antara JavaScript dan tampilan HTML.
+* Perubahan pada logika mengubah tampilan, dan interaksi pengguna di formulir (*input*) langsung memperbarui data variabel di JavaScript secara otomatis.
+* *Implementasi:* Menggunakan direktif **`v-model`**.
+* *Prinsip Dasar:* `v-model` merupakan *syntactic sugar* dari gabungan `:value="data"` dan `@input="data = $event.target.value"`.
+
+
+
+---
+
 ### Directive `v-bind` (One-Way Data Binding)
 
-Direktif `v-bind` digunakan untuk menghubungkan data dinamis ke *atribut* HTML secara satu arah. (Bisa disingkat menggunakan titik dua `:`).
+Digunakan untuk mengikat nilai variabel ke **atribut** HTML secara dinamis.
 
-**Binding pada atribut `src` pada elemen `<img>`:** Mengatur sumber gambar secara dinamis dari variabel data.
+* **Shorthand Atribut Gambar & Tautan:**
 ```html
-<img v-bind:src="imageSrc" alt="Dynamic Image">
-<!-- Atau menggunakan shorthand: -->
-<img :src="imageSrc" alt="Dynamic Image">
-
-```
-**Binding pada atribut `href` pada elemen `<a>`:** Menentukan alamat tautan URL secara dinamis.
-```html
+<!-- Mengikat atribut src dan href -->
+<img :src="imageSrc" alt="Gambar Dinamis">
 <a :href="profileUrl">Kunjungi Profil</a>
 
 ```
-**Binding pada atribut `class`:** Mengontrol kelas CSS secara dinamis berdasarkan kondisi boolean atau objek data.
+
+
+* **Binding Class Dinamis:**
 ```html
-<div :class="{ 'active': isActive, 'text-danger': hasError }">Kotak Status</div>
+<!-- Mengaktifkan kelas CSS berdasarkan kondisi boolean -->
+<div :class="{ active: isActive, 'text-danger': hasError }">Kotak Status</div>
 
 ```
-**Binding pada Inline CSS:** Mengatur gaya CSS langsung pada elemen berdasarkan variabel reaktif.
+
+
+* **Binding Inline Style:**
 ```html
 <div :style="{ color: activeColor, fontSize: fontSize + 'px' }">Teks Dinamis</div>
 
 ```
-**Binding ToolTip (Atribut `title`):** Menampilkan teks bantuan saat kursor diarahkan ke elemen.
+
+
+* **Binding Tooltip (`title`):**
 ```html
 <span :title="tooltipMessage">Arahkan kursor ke sini</span>
 
 ```
-___
-### Directive `v-model` (Two-Way Data Binding)
 
-Direktif `v-model` digunakan untuk membuat ikatan dua arah pada elemen formulir (*form input*). Berikut penerapannya pada berbagai jenis input:
 
-**Input tipe `text` dan `password`:** Menyimpan dan menyinkronkan string teks atau sandi yang diketik pengguna secara *real-time*.
+
+---
+
+### Directive `v-model` & Modifiers (Two-Way Data Binding)
+
+#### 1. Penerapan pada Elemen Input:
+
+* **Text & Password:** Menyinkronkan string teks secara *real-time*.
 ```html
-<input type="text" v-model="username" placeholder="Masukkan username">
-<input type="password" v-model="password" placeholder="Masukkan password">
+<input type="text" v-model="username" placeholder="Username">
+<input type="password" v-model="password" placeholder="Password">
 
 ```
-**Input tipe `radio`:** Mengikat nilai pilihan tunggal dari beberapa opsi yang tersedia.
+
+
+* **Radio Button:** Menyimpan nilai tunggal dari opsi yang dipilih.
 ```html
 <label><input type="radio" value="Pria" v-model="gender"> Pria</label>
 <label><input type="radio" value="Wanita" v-model="gender"> Wanita</label>
 
 ```
-**Input tipe `checkbox`:** Mengikat nilai boolean (centang/tidak) atau array untuk pilihan ganda.
+
+
+* **Checkbox:** Menyimpan nilai *boolean* (jika tunggal) atau *array* (jika pilihan ganda).
 ```html
-<label><input type="checkbox" value="Membaca" v-model="hobbies"> Membaca</label>
 <label><input type="checkbox" value="Coding" v-model="hobbies"> Coding</label>
+<label><input type="checkbox" value="Gaming" v-model="hobbies"> Gaming</label>
 
 ```
-**Input tipe `date`:** Mengambil dan menyinkronkan nilai tanggal yang dipilih pengguna.
+
+
+* **Date, Range, Select, & Textarea:**
 ```html
 <input type="date" v-model="selectedDate">
-
-```
-**Input tipe `range`:** Mengatur nilai numerik dalam rentang tertentu (biasanya untuk *slider*).
-```html
 <input type="range" min="0" max="100" v-model="volumeLevel">
-<p>Volume: {{ volumeLevel }}</p>
-
-```
-**Input List (`<select>` / Dropdown):** Menyimpan nilai dari opsi yang dipilih pengguna dari daftar pilihan.
-```html
 <select v-model="selectedCity">
-    <option disabled value="">Pilih Kota</option>
-    <option>Jakarta</option>
-    <option>Semarang</option>
-    <option>Surabaya</option>
+  <option disabled value="">Pilih Kota</option>
+  <option>Jakarta</option>
+  <option>Semarang</option>
 </select>
+<textarea v-model="userBio"></textarea>
 
 ```
-**Input `textarea`:** Mengambil teks panjang atau multi-baris dari pengguna.
+
+
+
+#### 2. Modifiers pada `v-model` (Fitur Tambahan Penting):
+
+* `.lazy`: Memperbarui data hanya setelah pengguna menekan Enter atau melepas fokus input (`change` event).
 ```html
-<textarea v-model="userBio" placeholder="Tulis bio singkat..."></textarea>
+<input type="text" v-model.lazy="username">
 
 ```
-___
 
-## Bagian 02: Computed Properties (Pengolahan Data Berbasis Ketergantungan)
 
-### Konsep Computed Property
+* `.number`: Mengonversi nilai input teks secara otomatis menjadi tipe data angka/number.
+```html
+<input type="number" v-model.number="age">
 
-* **Pengertian:** Properti khusus di dalam Vue yang digunakan untuk memproses data reaktif dan mengembalikan nilai baru secara otomatis.
-* **Fitur Utama (*Caching*):** Computed property mengingat hasil perhitungannya. Ia **hanya akan mengeksekusi ulang fungsinya jika data yang menjadi rujukannya (dependensinya) mengalami perubahan**. Jika tidak ada perubahan data, Vue langsung menyajikan data dari memori *cache*, sehingga performa aplikasi jauh lebih optimal.
-___
-### Implementasi Computed Property pada Berbagai Jenis Input
+```
 
-**Computed property pada input dengan value `text`:** Memproses teks yang diketik secara langsung (contoh: konversi otomatis ke huruf kapital, pemformatan nama, atau *live search filter*).
+
+* `.trim`: Otomatis memotong spasi di awal dan akhir teks.
+```html
+<input type="text" v-model.trim="email">
+
+```
+
+
+
+---
+
+## Bagian 02: Computed Properties (Pengolahan Data Berbasis Dependensi)
+
+### Konsep & Fitur Caching
+
+* **Pengertian:** Properti terhitung yang digunakan untuk mengolah, menyaring, atau mentransformasi data reaktif dan mengembalikan nilai hasil komputasi baru.
+* **Fitur Caching (Keunggulan Utama):** *Computed property* menyimpan hasil komputasinya di memori *cache*. Fungsinya **hanya akan dieksekusi ulang jika data reaktif yang menjadi rujukannya (dependensinya) mengalami perubahan**. Jika data acuan tidak berubah, Vue langsung menyajikan hasil dari *cache* tanpa kalkulasi ulang.
+* **Sifat Default:** Secara default bersifat *read-only* (hanya-baca).
+
+### Contoh Implementasi (Composition API vs Options API)
+
+#### Standar Vue 3 Modern (Composition API):
+
+```html
+<script setup>
+import { ref, computed } from 'vue'
+
+const inputText = ref('')
+const passwordInput = ref('')
+
+// Computed Property
+const formattedText = computed(() => inputText.value.trim().toUpperCase())
+const isPasswordValid = computed(() => passwordInput.value.length >= 8)
+</script>
+
+```
+
+#### Standar Classic (Options API):
+
 ```javascript
 computed: {
     formattedText() {
         return this.inputText.trim().toUpperCase();
-    }
-}
-
-```
-**Computed property pada input dengan value `password`:** Mengecek kekuatan sandi (*password strength*) atau memvalidasi kecocokan konfirmasi sandi secara *real-time*.
-```javascript
-computed: {
+    },
     isPasswordValid() {
         return this.passwordInput.length >= 8;
-    }
-}
-
-```
-**Computed property pada input dengan value `radio`:** Mengubah atau menyesuaikan tampilan/logika lanjutan berdasarkan pilihan *radio button* yang aktif.
-```javascript
-computed: {
-    shippingCost() {
-        return this.selectedService === 'Express' ? 25000 : 10000;
-    }
-}
-
-```
-**Computed property pada input dengan value `date`:** Menghitung selisih waktu, umur, atau memformat tanggal yang dipilih pengguna ke format baca tertentu.
-```javascript
-computed: {
+    },
     userAge() {
         const birthYear = new Date(this.selectedDate).getFullYear();
         const currentYear = new Date().getFullYear();
@@ -148,14 +172,16 @@ computed: {
 }
 
 ```
-___
 
-## Bagian 03: Methods (Fungsi Aksi di Vue.js)
+---
 
-### Pengertian & Penggunaan Methods Property
+## Bagian 03: Methods (Fungsi Aksi)
 
-* **Pengertian:** Kumpulan fungsi atau blok kode instruksi yang dideklarasikan di dalam opsi `methods` pada komponen Vue.
-* **Fungsi Utama:** Menjalankan tugas atau aksi tertentu (seperti merespon klik tombol *event handler*, mengirim data ke *server/API*, mengubah nilai data reaktif, atau melakukan kalkulasi yang membutuhkan aksi pemicu/eksekusi manual).
+### Pengertian & Fungsi
+
+* **Pengertian:** Kumpulan fungsi atau blok instruksi kode yang dipanggil untuk mengeksekusi suatu aksi.
+* **Fungsi Utama:** Menerima respon *event* dari pengguna (seperti klik tombol `@click`), mengirim data ke API/server, memutasi nilai data, atau menjalankan prosedur logika interaktif.
+
 ```javascript
 methods: {
     submitForm() {
@@ -167,13 +193,16 @@ methods: {
 }
 
 ```
-___
-### Perbedaan Utama: Computed Property vs. Methods Property
+
+---
+
+## Bagian 04: Perbandingan Utama: Computed vs. Methods
 
 | Aspek Perbandingan | Computed Property | Methods Property |
 | --- | --- | --- |
-| **Mekanisme Eksekusi** | Berjalan secara reaktif berdasarkan **perubahan dependensi data**. | Dijalankan secara eksplisit saat **dipanggil** (misal lewat *event click* atau dipanggil di template). |
-| **Sistem *Caching*** | **Memiliki *cache*.** Tidak menghitung ulang selama data acuan tidak berubah. | **Tidak memiliki *cache*.** Fungsi akan selalu dieksekusi setiap kali dipanggil, terlepas dari ada atau tidaknya perubahan data. |
-| **Cara Pemanggilan di Template** | Dipanggil sebagai **properti** (tanpa tanda kurung `()`, contoh: formattedText ). | Dipanggil sebagai **fungsi** (menggunakan tanda kurung `()`, contoh: calculateTotal() ). |
-| **Kegunaan Utama** | Untuk memformat, menyaring, atau menghitung data yang hasilnya akan ditampilkan di UI secara efisien. | Untuk menjalankan aksi/prosedur logika (fungsi tombol, validasi *submit*, pengambilan data API). |
+| **Mekanisme Eksekusi** | Berjalan reaktif otomatis jika **dependensi data berubah**. | Berjalan secara eksplisit saat **dipanggil** (*event/trigger*). |
+| **Sistem Caching** | **Memiliki Cache.** Menghemat biaya komputasi jika dependensi tidak berubah. | **Tidak Memiliki Cache.** Dieksekusi ulang setiap kali re-render/dipanggil. |
+| **Pemanggilan di Template** | Dipanggil sebagai **properti** (tanpa kurung `()`, contoh: `{{ formattedText }}`). | Dipanggil sebagai **fungsi** (dengan kurung `()`, contoh: `@click="submitForm()"`). |
+| **Sifat Nilai Kembalian** | Wajib mengembalikan nilai (*must return a value*). | Boleh mengembalikan nilai atau sekadar menjalankan fungsi/prosedur tanpa *return*. |
+| **Kasus Penggunaan** | Transformasi teks, kalkulasi total harga, *filtering* list data. | *Event handling* (submit form, reset, toggle modal), interaksi API. |
 ___

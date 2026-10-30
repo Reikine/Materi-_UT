@@ -1,4 +1,4 @@
-# MODUL 06: HUBUNGAN ANTARMANUSIA DALAM ORGANISASI: KOMUNIKASI, KONFLIK, DAN NEGOSIASI
+# Modul 06: Hubungan Antarmanusia dalam Organisasi
 
 ## Bagian 1: Komunikasi
 

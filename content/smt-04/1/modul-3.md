@@ -1,4 +1,4 @@
-# MODUL 03: PERSEPSI DAN STRES DI LINGKUNGAN KERJA
+# Modul 03: Persepsi dan Stress di Linkungan Kerja
 
 ## Bagian 1: Persepsi
 

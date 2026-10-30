@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const allSemestersData: Record<string, { title: string; desc: string; courses: { code: string; name: string; ssk: string; modulesCount: number; }[] }> = {
     "1": {
-        title: "Semester 1",
-        desc: "Pengantar fondasi akademik dan konsep dasar ilmu komputer serta sistem informasi.",
+        title: "1st Semester",
+        desc: "Introduction to academic foundations and core concepts of computer science and information systems.",
         courses: [
             { code: "MKWN4101", name: "Pendidikan Agama Islam", ssk: "3 SKS", modulesCount: 9 },
             { code: "MKWN4109", name: "Pendidikan Kewarganegaraan", ssk: "2 SKS", modulesCount: 9 },
@@ -15,8 +15,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "2": {
-        title: "Semester 2",
-        desc: "Pengembangan pemodelan data, struktur data, statistika, dan matematika lanjutan.",
+        title: "2nd Semester",
+        desc: "Data modeling development, data structures, statistics, and advanced mathematics.",
         courses: [
             { code: "MKDI4201", name: "Bahasa Inggris", ssk: "3 SKS", modulesCount: 9 },
             { code: "MKKI4201", name: "Pengantar Statistika", ssk: "3 SKS", modulesCount: 9 },
@@ -28,8 +28,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "3": {
-        title: "Semester 3",
-        desc: "Eksplorasi pemrograman berbasis desktop, jaringan komputer, rekayasa perangkat lunak, dan logika.",
+        title: "3rd Semester",
+        desc: "Exploration of desktop programming, computer networks, software engineering, and logic.",
         courses: [
             { code: "MKDI4202", name: "Belajar di Era Digital", ssk: "2 SKS", modulesCount: 9 },
             { code: "STIK4111", name: "Dasar Pemrograman R", ssk: "3 SKS", modulesCount: 9 },
@@ -41,8 +41,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "4": {
-        title: "Semester 4",
-        desc: "Fokus pada perancangan sistem, analisis dan visualisasi data, pemrograman web, serta tata kelola proses bisnis.",
+        title: "4th Semester",
+        desc: "Focus on system design, data analysis and visualization, web programming, and business process governance.",
         courses: [
             { code: "EMBS4207", name: "Perilaku Organisasi", ssk: "3 SKS", modulesCount: 9 },
             { code: "MKDI4203", name: "Kewirausahaan di Era Digital", ssk: "3 SKS", modulesCount: 9 },
@@ -54,8 +54,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "5": {
-        title: "Semester 5",
-        desc: "Pengembangan sistem pendukung keputusan, administrasi server, mobile programming, dan kalkulus.",
+        title: "5th Semester",
+        desc: "Decision support systems development, server administration, mobile programming, and calculus.",
         courses: [
             { code: "EMBS4102", name: "Pengantar Bisnis", ssk: "3 SKS", modulesCount: 9 },
             { code: "FSAP4102", name: "Teori Organisasi", ssk: "3 SKS", modulesCount: 9 },
@@ -68,8 +68,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "6": {
-        title: "Semester 6",
-        desc: "Arsitektur enterprise, data mining, etika profesi, infrastruktur TI, dan metodologi penelitian.",
+        title: "6th Semester",
+        desc: "Enterprise architecture, data mining, professional ethics, IT infrastructure, and research methodology.",
         courses: [
             { code: "EMBS4101", name: "Manajemen", ssk: "4 SKS", modulesCount: 9 },
             { code: "MKKI4301", name: "Pemberdayaan Masyarakat (Pilihan)", ssk: "3 SKS", modulesCount: 9 },
@@ -83,8 +83,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "7": {
-        title: "Semester 7",
-        desc: "Sains data, tata kelola TI, manajemen resiko, keamanan jaringan, data warehouse, dan capstone project.",
+        title: "7th Semester",
+        desc: "Data science, IT governance, risk management, network security, data warehousing, and capstone project.",
         courses: [
             { code: "STDA4101", name: "Pengantar Sains Data", ssk: "3 SKS", modulesCount: 9 },
             { code: "STSI4402", name: "Tata Kelola Teknologi Informasi", ssk: "2 SKS", modulesCount: 9 },
@@ -95,8 +95,8 @@ const allSemestersData: Record<string, { title: string; desc: string; courses: {
         ]
     },
     "8": {
-        title: "Semester 8",
-        desc: "Sistem informasi akuntansi, keamanan sistem informasi, manajemen layanan TI, e-bisnis, dan tugas akhir.",
+        title: "8th Semester",
+        desc: "Accounting information systems, information system security, IT service management, e-business, and final thesis.",
         courses: [
             { code: "EACC4207", name: "Sistem Informasi Akuntansi", ssk: "3 SKS", modulesCount: 9 },
             { code: "STSI4405", name: "Keamanan Sistem Informasi", ssk: "2 SKS", modulesCount: 9 },
@@ -120,7 +120,6 @@ export async function generateStaticParams() {
     ];
 }
 
-
 export default async function SemesterPage({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
     const slug = resolvedParams.slug;
@@ -132,19 +131,18 @@ export default async function SemesterPage({ params }: { params: Promise<{ slug:
         <div className="max-w-4xl mx-auto pt-10 pb-12 px-6">
             <div className="mb-6">
                 <Link href="/" className="inline-flex items-center text-xs font-semibold text-slate-600 bg-white border border-slate-200/80 px-3.5 py-2 rounded-xl shadow-sm hover:bg-slate-50 transition-colors">
-                    &larr; Kembali ke Beranda
+                    &larr; Semesters
                 </Link>
             </div>
 
             <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm mb-8">
                 <div className="flex items-center gap-2 mb-3">
                     <span className="text-[10px] font-semibold text-red-600 bg-red-50 border border-red-100 px-2.5 py-0.5 rounded-full">
-                        Fase Akademik
+                        Academic Phase
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">Arsip Maktul</span>
                 </div>
                 <h1 className="text-2xl font-extrabold text-slate-900 mb-1">
-                    {data.title} ({slug})
+                    {data.title}
                 </h1>
                 <p className="text-xs sm:text-sm text-slate-600">{data.desc}</p>
             </div>
@@ -152,7 +150,7 @@ export default async function SemesterPage({ params }: { params: Promise<{ slug:
             <div className="mb-4">
                 <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
                     <span className="w-1.5 h-4 bg-red-600 rounded-full"></span>
-                    Daftar Mata Kuliah
+                    Course List
                 </h2>
             </div>
 
@@ -175,9 +173,9 @@ export default async function SemesterPage({ params }: { params: Promise<{ slug:
                             </h3>
                         </div>
                         <div className="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs">
-                            <span className="text-slate-400 font-mono">{course.modulesCount} Modul / File</span>
+                            <span className="text-slate-400 font-mono">{course.modulesCount} Modules</span>
                             <span className="font-medium text-red-600 group-hover:translate-x-1 transition-transform">
-                                Lihat Modul &rarr;
+                                View Modules &rarr;
                             </span>
                         </div>
                     </Link>

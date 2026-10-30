@@ -1,4 +1,4 @@
-# MODUL 05: DINAMIKA KELOMPOK
+# Modul 05: Dinamika Kelompok
 
 ## Bagian 1: Dasar-Dasar Perilaku Kelompok dan Tim Kerja
 

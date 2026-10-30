@@ -1,4 +1,4 @@
-# MODUL 01: KONSEP PENGEMBANGAN SISTEM
+# Modul 01: Konsep Pengembangan Sistem
 ## Bagian 01: Konsep Dasar Pengembangan Sistem
 
 ### Pengertian Pengembangan Sistem

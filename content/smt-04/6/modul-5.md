@@ -1,4 +1,4 @@
-# MODUL 05: PEMODELAN ANALISIS DENGAN PENDEKATAN BERORIENTASI OBJEK
+# Modul 05: Pemodelan Analisis dengan Pendekatan Berorientasi Objek
 
 ## Bagian 1: Paradigma Berorientasi Objek
 
